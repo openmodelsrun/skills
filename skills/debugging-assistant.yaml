@@ -1,0 +1,71 @@
+id: debugging-assistant
+name: Debugging Assistant
+description: >
+  Systematic debugging workflow that helps identify, isolate, and fix bugs. Follows a
+  structured approach: reproduce, localize, reduce, fix, guard. Analyzes error messages,
+  stack traces, and logs to pinpoint root causes rather than symptoms.
+category: development
+tags:
+  - debugging
+  - troubleshooting
+  - error-handling
+  - stack-trace
+  - root-cause
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - claude-sonnet-4-6
+  - gpt-5
+  - deepseek-v4
+min_context_window: 32000
+modalities:
+  input:
+    - code
+    - text
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Analyzing stack traces and error messages
+  - Identifying race conditions and concurrency bugs
+  - Debugging memory leaks and performance issues
+  - Resolving dependency conflicts
+  - Fixing flaky tests
+example_prompt: |
+  Help me debug this issue.
+
+  Error message:
+  ```
+  [paste error/stack trace here]
+  ```
+
+  Relevant code:
+  ```
+  [paste code here]
+  ```
+
+  Context:
+  - When does it happen? [always / intermittent / specific conditions]
+  - What changed recently? [recent commits / dependency updates / config changes]
+  - Environment: [OS, runtime version, relevant tools]
+
+  Please:
+  1. Analyze the error and identify likely root causes
+  2. Suggest specific debugging steps to confirm the cause
+  3. Provide a fix with explanation
+  4. Recommend a regression test to prevent recurrence
+related_skills:
+  - unit-test-generation
+  - code-review
+  - refactoring-assistant
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T10:00:00.000Z"
+updated_at: "2026-05-24T10:00:00.000Z"

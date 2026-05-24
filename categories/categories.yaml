@@ -1,0 +1,36 @@
+categories:
+  - id: development
+    name: Development
+    description: Skills for writing, reviewing, and improving code across languages and frameworks
+
+  - id: writing
+    name: Writing
+    description: Skills for generating, editing, and transforming written content
+
+  - id: data
+    name: Data
+    description: Skills for analyzing, transforming, and visualizing data
+
+  - id: research
+    name: Research
+    description: Skills for gathering, synthesizing, and summarizing information
+
+  - id: creative
+    name: Creative
+    description: Skills for brainstorming, ideation, and creative problem-solving
+
+  - id: ops
+    name: DevOps & Infrastructure
+    description: Skills for deployment, monitoring, CI/CD, and infrastructure management
+
+  - id: testing
+    name: Testing & QA
+    description: Skills for test generation, quality assurance, and bug detection
+
+  - id: security
+    name: Security
+    description: Skills for vulnerability detection, security auditing, and hardening
+
+  - id: productivity
+    name: Productivity
+    description: Skills for workflow automation, task management, and efficiency

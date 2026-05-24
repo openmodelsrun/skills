@@ -1,0 +1,45 @@
+{
+  "title": "Category Schema",
+  "description": "JSON Schema for skill category definitions",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["categories"],
+  "properties": {
+    "categories": {
+      "type": "array",
+      "description": "List of skill categories",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "description"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Category identifier matching the skill category enum",
+            "pattern": "^[a-z]+(-[a-z]+)*$"
+          },
+          "name": {
+            "type": "string",
+            "description": "Human-readable category name",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "description": {
+            "type": "string",
+            "description": "Brief description of what skills in this category do",
+            "minLength": 10,
+            "maxLength": 500
+          },
+          "icon": {
+            "type": "string",
+            "description": "Emoji icon for the category (optional)",
+            "minLength": 1,
+            "maxLength": 10
+          }
+        }
+      }
+    }
+  }
+}

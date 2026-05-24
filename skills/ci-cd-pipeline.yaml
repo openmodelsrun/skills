@@ -1,0 +1,65 @@
+id: ci-cd-pipeline
+name: CI/CD Pipeline Builder
+description: >
+  Designs and implements CI/CD pipelines for various platforms (GitHub Actions, GitLab CI,
+  Jenkins, CircleCI). Covers build, test, lint, security scan, deploy stages with proper
+  caching, parallelization, and environment management.
+category: ops
+tags:
+  - ci-cd
+  - github-actions
+  - devops
+  - automation
+  - deployment
+  - pipeline
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - claude-sonnet-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Setting up GitHub Actions for a new project
+  - Adding security scanning to existing pipelines
+  - Implementing blue-green or canary deployments
+  - Optimizing CI build times with caching
+  - Multi-environment deployment workflows
+example_prompt: |
+  Create a GitHub Actions CI/CD pipeline for my project.
+
+  Project details:
+  - Language/framework: [e.g., Node.js + Next.js]
+  - Package manager: [e.g., pnpm]
+  - Test framework: [e.g., Vitest + Playwright]
+  - Deploy target: [e.g., Vercel / AWS / Docker]
+
+  Pipeline should include:
+  1. Lint and type-check on every PR
+  2. Unit tests with coverage reporting
+  3. E2E tests on PR to main
+  4. Build verification
+  5. Auto-deploy to staging on merge to main
+  6. Manual promotion to production
+  7. Proper caching for dependencies and build artifacts
+related_skills:
+  - security-audit
+  - documentation-generator
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T10:00:00.000Z"
+updated_at: "2026-05-24T10:00:00.000Z"

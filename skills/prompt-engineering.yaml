@@ -1,0 +1,60 @@
+id: prompt-engineering
+name: Prompt Engineering
+description: >
+  Designs, optimizes, and iterates on prompts for LLM applications. Covers system prompt
+  design, few-shot examples, chain-of-thought reasoning, output formatting, and prompt
+  testing strategies. Helps build reliable AI-powered features.
+category: development
+tags:
+  - prompts
+  - llm
+  - ai-engineering
+  - system-prompts
+  - few-shot
+  - chain-of-thought
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: advanced
+use_cases:
+  - Designing system prompts for AI applications
+  - Optimizing prompts for accuracy and consistency
+  - Building few-shot example sets
+  - Creating evaluation criteria for prompt outputs
+  - Migrating prompts between different models
+example_prompt: |
+  Help me design a system prompt for the following use case:
+
+  Application: [describe your AI feature]
+  Target model: [model name]
+  Expected input: [what users will provide]
+  Expected output: [what the AI should produce]
+  Constraints: [format, length, tone, safety requirements]
+
+  Please provide:
+  1. System prompt with clear role, context, and instructions
+  2. 3 few-shot examples (input → expected output)
+  3. Edge cases to handle explicitly
+  4. Evaluation criteria for testing prompt quality
+  5. Suggestions for iteration and improvement
+related_skills:
+  - documentation-generator
+  - data-analysis
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T10:00:00.000Z"
+updated_at: "2026-05-24T10:00:00.000Z"

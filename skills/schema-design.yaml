@@ -1,0 +1,62 @@
+id: schema-design
+name: Database Schema Design
+description: >
+  Designs normalized database schemas from business requirements. Covers entity relationships,
+  indexing strategies, migration planning, and performance considerations. Supports PostgreSQL,
+  MySQL, MongoDB, and other databases with dialect-specific optimizations.
+category: data
+tags:
+  - database
+  - schema
+  - postgresql
+  - migrations
+  - data-modeling
+  - erd
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+  output:
+    - code
+    - text
+complexity: advanced
+use_cases:
+  - Designing schemas for new applications from requirements
+  - Normalizing existing denormalized data structures
+  - Planning database migrations with zero-downtime strategies
+  - Optimizing query performance through indexing
+  - Designing multi-tenant database architectures
+example_prompt: |
+  Design a database schema for the following system:
+
+  "[describe the system and its entities]"
+
+  Requirements:
+  - Target database: [PostgreSQL / MySQL / MongoDB]
+  - Expected scale: [rows, queries/sec, growth rate]
+  - Key access patterns: [list main queries]
+
+  Deliverables:
+  1. Entity-relationship diagram (text-based)
+  2. CREATE TABLE statements with constraints
+  3. Index recommendations with justification
+  4. Migration strategy from current state (if applicable)
+  5. Performance considerations and trade-offs
+related_skills:
+  - sql-generation
+  - api-design
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T10:00:00.000Z"
+updated_at: "2026-05-24T10:00:00.000Z"

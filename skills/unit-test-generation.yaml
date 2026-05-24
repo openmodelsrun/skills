@@ -1,0 +1,64 @@
+id: unit-test-generation
+name: Unit Test Generation
+description: >
+  Generates comprehensive unit tests for existing code, covering happy paths, edge cases,
+  error conditions, and boundary values. Follows testing best practices including the test
+  pyramid, DAMP over DRY, and the Arrange-Act-Assert pattern. Adapts to the project's
+  existing test framework and conventions.
+category: testing
+tags:
+  - testing
+  - unit-tests
+  - tdd
+  - coverage
+  - automation
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - claude-sonnet-4-6
+  - gpt-5
+  - deepseek-v4
+min_context_window: 32000
+modalities:
+  input:
+    - code
+    - text
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Generating tests for untested legacy code
+  - Achieving coverage targets for CI gates
+  - TDD red-green-refactor workflow
+  - Regression test creation after bug fixes
+  - Testing edge cases and error paths
+example_prompt: |
+  Generate comprehensive unit tests for the following function.
+  Include tests for:
+  - Happy path with typical inputs
+  - Edge cases (empty inputs, null values, boundary values)
+  - Error conditions and exception handling
+  - Type coercion or unexpected input types
+
+  Use the project's existing test framework. Follow Arrange-Act-Assert pattern.
+  Each test should have a descriptive name explaining what it verifies.
+
+  Function to test:
+  ```
+  [paste function here]
+  ```
+related_skills:
+  - code-review
+  - refactoring-assistant
+  - debugging-assistant
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T10:00:00.000Z"
+updated_at: "2026-05-24T10:00:00.000Z"

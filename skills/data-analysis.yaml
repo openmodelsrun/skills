@@ -1,0 +1,67 @@
+id: data-analysis
+name: Data Analysis
+description: >
+  Analyzes datasets to extract insights, identify patterns, and generate visualizations.
+  Supports exploratory data analysis (EDA), statistical testing, trend detection, and
+  report generation. Works with CSV, JSON, and database outputs.
+category: data
+tags:
+  - data-analysis
+  - statistics
+  - visualization
+  - pandas
+  - eda
+  - reporting
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 64000
+modalities:
+  input:
+    - text
+    - code
+    - file
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Exploratory data analysis on new datasets
+  - Statistical hypothesis testing
+  - Generating Python/R analysis scripts
+  - Creating data visualization code (matplotlib, plotly, d3)
+  - Building automated reporting pipelines
+example_prompt: |
+  Analyze this dataset and provide insights.
+
+  Data sample (first 10 rows):
+  ```csv
+  [paste CSV data here]
+  ```
+
+  Questions to answer:
+  1. What are the key distributions and summary statistics?
+  2. Are there any notable correlations between variables?
+  3. What outliers or anomalies exist?
+  4. What trends are visible over time?
+
+  Deliverables:
+  - Summary statistics table
+  - Python code for full EDA (using pandas + matplotlib)
+  - Key findings in plain language
+  - Recommended next steps for deeper analysis
+related_skills:
+  - sql-generation
+  - documentation-generator
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T10:00:00.000Z"
+updated_at: "2026-05-24T10:00:00.000Z"

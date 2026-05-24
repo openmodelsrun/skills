@@ -1,0 +1,61 @@
+id: sql-generation
+name: SQL Generation
+description: >
+  Generates optimized SQL queries from natural language descriptions. Supports multiple
+  dialects (PostgreSQL, MySQL, SQLite, SQL Server), handles complex joins, subqueries,
+  window functions, and CTEs. Includes query explanation and performance optimization hints.
+category: data
+tags:
+  - sql
+  - database
+  - query-optimization
+  - data-analysis
+  - postgresql
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - claude-sonnet-4-6
+  - gpt-5
+  - deepseek-v4
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Converting business questions to SQL queries
+  - Optimizing slow queries with EXPLAIN analysis
+  - Generating migration scripts
+  - Building complex reporting queries
+  - Database schema design from requirements
+example_prompt: |
+  Generate a PostgreSQL query for the following requirement:
+
+  "Find the top 10 customers by total order value in the last 30 days,
+  including their order count and average order value. Exclude customers
+  who have any cancelled orders."
+
+  Schema context:
+  - customers (id, name, email, created_at)
+  - orders (id, customer_id, total, status, created_at)
+
+  Requirements:
+  - Use CTEs for readability
+  - Include performance hints (indexes to consider)
+  - Explain the query logic step by step
+related_skills:
+  - data-analysis
+  - api-design
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T10:00:00.000Z"
+updated_at: "2026-05-24T10:00:00.000Z"
