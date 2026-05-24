@@ -1,0 +1,58 @@
+id: error-message-improver
+name: Error Message Improver
+description: >
+  Rewrites vague or technical error messages into clear, actionable user-facing messages.
+  Considers the audience (end-user vs developer), suggests error codes, and provides
+  guidance on what the user can do to resolve the issue.
+category: writing
+tags:
+  - error-handling
+  - ux-writing
+  - user-experience
+  - microcopy
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-sonnet-4-6
+  - gpt-5-4-mini
+  - gemini-2-5-flash
+min_context_window: 8000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Rewriting cryptic error messages for end users
+  - Creating error message catalogs for applications
+  - Improving developer-facing error messages in libraries
+  - Localizing error messages for international audiences
+example_prompt: |
+  Rewrite these error messages to be clear and actionable for end users.
+
+  For each error, provide:
+  1. Improved user-facing message
+  2. Suggested error code (e.g., ERR_AUTH_001)
+  3. Recovery action the user can take
+
+  Original errors:
+  - "ECONNREFUSED 127.0.0.1:5432"
+  - "TypeError: Cannot read properties of undefined (reading 'map')"
+  - "403 Forbidden"
+  - "ENOMEM: not enough memory"
+
+  Context: This is a web application for project management.
+  Audience: Non-technical end users.
+related_skills:
+  - documentation-generator
+  - debugging-assistant
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T12:00:00.000Z"
+updated_at: "2026-05-24T12:00:00.000Z"

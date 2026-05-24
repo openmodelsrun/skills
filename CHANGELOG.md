@@ -5,6 +5,30 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] - 2026-05-24
+
+### Added
+
+- 15 new skills:
+  - `api-error-handler` — API error handling with RFC 7807
+  - `brainstorm-facilitator` — structured ideation with SCAMPER, Six Hats
+  - `changelog-generator` — changelogs from git history
+  - `code-explainer` — explain code at any depth level
+  - `cron-expression-builder` — cron from natural language
+  - `dependency-auditor` — audit deps for vulnerabilities and licenses
+  - `docker-compose-generator` — Docker Compose from requirements
+  - `email-writer` — professional email drafting
+  - `env-config-generator` — .env files and validation schemas
+  - `error-message-improver` — rewrite errors for end users
+  - `git-conflict-resolver` — resolve merge conflicts with intent analysis
+  - `git-pr-description` — PR descriptions from diffs
+  - `migration-planner` — framework/version migration strategies
+  - `openapi-spec-generator` — OpenAPI 3.1 specs from code or descriptions
+  - `react-component-generator` — production-ready React components
+  - `research-summarizer` — summarize papers and articles
+  - `test-data-generator` — realistic fixtures and seed data
+  - `typescript-type-generator` — TypeScript types from JSON/schemas
+
 ## [0.1.0] - 2026-05-24
 
 ### Added

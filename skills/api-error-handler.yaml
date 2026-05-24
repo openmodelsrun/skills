@@ -1,0 +1,65 @@
+id: api-error-handler
+name: API Error Handler
+description: >
+  Designs and implements comprehensive error handling for APIs. Covers error response
+  formats (RFC 7807 Problem Details), HTTP status code selection, error logging strategies,
+  retry logic, and client-friendly error messages with proper i18n support.
+category: development
+tags:
+  - error-handling
+  - api
+  - rest
+  - http-status
+  - rfc-7807
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - claude-sonnet-4-6
+  - gpt-5
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Implementing global error handlers in Express/NestJS/FastAPI
+  - Designing error response schemas (RFC 7807)
+  - Creating error code catalogs for APIs
+  - Building retry-aware error responses with Retry-After headers
+  - Implementing error boundary patterns in frontend apps
+example_prompt: |
+  Design an error handling system for my API.
+
+  Framework: [e.g., NestJS / Express / FastAPI]
+  Requirements:
+  - RFC 7807 Problem Details format
+  - Proper HTTP status codes for each error type
+  - Error codes for client consumption (e.g., AUTH_001)
+  - Structured logging (don't leak internals to clients)
+  - Rate limit errors with Retry-After header
+  - Validation errors with field-level details
+
+  Please provide:
+  1. Error response schema/interface
+  2. Global error handler middleware
+  3. Custom error classes (NotFound, Validation, Auth, RateLimit)
+  4. Error code catalog
+  5. Example usage in a controller
+related_skills:
+  - api-design
+  - security-audit
+  - debugging-assistant
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T12:00:00.000Z"
+updated_at: "2026-05-24T12:00:00.000Z"

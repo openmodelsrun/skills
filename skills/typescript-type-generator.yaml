@@ -1,0 +1,61 @@
+id: typescript-type-generator
+name: TypeScript Type Generator
+description: >
+  Generates TypeScript type definitions from various sources — JSON data, API responses,
+  database schemas, or plain descriptions. Produces strict types with proper generics,
+  utility types, discriminated unions, and JSDoc comments.
+category: development
+tags:
+  - typescript
+  - types
+  - code-generation
+  - interfaces
+  - generics
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - claude-sonnet-4-6
+  - gpt-5
+  - deepseek-v4
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - code
+complexity: intermediate
+use_cases:
+  - Generating types from JSON API responses
+  - Creating Zod schemas with inferred types
+  - Converting database schemas to TypeScript interfaces
+  - Building discriminated unions for state machines
+  - Adding strict types to untyped JavaScript code
+example_prompt: |
+  Generate TypeScript types for the following JSON API response.
+
+  Requirements:
+  - Use interfaces (not type aliases) for objects
+  - Add JSDoc comments for each field
+  - Use strict types (no `any`)
+  - Handle nullable fields with `| null`
+  - Export all types
+  - Generate a Zod schema that matches the types
+
+  JSON response:
+  ```json
+  [paste JSON here]
+  ```
+related_skills:
+  - api-design
+  - code-translation
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T12:00:00.000Z"
+updated_at: "2026-05-24T12:00:00.000Z"

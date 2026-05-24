@@ -1,0 +1,66 @@
+id: migration-planner
+name: Migration Planner
+description: >
+  Plans and generates migration strategies for framework upgrades, language versions,
+  database changes, and architecture shifts. Produces step-by-step migration guides with
+  rollback plans, risk assessment, and automated codemods where possible.
+category: ops
+tags:
+  - migration
+  - upgrade
+  - planning
+  - breaking-changes
+  - codemods
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 64000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Planning React 18 to React 19 migration
+  - Upgrading Node.js major versions
+  - Migrating from REST to GraphQL
+  - Database schema migrations with zero downtime
+  - Monolith to microservices decomposition planning
+example_prompt: |
+  Plan a migration for the following upgrade:
+
+  From: [current version/framework/architecture]
+  To: [target version/framework/architecture]
+
+  Current codebase:
+  - Size: [files, LOC]
+  - Key dependencies: [list major deps]
+  - Test coverage: [percentage]
+
+  Please provide:
+  1. Breaking changes analysis
+  2. Step-by-step migration plan (ordered by risk)
+  3. Automated codemods or scripts where possible
+  4. Manual changes required
+  5. Testing strategy for each step
+  6. Rollback plan if something goes wrong
+  7. Estimated effort (hours/days)
+related_skills:
+  - refactoring-assistant
+  - code-translation
+  - ci-cd-pipeline
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T12:00:00.000Z"
+updated_at: "2026-05-24T12:00:00.000Z"

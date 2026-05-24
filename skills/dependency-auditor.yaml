@@ -1,0 +1,67 @@
+id: dependency-auditor
+name: Dependency Auditor
+description: >
+  Audits project dependencies for security vulnerabilities, license compliance, maintenance
+  status, and bundle size impact. Identifies outdated packages, suggests alternatives for
+  abandoned libraries, and flags risky transitive dependencies.
+category: security
+tags:
+  - dependencies
+  - npm
+  - supply-chain
+  - vulnerabilities
+  - licenses
+  - audit
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - code
+    - text
+    - file
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Reviewing package.json for risky dependencies
+  - Checking license compatibility for commercial projects
+  - Finding lighter alternatives to heavy packages
+  - Identifying unmaintained or deprecated packages
+  - Assessing supply chain attack surface
+example_prompt: |
+  Audit the following dependencies for my project:
+
+  ```json
+  [paste package.json dependencies or requirements.txt]
+  ```
+
+  Project type: [commercial / open-source]
+  License: [e.g., MIT, proprietary]
+
+  Please check:
+  1. Known vulnerabilities (CVEs)
+  2. License compatibility with my project license
+  3. Maintenance status (last release, open issues, bus factor)
+  4. Bundle size impact (for frontend deps)
+  5. Alternatives for any problematic packages
+  6. Unnecessary or redundant dependencies
+
+  Output a risk summary table:
+  | Package | Risk | Issue | Recommendation |
+related_skills:
+  - security-audit
+  - performance-optimization
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T14:00:00.000Z"
+updated_at: "2026-05-24T14:00:00.000Z"

@@ -1,0 +1,63 @@
+id: git-pr-description
+name: PR Description Generator
+description: >
+  Generates clear, structured pull request descriptions from code diffs. Includes summary
+  of changes, motivation, testing notes, and reviewer guidance. Follows team conventions
+  and links related issues automatically.
+category: productivity
+tags:
+  - git
+  - pull-request
+  - workflow
+  - collaboration
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-sonnet-4-6
+  - gpt-5-4-mini
+  - gemini-2-5-flash
+min_context_window: 16000
+modalities:
+  input:
+    - code
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Generating PR descriptions from staged changes
+  - Summarizing large feature branches for reviewers
+  - Standardizing PR format across a team
+  - Adding testing instructions and deployment notes
+example_prompt: |
+  Generate a pull request description for the following diff.
+
+  Format:
+  ## Summary
+  [1-2 sentence overview of what changed and why]
+
+  ## Changes
+  - [bullet list of key changes]
+
+  ## Testing
+  - [how to verify these changes work]
+
+  ## Notes for Reviewers
+  - [anything reviewers should pay attention to]
+
+  Diff:
+  ```diff
+  [paste git diff here]
+  ```
+related_skills:
+  - commit-message-writer
+  - code-review
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T12:00:00.000Z"
+updated_at: "2026-05-24T12:00:00.000Z"

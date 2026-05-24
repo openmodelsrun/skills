@@ -1,0 +1,58 @@
+id: env-config-generator
+name: Environment Config Generator
+description: >
+  Generates .env files, configuration schemas, and environment variable documentation from
+  application requirements. Includes validation rules, default values, required vs optional
+  flags, and example values. Supports multiple environments (dev/staging/prod).
+category: ops
+tags:
+  - configuration
+  - environment
+  - env-vars
+  - dotenv
+  - twelve-factor
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-sonnet-4-6
+  - gpt-5-4-mini
+  - gemini-2-5-flash
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - code
+    - text
+complexity: beginner
+use_cases:
+  - Creating .env.example files for new projects
+  - Generating Zod/Joi validation schemas for env vars
+  - Documenting all environment variables in a project
+  - Setting up multi-environment configurations
+  - Auditing for missing or unused env vars
+example_prompt: |
+  Generate environment configuration for the following application:
+
+  Stack: [e.g., "Next.js + PostgreSQL + Redis + S3"]
+  Environments: development, staging, production
+
+  Please provide:
+  1. `.env.example` with all variables, comments, and safe defaults
+  2. TypeScript validation schema (using Zod)
+  3. Documentation table (variable, required, default, description)
+  4. Differences between environments (what changes in prod)
+  5. Security notes (which values are secrets, rotation policy)
+related_skills:
+  - docker-compose-generator
+  - ci-cd-pipeline
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T12:00:00.000Z"
+updated_at: "2026-05-24T12:00:00.000Z"

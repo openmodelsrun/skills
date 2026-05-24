@@ -1,0 +1,59 @@
+id: brainstorm-facilitator
+name: Brainstorm Facilitator
+description: >
+  Facilitates structured brainstorming sessions using proven ideation frameworks — SCAMPER,
+  Six Thinking Hats, How Might We, Crazy Eights, and more. Generates diverse ideas,
+  challenges assumptions, and helps converge on the strongest concepts.
+category: creative
+tags:
+  - brainstorming
+  - ideation
+  - creativity
+  - problem-solving
+  - design-thinking
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Generating feature ideas for a product
+  - Exploring solutions to a technical challenge
+  - Naming products, features, or companies
+  - Finding creative approaches to user experience problems
+  - Breaking through creative blocks on projects
+example_prompt: |
+  Help me brainstorm solutions for the following challenge:
+
+  Challenge: "[describe the problem or opportunity]"
+  Constraints: [budget, timeline, technical limitations]
+  Target audience: [who benefits]
+
+  Please use the following approach:
+  1. Generate 10 diverse ideas (quantity over quality first)
+  2. For each idea, give a one-line description
+  3. Rate each on feasibility (1-5) and impact (1-5)
+  4. Pick the top 3 and expand with:
+     - How it works
+     - Key risks
+     - First step to validate
+  5. Suggest one "wild card" idea that breaks all constraints
+related_skills:
+  - prompt-engineering
+  - research-summarizer
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-05-24T14:00:00.000Z"
+updated_at: "2026-05-24T14:00:00.000Z"

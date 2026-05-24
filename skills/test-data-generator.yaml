@@ -1,0 +1,63 @@
+id: test-data-generator
+name: Test Data Generator
+description: >
+  Generates realistic test data, fixtures, and seed files for databases and APIs. Creates
+  data that respects constraints (foreign keys, unique fields, valid formats) and covers
+  edge cases. Supports JSON, SQL, CSV, and factory patterns.
+category: testing
+tags:
+  - test-data
+  - fixtures
+  - seeding
+  - mocking
+  - factories
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-sonnet-4-6
+  - gpt-5-4-mini
+  - gemini-2-5-flash
+  - deepseek-v4
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - code
+complexity: beginner
+use_cases:
+  - Generating database seed files for development
+  - Creating API response fixtures for frontend testing
+  - Building factory functions (Faker.js, Factory Boy)
+  - Generating edge case data (unicode, long strings, nulls)
+  - Creating realistic demo data for presentations
+example_prompt: |
+  Generate test data for the following schema:
+
+  ```sql
+  [paste schema or describe entities]
+  ```
+
+  Requirements:
+  - 20 records per table
+  - Realistic names, emails, dates (not "test1", "test2")
+  - Respect foreign key relationships
+  - Include edge cases: empty strings, max-length values, special characters
+  - Output format: [SQL INSERT / JSON / TypeScript factory functions]
+
+  Additional constraints:
+  - [e.g., "dates should span last 6 months", "include some inactive users"]
+related_skills:
+  - unit-test-generation
+  - schema-design
+  - sql-generation
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T12:00:00.000Z"
+updated_at: "2026-05-24T12:00:00.000Z"

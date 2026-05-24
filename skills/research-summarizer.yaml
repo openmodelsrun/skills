@@ -1,0 +1,70 @@
+id: research-summarizer
+name: Research Summarizer
+description: >
+  Summarizes research papers, technical articles, and documentation into structured
+  briefs. Extracts key findings, methodology, limitations, and practical implications.
+  Adapts output format from executive summary to detailed technical breakdown.
+category: research
+tags:
+  - summarization
+  - research
+  - papers
+  - analysis
+  - knowledge-extraction
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 128000
+modalities:
+  input:
+    - text
+    - file
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Summarizing academic papers for team discussions
+  - Creating executive briefs from technical reports
+  - Extracting actionable insights from industry whitepapers
+  - Building knowledge bases from documentation
+  - Comparing multiple papers on the same topic
+example_prompt: |
+  Summarize the following paper/article.
+
+  Output format:
+  ## TL;DR
+  [1-2 sentences]
+
+  ## Key Findings
+  - [bullet points of main results]
+
+  ## Methodology
+  [brief description of approach]
+
+  ## Limitations
+  - [what the paper doesn't cover or gets wrong]
+
+  ## Practical Implications
+  - [how this affects our work]
+
+  ## Related Work
+  - [other papers/tools to look at]
+
+  Paper/Article:
+  ```
+  [paste content here]
+  ```
+related_skills:
+  - documentation-generator
+  - data-analysis
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-05-24T12:00:00.000Z"
+updated_at: "2026-05-24T12:00:00.000Z"

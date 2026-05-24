@@ -1,0 +1,61 @@
+id: docker-compose-generator
+name: Docker Compose Generator
+description: >
+  Generates Docker Compose configurations from application requirements. Handles service
+  dependencies, networking, volumes, health checks, environment variables, and multi-stage
+  builds. Supports development and production profiles.
+category: ops
+tags:
+  - docker
+  - containers
+  - infrastructure
+  - devops
+  - deployment
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - claude-sonnet-4-6
+  - gpt-5
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Setting up local development environments
+  - Creating production-ready Docker Compose stacks
+  - Adding services (databases, caches, queues) to existing setups
+  - Configuring health checks and restart policies
+  - Multi-environment configurations (dev/staging/prod)
+example_prompt: |
+  Generate a Docker Compose configuration for the following stack:
+
+  Services:
+  - [list your services, e.g., "Next.js app", "PostgreSQL 15", "Redis 7"]
+
+  Requirements:
+  - Health checks for all services
+  - Named volumes for data persistence
+  - Environment variables from .env file
+  - Proper startup order with depends_on conditions
+  - Development profile with hot-reload
+  - Production profile with resource limits
+
+  Additional context:
+  - [any networking, port, or volume requirements]
+related_skills:
+  - ci-cd-pipeline
+  - schema-design
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T12:00:00.000Z"
+updated_at: "2026-05-24T12:00:00.000Z"

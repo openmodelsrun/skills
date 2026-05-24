@@ -1,0 +1,57 @@
+id: cron-expression-builder
+name: Cron Expression Builder
+description: >
+  Builds and explains cron expressions from natural language schedules. Supports standard
+  cron (5-field), extended cron (6-field with seconds), and cloud-specific formats
+  (AWS EventBridge, Google Cloud Scheduler). Validates expressions and shows next run times.
+category: ops
+tags:
+  - cron
+  - scheduling
+  - automation
+  - devops
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-sonnet-4-6
+  - gpt-5-4-mini
+  - gemini-2-5-flash
+min_context_window: 8000
+modalities:
+  input:
+    - text
+  output:
+    - text
+    - code
+complexity: beginner
+use_cases:
+  - Converting schedule descriptions to cron expressions
+  - Explaining existing cron expressions in plain language
+  - Generating crontab entries with comments
+  - Building AWS EventBridge schedule expressions
+  - Validating cron expressions and showing next N run times
+example_prompt: |
+  Create cron expressions for the following schedules:
+
+  1. Every weekday at 9:00 AM UTC
+  2. Every 15 minutes during business hours (9-17) on weekdays
+  3. First Monday of every month at midnight
+  4. Every Sunday at 2:30 AM (for maintenance window)
+
+  For each, provide:
+  - Standard cron expression (5-field)
+  - AWS EventBridge format (if different)
+  - Plain English explanation
+  - Next 3 run times from now
+related_skills:
+  - ci-cd-pipeline
+  - docker-compose-generator
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T12:00:00.000Z"
+updated_at: "2026-05-24T12:00:00.000Z"

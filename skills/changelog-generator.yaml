@@ -1,0 +1,62 @@
+id: changelog-generator
+name: Changelog Generator
+description: >
+  Generates structured changelogs from git history, commit messages, or PR descriptions.
+  Follows Keep a Changelog format, groups changes by type (Added, Changed, Fixed, Removed),
+  and highlights breaking changes. Supports semantic versioning recommendations.
+category: productivity
+tags:
+  - changelog
+  - release-notes
+  - versioning
+  - git
+  - documentation
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-sonnet-4-6
+  - gpt-5-4-mini
+  - gemini-2-5-flash
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Generating release notes from git log
+  - Creating changelogs for open-source projects
+  - Summarizing sprint changes for stakeholders
+  - Determining semantic version bumps from changes
+  - Writing user-facing release announcements
+example_prompt: |
+  Generate a changelog entry from the following commits/PRs:
+
+  ```
+  [paste git log or PR list here]
+  ```
+
+  Format: Keep a Changelog (https://keepachangelog.com)
+  Current version: [e.g., 1.2.3]
+
+  Please:
+  1. Group changes into: Added, Changed, Fixed, Deprecated, Removed, Security
+  2. Write entries from the user's perspective (not developer's)
+  3. Highlight any breaking changes with ⚠️
+  4. Recommend the next version number (major/minor/patch) based on changes
+  5. Keep each entry to one clear sentence
+related_skills:
+  - commit-message-writer
+  - git-pr-description
+  - documentation-generator
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T12:00:00.000Z"
+updated_at: "2026-05-24T12:00:00.000Z"

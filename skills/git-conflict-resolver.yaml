@@ -1,0 +1,68 @@
+id: git-conflict-resolver
+name: Git Conflict Resolver
+description: >
+  Analyzes and resolves git merge conflicts by understanding the intent of both sides.
+  Examines the conflict markers, surrounding context, and commit history to produce a
+  correct merged result that preserves both changes without breaking functionality.
+category: development
+tags:
+  - git
+  - merge-conflicts
+  - collaboration
+  - version-control
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - claude-sonnet-4-6
+  - gpt-5
+  - deepseek-v4
+min_context_window: 32000
+modalities:
+  input:
+    - code
+    - text
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Resolving complex merge conflicts in large files
+  - Understanding intent behind conflicting changes
+  - Merging long-lived feature branches
+  - Resolving conflicts in generated files (lockfiles, configs)
+  - Batch-resolving multiple conflicts in a single merge
+example_prompt: |
+  Resolve the following git merge conflict.
+
+  Context:
+  - Branch A (ours): [describe what this branch was doing]
+  - Branch B (theirs): [describe what this branch was doing]
+
+  Conflicted file:
+  ```
+  <<<<<<< HEAD
+  [our version]
+  =======
+  [their version]
+  >>>>>>> feature-branch
+  ```
+
+  Please:
+  1. Explain what each side was trying to do
+  2. Provide the correctly merged result
+  3. Flag if both changes can coexist or if one should win
+  4. Note any potential issues with the merged result
+related_skills:
+  - code-review
+  - commit-message-writer
+  - git-pr-description
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T14:00:00.000Z"
+updated_at: "2026-05-24T14:00:00.000Z"

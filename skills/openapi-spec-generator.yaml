@@ -1,0 +1,64 @@
+id: openapi-spec-generator
+name: OpenAPI Spec Generator
+description: >
+  Generates complete OpenAPI 3.1 specifications from API descriptions, existing code, or
+  route definitions. Includes request/response schemas, authentication, error responses,
+  examples, and server configurations. Produces valid YAML ready for Swagger UI.
+category: development
+tags:
+  - openapi
+  - swagger
+  - api-documentation
+  - specification
+  - rest
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - code
+complexity: intermediate
+use_cases:
+  - Generating OpenAPI specs from Express/NestJS route handlers
+  - Creating API documentation from scratch based on requirements
+  - Adding missing schemas and examples to existing specs
+  - Converting Postman collections to OpenAPI format
+  - Generating client SDKs from specifications
+example_prompt: |
+  Generate an OpenAPI 3.1 specification for the following API:
+
+  Base URL: [e.g., https://api.example.com/v1]
+  Authentication: [e.g., Bearer token]
+
+  Endpoints:
+  - [list endpoints with methods, paths, and brief descriptions]
+
+  Requirements:
+  - Complete request/response schemas with examples
+  - Error responses (400, 401, 403, 404, 429, 500)
+  - Pagination parameters where applicable
+  - Security scheme definitions
+  - Server configurations (dev, staging, prod)
+  - Tags for grouping endpoints
+
+  Output: Valid OpenAPI 3.1 YAML
+related_skills:
+  - api-design
+  - documentation-generator
+  - typescript-type-generator
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-05-24T12:00:00.000Z"
+updated_at: "2026-05-24T12:00:00.000Z"
