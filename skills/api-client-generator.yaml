@@ -1,0 +1,102 @@
+id: api-client-generator
+name: API Client Generator
+description: >
+  Generates type-safe API client SDKs from OpenAPI specs, API documentation, or example
+  requests. Produces clean, well-typed client code with error handling, retry logic,
+  pagination helpers, and authentication setup. Supports TypeScript, Python, Go, and Rust.
+category: development
+tags:
+  - sdk
+  - api-client
+  - typescript
+  - python
+  - openapi
+  - code-generation
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-7
+  - gpt-5-5-pro
+  - deepseek-v4
+  - claude-sonnet-4-6
+min_context_window: 64000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Generating a TypeScript SDK from an OpenAPI 3.1 spec
+  - Creating a Python client for a REST API with auth and pagination
+  - Building a Go client with context support and retry logic
+  - Wrapping a third-party API with a clean typed interface
+  - Adding request/response validation to an existing client
+example_prompt: |
+  Generate a TypeScript API client for this OpenAPI spec:
+
+  ```yaml
+  openapi: 3.1.0
+  info:
+    title: Tasks API
+    version: 1.0.0
+  paths:
+    /tasks:
+      get:
+        parameters:
+          - name: status
+            in: query
+            schema:
+              type: string
+              enum: [pending, done]
+          - name: page
+            in: query
+            schema:
+              type: integer
+        responses:
+          200:
+            content:
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    items:
+                      type: array
+                      items:
+                        $ref: '#/components/schemas/Task'
+                    total:
+                      type: integer
+      post:
+        requestBody:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateTask'
+        responses:
+          201:
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Task'
+  ```
+
+  Requirements:
+  - Full TypeScript types for all request/response shapes
+  - Bearer token auth with configurable base URL
+  - Automatic pagination helper
+  - Proper error handling with typed errors
+  - Zero external dependencies (use native fetch)
+related_skills:
+  - openapi-spec-generator
+  - typescript-type-generator
+  - api-design
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-05-25T00:00:00.000Z"
+updated_at: "2026-05-25T00:00:00.000Z"

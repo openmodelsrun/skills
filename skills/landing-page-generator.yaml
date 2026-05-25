@@ -1,0 +1,63 @@
+id: landing-page-generator
+name: Landing Page Generator
+description: >
+  Generates complete, responsive landing pages from a product description or brief.
+  Produces semantic HTML, modern CSS (Tailwind or vanilla), and optional JavaScript
+  for interactions. Follows conversion-optimized layouts with hero sections, features,
+  social proof, pricing, and CTAs.
+category: creative
+tags:
+  - frontend
+  - html
+  - tailwind
+  - marketing
+  - web-design
+  - conversion
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-7
+  - gpt-5-5-pro
+  - claude-sonnet-4-6
+  - gemini-3-1-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Quickly prototyping a SaaS landing page from a product brief
+  - Generating A/B test variants for marketing campaigns
+  - Creating event or launch announcement pages
+  - Building portfolio or personal brand pages
+  - Producing email-capture squeeze pages
+example_prompt: |
+  Create a modern landing page for "FlowMetrics" — a real-time analytics dashboard for SaaS companies.
+
+  Product details:
+  - Tracks MRR, churn, LTV, and cohort retention
+  - Integrates with Stripe, Paddle, and Chargebee
+  - Real-time alerts via Slack and email
+  - Starts at $29/month
+
+  Requirements:
+  - Use Tailwind CSS
+  - Dark theme with accent color #6366f1
+  - Sections: Hero with CTA, Features (3-4), Integrations logos, Pricing (3 tiers), FAQ, Footer
+  - Mobile responsive
+  - Include meta tags for SEO
+related_skills:
+  - react-component-generator
+  - documentation-generator
+compatible_tools:
+  - cursor
+  - claude-code
+  - kiro
+  - windsurf
+  - any
+created_at: "2026-05-25T00:00:00.000Z"
+updated_at: "2026-05-25T00:00:00.000Z"

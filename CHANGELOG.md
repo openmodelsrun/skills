@@ -5,6 +5,22 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.2] - 2026-05-25
+
+### Added
+
+- 6 new skills:
+  - `system-design` — scalable distributed systems architecture
+  - `ai-agent-builder` — AI agent design with tool definitions, MCP, orchestration
+  - `api-client-generator` — type-safe SDK generation from OpenAPI specs
+  - `landing-page-generator` — conversion-optimized landing pages from product briefs
+  - `technical-writing` — ADRs, READMEs, runbooks, onboarding guides
+  - `database-query-optimizer` — SQL optimization, indexing strategies, EXPLAIN analysis
+
+### Changed
+
+- Total skills: 41
+
 ## [0.1.1] - 2026-05-24
 
 ### Added

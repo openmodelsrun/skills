@@ -1,0 +1,61 @@
+id: system-design
+name: System Design
+description: >
+  Helps architect scalable distributed systems by analyzing requirements and producing
+  high-level architecture diagrams, component breakdowns, data flow descriptions, and
+  technology recommendations. Covers load balancing, caching strategies, database selection,
+  message queues, and failure handling patterns.
+category: development
+tags:
+  - architecture
+  - scalability
+  - distributed-systems
+  - design-patterns
+  - infrastructure
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-7
+  - gpt-5-5-pro
+  - gemini-3-1-pro
+  - deepseek-v4
+min_context_window: 64000
+modalities:
+  input:
+    - text
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Designing microservices architecture for a new product
+  - Evaluating trade-offs between SQL and NoSQL for a specific workload
+  - Planning a migration from monolith to microservices
+  - Designing real-time data pipelines at scale
+  - Capacity planning and cost estimation for cloud infrastructure
+example_prompt: |
+  Design a system for a real-time collaborative document editor (like Google Docs) that supports:
+  - 10M registered users, 500K concurrent editors
+  - Real-time character-by-character sync
+  - Offline editing with conflict resolution
+  - Version history and rollback
+
+  Provide:
+  1. High-level architecture diagram (text-based)
+  2. Key components and their responsibilities
+  3. Data model and storage strategy
+  4. Real-time sync approach (CRDT vs OT)
+  5. Scaling strategy and failure handling
+  6. Technology recommendations with justification
+related_skills:
+  - api-design
+  - schema-design
+  - performance-optimization
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-05-25T00:00:00.000Z"
+updated_at: "2026-05-25T00:00:00.000Z"

@@ -1,0 +1,62 @@
+id: ai-agent-builder
+name: AI Agent Builder
+description: >
+  Designs and scaffolds AI agent architectures including tool definitions, system prompts,
+  memory strategies, and orchestration logic. Supports multi-agent workflows, ReAct patterns,
+  function calling schemas, and MCP server configurations. Helps structure agents that are
+  reliable, observable, and easy to debug.
+category: development
+tags:
+  - ai-agents
+  - function-calling
+  - mcp
+  - orchestration
+  - llm
+  - automation
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-7
+  - gpt-5-5-pro
+  - deepseek-v4
+  - gemini-3-1-pro
+min_context_window: 64000
+modalities:
+  input:
+    - text
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Designing a customer support agent with tool access
+  - Building a code review agent with GitHub integration
+  - Creating a research agent that searches and synthesizes information
+  - Scaffolding MCP server tools for an IDE assistant
+  - Designing multi-agent workflows with handoff protocols
+example_prompt: |
+  Design an AI agent for automated code deployment that can:
+  1. Review a PR for safety (no secrets, no destructive migrations)
+  2. Run the test suite and report results
+  3. Deploy to staging and run smoke tests
+  4. Request human approval for production deploy
+  5. Deploy to production and monitor for 5 minutes
+
+  Provide:
+  - System prompt for the agent
+  - Tool definitions (function calling schema)
+  - State machine / workflow diagram
+  - Error handling and rollback strategy
+  - Observability hooks (logging, metrics)
+related_skills:
+  - prompt-engineering
+  - ci-cd-pipeline
+  - code-review
+compatible_tools:
+  - claude-code
+  - kiro
+  - cursor
+  - any
+created_at: "2026-05-25T00:00:00.000Z"
+updated_at: "2026-05-25T00:00:00.000Z"

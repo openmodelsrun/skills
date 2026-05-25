@@ -1,0 +1,62 @@
+id: technical-writing
+name: Technical Writing
+description: >
+  Transforms complex technical concepts into clear, well-structured documentation for
+  different audiences. Produces README files, architecture decision records (ADRs),
+  runbooks, onboarding guides, and technical blog posts. Follows documentation best
+  practices with consistent tone, proper formatting, and useful examples.
+category: writing
+tags:
+  - documentation
+  - readme
+  - adr
+  - technical-blog
+  - onboarding
+  - developer-experience
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-7
+  - gpt-5-5-pro
+  - claude-sonnet-4-6
+  - gemini-3-1-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Writing a comprehensive README for an open-source project
+  - Creating Architecture Decision Records for design choices
+  - Producing runbooks for incident response procedures
+  - Writing onboarding guides for new team members
+  - Drafting technical blog posts explaining complex systems
+example_prompt: |
+  Write an Architecture Decision Record (ADR) for the following decision:
+
+  Context: Our API currently uses REST with JSON. We're considering adding GraphQL
+  for our mobile clients that need flexible queries and reduced over-fetching.
+
+  Write the ADR covering:
+  - Title and status
+  - Context and problem statement
+  - Decision drivers
+  - Considered options (REST-only, GraphQL-only, hybrid)
+  - Decision outcome with justification
+  - Consequences (positive, negative, neutral)
+  - Follow-up actions
+related_skills:
+  - documentation-generator
+  - email-writer
+  - research-summarizer
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-05-25T00:00:00.000Z"
+updated_at: "2026-05-25T00:00:00.000Z"
