@@ -1,0 +1,61 @@
+id: frontend-design
+name: Frontend Design
+description: >
+  Creates production-grade frontend interfaces with high design quality. Generates
+  complete UI components, pages, and layouts using modern frameworks (React, Vue, Svelte)
+  with Tailwind CSS or CSS-in-JS. Focuses on unique, polished designs that avoid generic
+  AI aesthetics — emphasizing typography, spacing, color harmony, and micro-interactions.
+category: creative
+tags:
+  - frontend
+  - ui-design
+  - react
+  - tailwind
+  - components
+  - web-design
+  - css
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-7
+  - claude-sonnet-4-6
+  - gpt-5-5
+  - gemini-2-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - image
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Building responsive landing pages from wireframes or descriptions
+  - Creating reusable component libraries with consistent design tokens
+  - Converting Figma designs to production React/Vue components
+  - Prototyping interactive dashboards and data visualizations
+  - Implementing dark mode and theme switching systems
+example_prompt: |
+  Create a modern pricing page component with:
+  - 3 tiers (Free, Pro, Enterprise) in a responsive card layout
+  - Animated hover effects and a "Most Popular" badge on Pro
+  - Toggle between monthly/annual billing with discount shown
+  - Accessible, semantic HTML with ARIA labels
+  - Tailwind CSS with a custom color palette (not default blue)
+  - Mobile-first responsive design
+
+  Use React + TypeScript + Tailwind CSS 4.
+related_skills:
+  - react-component-generator
+  - landing-page-generator
+  - accessibility-review
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - windsurf
+  - any
+created_at: "2026-05-25T12:00:00.000Z"
+updated_at: "2026-05-25T12:00:00.000Z"

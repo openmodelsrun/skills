@@ -1,0 +1,60 @@
+id: self-improving-agent
+name: Self-Improving Agent
+description: >
+  Records learnings, mistakes, and corrections to enable continuous improvement of AI agent
+  behavior. Maintains a structured memory of failures, user corrections, outdated knowledge,
+  and discovered better approaches. Reviews past learnings before executing important tasks
+  to avoid repeating mistakes.
+category: productivity
+tags:
+  - agent
+  - self-improvement
+  - memory
+  - learning
+  - automation
+  - error-tracking
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-7
+  - gpt-5-5
+  - deepseek-v4
+  - gemini-2-5-pro
+min_context_window: 64000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - file
+complexity: advanced
+use_cases:
+  - Recording command failures and their resolutions for future reference
+  - Tracking user corrections to avoid repeating wrong approaches
+  - Maintaining a knowledge base of project-specific patterns and preferences
+  - Reviewing past learnings before executing similar tasks
+  - Discovering and documenting better methods for recurring workflows
+example_prompt: |
+  A command just failed unexpectedly. Record this learning:
+
+  Context: [what you were trying to do]
+  Command/Action: [what failed]
+  Error: [error message or unexpected behavior]
+  Root cause: [why it failed]
+  Correct approach: [what works instead]
+  Prevention: [how to avoid this in the future]
+
+  Store this in the learnings file and review relevant learnings
+  before executing similar tasks in the future.
+related_skills:
+  - debugging-assistant
+  - documentation-generator
+compatible_tools:
+  - claude-code
+  - kiro
+  - opencode
+  - any
+created_at: "2026-05-25T12:00:00.000Z"
+updated_at: "2026-05-25T12:00:00.000Z"

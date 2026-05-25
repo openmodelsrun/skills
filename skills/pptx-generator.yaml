@@ -1,0 +1,61 @@
+id: pptx-generator
+name: PPTX Presentation Generator
+description: >
+  Generates professional PowerPoint presentations from text descriptions, outlines, or
+  research notes. Creates structured slide decks with appropriate layouts, bullet points,
+  speaker notes, and visual hierarchy. Outputs valid PPTX files or structured JSON for
+  presentation frameworks.
+category: productivity
+tags:
+  - presentation
+  - pptx
+  - slides
+  - office
+  - business
+  - document-generation
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-7
+  - gpt-5-5
+  - gemini-2-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - file
+  output:
+    - file
+    - text
+complexity: intermediate
+use_cases:
+  - Converting meeting notes into executive summary presentations
+  - Creating pitch decks from business plans or product briefs
+  - Generating training materials from documentation
+  - Building quarterly review presentations from data reports
+  - Producing conference talk slides from paper abstracts
+example_prompt: |
+  Create a 12-slide investor pitch deck for an AI startup:
+
+  Company: [name]
+  Problem: [what problem you solve]
+  Solution: [your product/approach]
+  Market size: [TAM/SAM/SOM]
+  Traction: [key metrics]
+  Team: [founders and backgrounds]
+  Ask: [funding amount and use of funds]
+
+  Include: title slide, problem, solution, market, product demo layout,
+  business model, traction, competition, team, financials, roadmap, ask.
+  Add speaker notes for each slide.
+related_skills:
+  - technical-writing
+  - data-analysis
+  - research-summarizer
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-05-25T12:00:00.000Z"
+updated_at: "2026-05-25T12:00:00.000Z"

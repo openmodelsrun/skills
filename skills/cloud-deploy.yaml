@@ -1,0 +1,67 @@
+id: cloud-deploy
+name: Cloud Deployment Assistant
+description: >
+  Assists with deploying applications to cloud platforms including AWS, GCP, Azure, and
+  Vercel/Netlify. Generates infrastructure-as-code (Terraform, Pulumi, CDK), Dockerfiles,
+  CI/CD pipelines, and deployment scripts. Handles environment configuration, secrets
+  management, and production readiness checks.
+category: ops
+tags:
+  - deployment
+  - cloud
+  - aws
+  - docker
+  - terraform
+  - infrastructure
+  - devops
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-7
+  - gpt-5-5
+  - deepseek-v4
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+    - file
+  output:
+    - code
+    - text
+    - file
+complexity: advanced
+use_cases:
+  - Generating Terraform/Pulumi configs for new services
+  - Creating optimized multi-stage Dockerfiles
+  - Setting up CI/CD pipelines (GitHub Actions, GitLab CI)
+  - Configuring auto-scaling, load balancing, and health checks
+  - Managing secrets and environment variables across environments
+example_prompt: |
+  Deploy this Next.js application to AWS:
+
+  Requirements:
+  - Containerized with Docker (multi-stage build)
+  - ECS Fargate with auto-scaling (2-10 tasks)
+  - CloudFront CDN for static assets
+  - RDS PostgreSQL for database
+  - Secrets in AWS Secrets Manager
+  - GitHub Actions for CI/CD (deploy on merge to main)
+
+  Generate:
+  1. Dockerfile (optimized, multi-stage)
+  2. Terraform configuration for all infrastructure
+  3. GitHub Actions workflow
+  4. Environment variable management approach
+related_skills:
+  - docker-compose-generator
+  - ci-cd-pipeline
+  - env-config-generator
+compatible_tools:
+  - claude-code
+  - kiro
+  - opencode
+  - any
+created_at: "2026-05-25T12:00:00.000Z"
+updated_at: "2026-05-25T12:00:00.000Z"

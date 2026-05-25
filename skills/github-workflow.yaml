@@ -1,0 +1,58 @@
+id: github-workflow
+name: GitHub Workflow
+description: >
+  Interacts with GitHub via the gh CLI for managing issues, pull requests, CI runs,
+  releases, and repository settings. Automates common GitHub workflows including PR
+  creation with proper descriptions, issue triage, release drafting, and CI debugging.
+category: development
+tags:
+  - github
+  - git
+  - ci-cd
+  - pull-request
+  - issues
+  - automation
+  - devops
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-7
+  - gpt-5-4
+  - deepseek-v4
+  - claude-sonnet-4-6
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Creating well-structured pull requests with descriptions and labels
+  - Triaging and labeling issues based on content analysis
+  - Debugging failed CI/CD runs by analyzing logs
+  - Drafting release notes from merged PRs
+  - Managing branch protection rules and repository settings
+example_prompt: |
+  Create a pull request for the current branch with:
+  - A concise title summarizing the changes
+  - A description with: summary, what changed, how to test, and any breaking changes
+  - Appropriate labels based on the file types changed
+  - Request review from the team lead
+
+  Use `gh pr create` with the appropriate flags.
+related_skills:
+  - git-pr-description
+  - ci-cd-pipeline
+  - changelog-generator
+  - commit-message-writer
+compatible_tools:
+  - claude-code
+  - kiro
+  - opencode
+  - any
+created_at: "2026-05-25T12:00:00.000Z"
+updated_at: "2026-05-25T12:00:00.000Z"
