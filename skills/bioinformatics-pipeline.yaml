@@ -1,0 +1,72 @@
+id: bioinformatics-pipeline
+name: Bioinformatics Pipeline
+description: >
+  Builds and executes bioinformatics analysis pipelines for genomics, transcriptomics,
+  and proteomics data. Supports single-cell RNA-seq analysis with Scanpy, differential
+  expression with PyDESeq2, sequence alignment, variant calling, gene ontology
+  enrichment, and pathway analysis using KEGG and Reactome databases.
+category: data
+tags:
+  - bioinformatics
+  - genomics
+  - rna-seq
+  - single-cell
+  - scanpy
+  - variant-calling
+  - pathway-analysis
+  - gene-expression
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+source_url: https://github.com/K-Dense-AI/scientific-agent-skills
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 128000
+modalities:
+  input:
+    - text
+    - code
+    - file
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Single-cell RNA-seq analysis from raw counts to cell type annotation
+  - Differential gene expression analysis between conditions
+  - Gene ontology and pathway enrichment analysis
+  - Building reproducible Snakemake or Nextflow pipelines
+  - Variant annotation and clinical interpretation
+  - Multi-omics data integration workflows
+example_prompt: |
+  Build a single-cell RNA-seq analysis pipeline using Scanpy for a 10X Genomics dataset.
+
+  The pipeline should include:
+  1. Data loading (from 10X .h5 or .mtx format)
+  2. Quality control (filter cells by gene count, mito %, doublet detection)
+  3. Normalization and log-transformation
+  4. Highly variable gene selection
+  5. PCA and batch correction (if multiple samples)
+  6. Neighborhood graph and UMAP embedding
+  7. Leiden clustering
+  8. Marker gene identification per cluster
+  9. Cell type annotation using known markers
+  10. Differential expression between conditions
+
+  Output:
+  - Complete Python script with Scanpy
+  - QC thresholds and rationale
+  - Expected output files and visualizations
+  - Tips for parameter tuning
+related_skills:
+  - data-analysis
+  - scientific-visualization
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-05-26T10:00:00.000Z"
+updated_at: "2026-05-26T10:00:00.000Z"

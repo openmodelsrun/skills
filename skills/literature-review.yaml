@@ -1,0 +1,75 @@
+id: literature-review
+name: Literature Review
+description: >
+  Conducts systematic literature reviews across scientific databases including PubMed,
+  arXiv, bioRxiv, and Semantic Scholar. Synthesizes findings from multiple papers,
+  identifies research gaps, maps citation networks, and produces structured review
+  documents suitable for grant proposals or publication introductions.
+category: research
+tags:
+  - literature
+  - papers
+  - pubmed
+  - arxiv
+  - citations
+  - systematic-review
+  - meta-analysis
+  - scientific-writing
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+source_url: https://github.com/K-Dense-AI/scientific-agent-skills
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 200000
+modalities:
+  input:
+    - text
+    - file
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Systematic literature reviews for grant proposals
+  - Mapping the state of the art in a research field
+  - Identifying research gaps and open questions
+  - Generating annotated bibliographies with key findings
+  - Comparing methodologies across multiple studies
+  - Building citation networks to find seminal papers
+example_prompt: |
+  Conduct a literature review on the topic of "transformer architectures for protein
+  structure prediction" covering the last 3 years.
+
+  Steps:
+  1. Search PubMed and arXiv for relevant papers
+  2. Categorize papers by approach (language models, diffusion, GNNs, etc.)
+  3. Extract key metrics and benchmarks from each paper
+  4. Identify the current state of the art and remaining challenges
+  5. Map citation relationships between key papers
+
+  Output format:
+  ## Overview
+  [2-3 paragraph summary of the field]
+
+  ## Key Papers (by category)
+  | Paper | Year | Approach | Key Result |
+  |-------|------|----------|------------|
+
+  ## Research Gaps
+  - [identified gaps and opportunities]
+
+  ## Recommended Reading Order
+  1. [foundational papers first, then recent advances]
+related_skills:
+  - research-summarizer
+  - knowledge-graph
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-05-26T10:00:00.000Z"
+updated_at: "2026-05-26T10:00:00.000Z"

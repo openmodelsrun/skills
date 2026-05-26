@@ -5,6 +5,26 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.4] - 2026-05-26
+
+### Added
+
+- 10 new scientific and data skills inspired by K-Dense-AI/scientific-agent-skills and community needs:
+  - `literature-review` — systematic literature reviews across PubMed, arXiv, bioRxiv, Semantic Scholar
+  - `hypothesis-generation` — scientific hypothesis formulation, PICO frameworks, experimental design
+  - `bioinformatics-pipeline` — scRNA-seq analysis, Scanpy, pathway enrichment, variant calling
+  - `molecular-analysis` — cheminformatics with RDKit, drug-likeness, ADMET, SAR analysis
+  - `scientific-visualization` — publication-quality figures, volcano plots, heatmaps, multi-panel layouts
+  - `network-graph-analysis` — NetworkX, community detection, centrality, GNN, knowledge graphs
+  - `time-series-forecasting` — ARIMA, Prophet, LSTM, anomaly detection, backtesting
+  - `ml-experiment-tracker` — MLflow, Weights & Biases, Optuna, hyperparameter optimization
+  - `scientific-writing` — manuscripts, grants, IMRaD structure, peer review responses
+  - `geospatial-analysis` — GeoPandas, GIS, remote sensing, spatial statistics, choropleth maps
+
+### Changed
+
+- Total skills: 62 (from 51)
+
 ## [0.1.3] - 2026-05-25
 
 ### Added

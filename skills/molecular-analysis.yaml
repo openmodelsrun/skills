@@ -1,0 +1,68 @@
+id: molecular-analysis
+name: Molecular Analysis
+description: >
+  Performs cheminformatics and molecular property analysis using RDKit, PubChem, and
+  ChEMBL. Supports SMILES/InChI parsing, molecular descriptor calculation, drug-likeness
+  filtering (Lipinski, Veber), ADMET prediction, substructure search, and
+  structure-activity relationship (SAR) analysis for drug discovery workflows.
+category: data
+tags:
+  - cheminformatics
+  - rdkit
+  - drug-discovery
+  - molecules
+  - smiles
+  - admet
+  - pubchem
+  - chembl
+  - sar
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+source_url: https://github.com/K-Dense-AI/scientific-agent-skills
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 64000
+modalities:
+  input:
+    - text
+    - code
+    - file
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Calculating molecular descriptors and drug-likeness properties
+  - Virtual screening of compound libraries against target profiles
+  - Structure-activity relationship analysis for lead optimization
+  - ADMET property prediction for drug candidates
+  - Querying PubChem and ChEMBL for bioactivity data
+  - Generating molecular fingerprints for similarity search
+example_prompt: |
+  Analyze the following set of SMILES strings for drug-likeness and ADMET properties.
+
+  Compounds:
+  - CC(=O)Oc1ccccc1C(=O)O  (Aspirin)
+  - CC12CCC3C(C1CCC2O)CCC4=CC(=O)CCC34C  (Testosterone)
+  - CN1C=NC2=C1C(=O)N(C(=O)N2C)C  (Caffeine)
+
+  For each compound:
+  1. Calculate Lipinski Rule of 5 properties (MW, LogP, HBD, HBA)
+  2. Assess Veber rules (TPSA, rotatable bonds)
+  3. Predict basic ADMET flags (solubility, BBB permeability)
+  4. Generate RDKit Python code for the full analysis pipeline
+  5. Rank compounds by overall drug-likeness score
+
+  Output a summary table and the complete Python script using RDKit.
+related_skills:
+  - data-analysis
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-05-26T10:00:00.000Z"
+updated_at: "2026-05-26T10:00:00.000Z"

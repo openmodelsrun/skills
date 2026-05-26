@@ -1,0 +1,68 @@
+id: time-series-forecasting
+name: Time Series Forecasting
+description: >
+  Builds and evaluates time series forecasting models using statistical and ML approaches.
+  Supports ARIMA, Prophet, LSTM, Transformer-based models, and foundation models like
+  TimesFM. Handles seasonality detection, trend decomposition, anomaly detection,
+  multi-step forecasting, and backtesting with proper train/test splits for financial,
+  IoT, and scientific time series data.
+category: data
+tags:
+  - time-series
+  - forecasting
+  - prophet
+  - arima
+  - lstm
+  - anomaly-detection
+  - seasonality
+  - prediction
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 64000
+modalities:
+  input:
+    - text
+    - code
+    - file
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Demand forecasting for inventory and supply chain planning
+  - Financial time series prediction with confidence intervals
+  - IoT sensor anomaly detection and predictive maintenance
+  - Seasonal decomposition and trend analysis
+  - Multi-variate forecasting with exogenous variables
+  - Backtesting and model comparison across multiple approaches
+example_prompt: |
+  I have daily sales data for the past 3 years with clear weekly and yearly seasonality.
+  Build a forecasting pipeline that:
+
+  1. Performs exploratory analysis (trend, seasonality, stationarity tests)
+  2. Decomposes the series (STL decomposition)
+  3. Fits multiple models:
+     - SARIMA (with auto parameter selection)
+     - Prophet (with holidays and regressors)
+     - LightGBM with lag features
+  4. Evaluates using time series cross-validation (expanding window)
+  5. Reports MAPE, RMSE, and coverage of prediction intervals
+  6. Generates a 90-day forecast with 80% and 95% confidence bands
+  7. Detects anomalies in historical data
+
+  Output complete Python code using statsmodels, prophet, and scikit-learn.
+related_skills:
+  - data-analysis
+  - scientific-visualization
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-05-26T12:00:00.000Z"
+updated_at: "2026-05-26T12:00:00.000Z"

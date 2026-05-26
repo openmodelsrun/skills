@@ -1,0 +1,70 @@
+id: scientific-visualization
+name: Scientific Visualization
+description: >
+  Creates publication-quality scientific figures and plots using matplotlib, seaborn,
+  and plotly. Supports common scientific plot types including heatmaps, volcano plots,
+  survival curves, network graphs, phylogenetic trees, and multi-panel figures with
+  proper statistical annotations, color-blind safe palettes, and journal formatting.
+category: data
+tags:
+  - visualization
+  - matplotlib
+  - seaborn
+  - plotly
+  - figures
+  - publication
+  - heatmap
+  - scientific-plots
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+source_url: https://github.com/K-Dense-AI/scientific-agent-skills
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 64000
+modalities:
+  input:
+    - text
+    - code
+    - file
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Creating publication-ready figures for journal submissions
+  - Generating volcano plots for differential expression results
+  - Building multi-panel figures with consistent styling
+  - Producing interactive dashboards for exploratory analysis
+  - Making color-blind accessible scientific visualizations
+  - Formatting plots to specific journal requirements (Nature, Science, Cell)
+example_prompt: |
+  Create a publication-quality multi-panel figure for a genomics paper.
+
+  The figure should contain:
+  - Panel A: Volcano plot of differential expression (log2FC vs -log10 p-value)
+  - Panel B: Heatmap of top 50 differentially expressed genes
+  - Panel C: UMAP embedding colored by cell type
+  - Panel D: Bar plot of cell type proportions across conditions
+
+  Requirements:
+  - Use a color-blind safe palette (e.g., Wong or Tol)
+  - 300 DPI, suitable for Nature-style journals
+  - Consistent font sizes (axis labels 8pt, titles 10pt)
+  - Panel labels (A, B, C, D) in bold
+  - Statistical annotations where appropriate
+  - Save as both PDF (vector) and PNG (raster)
+
+  Generate the complete matplotlib/seaborn Python code with sample data.
+related_skills:
+  - data-analysis
+  - bioinformatics-pipeline
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-05-26T10:00:00.000Z"
+updated_at: "2026-05-26T10:00:00.000Z"

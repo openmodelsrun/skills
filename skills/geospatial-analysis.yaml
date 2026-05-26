@@ -1,0 +1,64 @@
+id: geospatial-analysis
+name: Geospatial Analysis
+description: >
+  Performs geospatial data analysis, mapping, and spatial statistics using GeoPandas,
+  Shapely, Rasterio, and Folium. Supports vector and raster operations, coordinate
+  transformations, spatial joins, buffer analysis, satellite imagery processing,
+  choropleth mapping, and route optimization for GIS and remote sensing workflows.
+category: data
+tags:
+  - geospatial
+  - gis
+  - geopandas
+  - mapping
+  - remote-sensing
+  - satellite
+  - spatial-analysis
+  - coordinates
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 64000
+modalities:
+  input:
+    - text
+    - code
+    - file
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Analyzing spatial distributions and clustering patterns
+  - Processing satellite imagery for land use classification
+  - Building interactive maps with Folium or Kepler.gl
+  - Performing spatial joins and proximity analysis
+  - Route optimization and network analysis
+  - Creating choropleth maps from census or survey data
+example_prompt: |
+  I have a GeoJSON file with city boundaries and a CSV with population data by district.
+  Build a geospatial analysis pipeline that:
+
+  1. Load and merge spatial + tabular data (GeoPandas)
+  2. Calculate population density per district
+  3. Perform spatial autocorrelation analysis (Moran's I)
+  4. Identify hot spots and cold spots (LISA)
+  5. Create a choropleth map with interactive tooltips (Folium)
+  6. Calculate distances between districts (centroids)
+  7. Export results as GeoPackage
+
+  Generate complete Python code with GeoPandas, PySAL, and Folium.
+related_skills:
+  - data-analysis
+  - scientific-visualization
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-05-26T12:00:00.000Z"
+updated_at: "2026-05-26T12:00:00.000Z"

@@ -1,0 +1,68 @@
+id: network-graph-analysis
+name: Network Graph Analysis
+description: >
+  Analyzes complex networks and graphs using NetworkX, igraph, and PyTorch Geometric.
+  Supports social network analysis, biological interaction networks, knowledge graphs,
+  and citation networks. Performs community detection, centrality analysis, link
+  prediction, graph neural networks, and network visualization with force-directed
+  layouts.
+category: data
+tags:
+  - networks
+  - graphs
+  - networkx
+  - community-detection
+  - centrality
+  - gnn
+  - social-networks
+  - knowledge-graphs
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 64000
+modalities:
+  input:
+    - text
+    - code
+    - file
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Analyzing protein-protein interaction networks
+  - Community detection in social networks
+  - Building and querying knowledge graphs
+  - Citation network analysis for research mapping
+  - Identifying influential nodes (centrality measures)
+  - Link prediction for recommendation systems
+example_prompt: |
+  Analyze a protein-protein interaction network from STRING database.
+
+  Given an edge list of interactions with confidence scores, perform:
+  1. Load network and compute basic statistics (nodes, edges, density, diameter)
+  2. Degree distribution analysis (is it scale-free?)
+  3. Centrality analysis (degree, betweenness, closeness, eigenvector)
+  4. Community detection (Louvain and Leiden algorithms)
+  5. Identify hub proteins (top 10 by betweenness centrality)
+  6. Find network motifs and enriched subgraphs
+  7. Visualize with communities colored, node size by centrality
+  8. Export results for Cytoscape
+
+  Generate complete Python code using NetworkX and community detection libraries.
+  Include a summary table of key network metrics.
+related_skills:
+  - data-analysis
+  - scientific-visualization
+  - knowledge-graph
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-05-26T12:00:00.000Z"
+updated_at: "2026-05-26T12:00:00.000Z"

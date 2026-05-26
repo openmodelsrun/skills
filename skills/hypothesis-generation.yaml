@@ -1,0 +1,70 @@
+id: hypothesis-generation
+name: Hypothesis Generation
+description: >
+  Assists researchers in generating, refining, and evaluating scientific hypotheses.
+  Analyzes existing literature and data to propose testable hypotheses, identifies
+  confounding variables, suggests experimental designs, and evaluates feasibility.
+  Supports structured frameworks like PICO for clinical research and helps formulate
+  null/alternative hypotheses with appropriate statistical tests.
+category: research
+tags:
+  - hypothesis
+  - experimental-design
+  - scientific-method
+  - research-planning
+  - statistics
+  - pico
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+source_url: https://github.com/K-Dense-AI/scientific-agent-skills
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 128000
+modalities:
+  input:
+    - text
+    - file
+  output:
+    - text
+complexity: advanced
+use_cases:
+  - Generating testable hypotheses from preliminary data
+  - Designing experiments with proper controls and power analysis
+  - Identifying confounding variables and potential biases
+  - Formulating PICO questions for clinical research
+  - Evaluating hypothesis feasibility given available resources
+  - Suggesting statistical tests appropriate for the hypothesis
+example_prompt: |
+  I have preliminary data showing that gene X is upregulated in treatment-resistant
+  cancer cells compared to sensitive cells. Help me develop this into a research project.
+
+  Please:
+  1. Generate 3-5 testable hypotheses based on this observation
+  2. For each hypothesis:
+     - State H0 and H1 formally
+     - Identify key variables (independent, dependent, confounding)
+     - Suggest an experimental approach
+     - Recommend appropriate statistical tests
+     - Estimate required sample size (power analysis)
+  3. Rank hypotheses by:
+     - Scientific impact
+     - Feasibility with standard lab equipment
+     - Timeline (6 months vs 2 years)
+  4. Identify potential pitfalls and how to mitigate them
+  5. Suggest preliminary experiments to validate assumptions
+
+  Context: We have access to cell lines, basic molecular biology tools, flow cytometry,
+  and a sequencing core facility.
+related_skills:
+  - literature-review
+  - research-summarizer
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-05-26T10:00:00.000Z"
+updated_at: "2026-05-26T10:00:00.000Z"

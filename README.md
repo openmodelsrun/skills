@@ -34,8 +34,23 @@ skills/
 ├── commit-message-writer.yaml
 ├── prompt-engineering.yaml
 ├── code-translation.yaml
-└── regex-builder.yaml
+├── regex-builder.yaml
+├── ...
+└── 62 skills total (see full list in skills/ directory)
 ```
+
+### Scientific & Data Skills (new in v0.1.4)
+
+- `literature-review` — systematic reviews across PubMed, arXiv, bioRxiv
+- `hypothesis-generation` — scientific hypothesis formulation and experimental design
+- `bioinformatics-pipeline` — scRNA-seq, Scanpy, pathway analysis, variant calling
+- `molecular-analysis` — cheminformatics, RDKit, drug-likeness, ADMET
+- `scientific-visualization` — publication-quality figures for journals
+- `network-graph-analysis` — NetworkX, community detection, GNN
+- `time-series-forecasting` — ARIMA, Prophet, LSTM, anomaly detection
+- `ml-experiment-tracker` — MLflow, W&B, Optuna, hyperparameter tuning
+- `scientific-writing` — manuscripts, grants, IMRaD, peer review
+- `geospatial-analysis` — GeoPandas, GIS, remote sensing, spatial stats
 
 ## Skill Format
 
