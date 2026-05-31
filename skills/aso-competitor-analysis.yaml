@@ -1,0 +1,62 @@
+id: aso-competitor-analysis
+name: ASO Competitor Analysis
+description: >
+  Performs a comprehensive competitive intelligence analysis for mobile apps on the App Store
+  and Google Play. Compares metadata, keyword gaps, creative strategy (screenshots, preview
+  video, icon), ratings, monetization, and growth signals across up to 5 competitors, then
+  delivers a prioritized opportunity map with quick wins and strategic recommendations.
+category: research
+tags:
+  - aso
+  - app-store
+  - competitor-analysis
+  - mobile-marketing
+  - keyword-gap
+  - growth
+  - ios
+  - android
+author:
+  name: Eronred
+  github: Eronred
+source_url: https://github.com/Eronred/aso-skills
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: advanced
+use_cases:
+  - Identifying keyword gaps where competitors rank but your app does not
+  - Benchmarking screenshot and creative strategy against top competitors
+  - Comparing monetization models and paywall timing across the category
+  - Finding underserved user segments or countries competitors are ignoring
+  - Monitoring competitor moves and market shifts on a recurring basis
+example_prompt: |
+  Analyze my fitness app's competitors on the iOS App Store (US).
+  My app: MyFit (App ID: 123456789)
+  Competitors: Nike Training Club, Fitbod, Freeletics, Centr
+
+  Please provide:
+  1. Metadata comparison table (title, subtitle, keyword strategy)
+  2. Keyword gap analysis — keywords they rank for that I don't
+  3. Creative strategy breakdown (screenshots, video, icon)
+  4. Ratings and review sentiment comparison
+  5. Monetization model comparison
+  6. Top 5 opportunities ranked by impact
+  7. Threats to monitor
+related_skills:
+  - aso-keyword-research
+  - aso-metadata-optimization
+  - aso-audit
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-05-31T00:00:00.000Z"
+updated_at: "2026-05-31T00:00:00.000Z"

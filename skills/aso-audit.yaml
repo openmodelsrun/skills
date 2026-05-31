@@ -1,0 +1,64 @@
+id: aso-audit
+name: ASO Audit
+description: >
+  Performs a full App Store Optimization health check across 10 weighted dimensions:
+  title, subtitle, keyword field, description, screenshots, preview video, ratings and
+  reviews, icon, keyword rankings, and conversion signals. Produces a scored ASO report
+  card (0–100) with quick wins, high-impact changes, and strategic recommendations
+  prioritized by effort and expected impact.
+category: productivity
+tags:
+  - aso
+  - app-store
+  - audit
+  - mobile-marketing
+  - ios
+  - android
+  - growth
+  - conversion
+author:
+  name: Eronred
+  github: Eronred
+source_url: https://github.com/Eronred/aso-skills
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: advanced
+use_cases:
+  - Diagnosing why an app is not ranking for target keywords
+  - Getting a baseline ASO score before a metadata refresh
+  - Identifying the highest-ROI improvements across all listing elements
+  - Preparing an app for a major launch or feature update
+  - Regular quarterly ASO health checks to catch regressions
+example_prompt: |
+  Please run a full ASO audit for my productivity app on the iOS App Store (US).
+  App ID: 987654321
+  Current metadata:
+    Title: "TaskFlow - To Do List & Planner" (31 chars)
+    Subtitle: "Daily Planner & Habit Tracker" (29 chars)
+    Keyword field: "task manager,productivity,planner,habit,reminder,schedule,organizer,gtd,focus"
+    Rating: 4.2 stars, 1,840 reviews
+
+  Score each of the 10 ASO dimensions, calculate an overall score, and give me:
+  1. ASO Score Card with visual bar chart
+  2. Quick wins I can implement today
+  3. High-impact changes for this week
+  4. Strategic recommendations for this month
+related_skills:
+  - aso-keyword-research
+  - aso-metadata-optimization
+  - aso-competitor-analysis
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-05-31T00:00:00.000Z"
+updated_at: "2026-05-31T00:00:00.000Z"

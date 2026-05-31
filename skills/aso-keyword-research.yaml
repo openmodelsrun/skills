@@ -1,0 +1,60 @@
+id: aso-keyword-research
+name: ASO Keyword Research
+description: >
+  Discovers, evaluates, and prioritizes App Store keywords for mobile apps. Expands seed
+  keywords using autocomplete suggestions, competitor rankings, and category analysis, then
+  scores each keyword by volume, difficulty, and relevance to build a prioritized keyword
+  strategy with primary, secondary, long-tail, and aspirational buckets.
+category: productivity
+tags:
+  - aso
+  - app-store
+  - keyword-research
+  - mobile-marketing
+  - growth
+  - ios
+  - android
+  - seo
+author:
+  name: Eronred
+  github: Eronred
+source_url: https://github.com/Eronred/aso-skills
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Discovering high-opportunity keywords for a new app launch
+  - Finding keyword gaps vs top competitors in the same category
+  - Building a keyword strategy before updating App Store metadata
+  - Quarterly keyword refresh to adapt to search trend changes
+  - International keyword research for new target markets
+example_prompt: |
+  I want to do keyword research for my fitness tracking app on the iOS App Store.
+  My seed keywords are: fitness tracker, workout log, exercise planner.
+  Target country: US.
+
+  Please:
+  1. Expand these seeds using autocomplete and competitor analysis
+  2. Score each keyword by volume, difficulty, and relevance
+  3. Calculate an Opportunity Score for each
+  4. Group keywords into Primary, Secondary, Long-tail, and Aspirational buckets
+  5. Suggest a final keyword field (100 chars, comma-separated, no spaces)
+related_skills:
+  - aso-metadata-optimization
+  - aso-competitor-analysis
+  - aso-audit
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-05-31T00:00:00.000Z"
+updated_at: "2026-05-31T00:00:00.000Z"

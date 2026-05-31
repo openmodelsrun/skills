@@ -1,0 +1,62 @@
+id: aso-metadata-optimization
+name: ASO Metadata Optimization
+description: >
+  Crafts App Store metadata — title, subtitle, keyword field, and description — that
+  maximizes both search visibility and conversion rate. Applies platform-specific character
+  limits and indexing rules for iOS and Android, provides multiple copy variants per field,
+  and outputs a keyword coverage matrix with before/after comparison.
+category: productivity
+tags:
+  - aso
+  - app-store
+  - metadata
+  - copywriting
+  - mobile-marketing
+  - ios
+  - android
+  - conversion
+author:
+  name: Eronred
+  github: Eronred
+source_url: https://github.com/Eronred/aso-skills
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Writing an optimized title and subtitle for a new iOS app
+  - Filling the 100-character keyword field without repetition or wasted space
+  - Rewriting an app description with a compelling hook and benefit-driven copy
+  - Adapting metadata for Android with keyword density requirements
+  - Generating seasonal promotional text without triggering an app review
+example_prompt: |
+  Help me optimize the App Store metadata for my meditation app (iOS).
+  Target keywords (from keyword research): meditation, sleep sounds, mindfulness, breathing exercises, stress relief.
+  Current title: "Calm Mind - Meditation App" (26 chars)
+  Current subtitle: "Relax and sleep better" (22 chars)
+  Current keyword field: "meditation,relax,sleep,mindfulness,breathing" (44 chars)
+
+  Please provide:
+  1. 3 title options (max 30 chars each) with keyword analysis
+  2. 3 subtitle options (max 30 chars each)
+  3. Optimized keyword field (max 100 chars, no spaces after commas, no repeats)
+  4. A keyword coverage matrix
+  5. Before/after comparison with improvement notes
+related_skills:
+  - aso-keyword-research
+  - aso-audit
+  - aso-competitor-analysis
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-05-31T00:00:00.000Z"
+updated_at: "2026-05-31T00:00:00.000Z"

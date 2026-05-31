@@ -36,8 +36,15 @@ skills/
 ├── code-translation.yaml
 ├── regex-builder.yaml
 ├── ...
-└── 62 skills total (see full list in skills/ directory)
+└── 66 skills total (see full list in skills/ directory)
 ```
+
+### ASO Skills (new in v0.1.5)
+
+- `aso-audit` — full App Store health check with 10-dimension scored report card (0–100)
+- `aso-competitor-analysis` — keyword gaps, creative strategy, ratings, and monetization benchmarking
+- `aso-keyword-research` — keyword discovery, opportunity scoring, and strategy bucketing
+- `aso-metadata-optimization` — title, subtitle, keyword field, and description writing for iOS and Android
 
 ### Scientific & Data Skills (new in v0.1.4)
 

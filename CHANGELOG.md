@@ -5,6 +5,16 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.5] - 2026-05-31
+
+### Added
+
+- 4 new App Store Optimization (ASO) skills inspired by [Eronred/aso-skills](https://github.com/Eronred/aso-skills):
+  - `aso-audit` — full ASO health check with 10-dimension scored report card (0–100), quick wins, and prioritized action plan
+  - `aso-competitor-analysis` — competitive intelligence: keyword gaps, creative strategy, ratings, monetization, and growth signals
+  - `aso-keyword-research` — keyword discovery, opportunity scoring (volume × difficulty × relevance), and strategy bucketing
+  - `aso-metadata-optimization` — title, subtitle, keyword field, and description writing with iOS/Android platform-specific rules
+
 ## [0.1.4] - 2026-05-26
 
 ### Added
