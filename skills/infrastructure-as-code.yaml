@@ -1,0 +1,66 @@
+id: infrastructure-as-code
+name: Infrastructure as Code Generator
+description: >
+  Generates production-ready infrastructure as code (IaC) configurations for cloud
+  deployments. Supports Terraform, Pulumi, CloudFormation, and CDK. Creates modular,
+  reusable infrastructure components with proper networking, security groups, IAM
+  policies, and monitoring configurations.
+category: ops
+tags:
+  - terraform
+  - infrastructure
+  - cloud
+  - aws
+  - gcp
+  - azure
+  - iac
+  - devops
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 64000
+modalities:
+  input:
+    - text
+  output:
+    - code
+    - text
+complexity: advanced
+use_cases:
+  - Generating Terraform modules for multi-tier web applications
+  - Creating AWS CDK stacks with proper VPC and security configuration
+  - Setting up Kubernetes cluster infrastructure with autoscaling
+  - Designing disaster recovery infrastructure across regions
+  - Migrating existing manual infrastructure to IaC
+example_prompt: |
+  Generate Terraform configuration for a production-ready web application stack on AWS.
+
+  Requirements:
+  - VPC with public and private subnets across 3 AZs
+  - ECS Fargate cluster with auto-scaling (min 2, max 10 tasks)
+  - Application Load Balancer with HTTPS termination
+  - RDS PostgreSQL in Multi-AZ with automated backups
+  - ElastiCache Redis for session management
+  - CloudWatch alarms for CPU, memory, and 5xx errors
+  - S3 bucket for static assets with CloudFront CDN
+  - Proper IAM roles with least-privilege access
+
+  Output:
+  - Modular Terraform with separate files (main.tf, variables.tf, outputs.tf)
+  - Use terraform-aws-modules where appropriate
+  - Include tfvars example for staging and production
+related_skills:
+  - docker-compose-generator
+  - ci-cd-pipeline
+  - cloud-deploy
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-06-04T00:00:00.000Z"
+updated_at: "2026-06-04T00:00:00.000Z"

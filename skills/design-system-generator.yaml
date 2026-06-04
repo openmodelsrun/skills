@@ -1,0 +1,69 @@
+id: design-system-generator
+name: Design System Generator
+description: >
+  Creates comprehensive design system documentation and component specifications from
+  existing UI patterns or requirements. Generates design tokens, component APIs, usage
+  guidelines, and accessibility specifications. Supports Figma-to-code workflows and
+  produces consistent theming across platforms.
+category: creative
+tags:
+  - design-system
+  - ui
+  - components
+  - tokens
+  - accessibility
+  - figma
+  - theming
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 64000
+modalities:
+  input:
+    - text
+    - image
+  output:
+    - code
+    - text
+complexity: advanced
+use_cases:
+  - Generating design token definitions from brand guidelines
+  - Creating React/Vue component specifications with props and variants
+  - Building accessibility-compliant component documentation
+  - Converting Figma screenshots to structured component APIs
+  - Producing theming configuration for dark/light modes
+example_prompt: |
+  Create a design system specification for a Button component.
+
+  Brand context:
+  - Primary color: #2563EB (blue-600)
+  - Border radius: 8px
+  - Font: Inter, system-ui
+  - Focus visible ring style
+
+  Requirements:
+  1. Design tokens (colors, spacing, typography, shadows)
+  2. Component variants: primary, secondary, ghost, destructive
+  3. Sizes: sm, md, lg
+  4. States: default, hover, active, disabled, loading
+  5. Icon support (leading and trailing)
+  6. React component API with TypeScript types
+  7. Accessibility: WCAG 2.1 AA compliant, focus management, aria attributes
+  8. Usage guidelines with do's and don'ts
+
+  Output in both design token format (JSON) and React component code.
+related_skills:
+  - react-component-generator
+  - frontend-design
+  - accessibility-review
+compatible_tools:
+  - cursor
+  - kiro
+  - github-copilot
+  - any
+created_at: "2026-06-04T00:00:00.000Z"
+updated_at: "2026-06-04T00:00:00.000Z"

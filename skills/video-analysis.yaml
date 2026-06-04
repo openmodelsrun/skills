@@ -1,0 +1,59 @@
+id: video-analysis
+name: Video Analysis
+description: >
+  Analyzes video content to extract insights, describe scenes, identify objects and actions,
+  generate summaries, and create structured annotations. Supports temporal reasoning across
+  frames, scene change detection, and content categorization. Works with educational videos,
+  product demos, surveillance footage, and social media content.
+category: data
+tags:
+  - video
+  - analysis
+  - multimodal
+  - scene-detection
+  - content-understanding
+  - annotation
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - gemma-4-12b
+  - gemini-2-5-pro
+  - gpt-5
+min_context_window: 64000
+modalities:
+  input:
+    - video
+    - text
+  output:
+    - text
+complexity: advanced
+use_cases:
+  - Generating detailed video summaries with chapter markers
+  - Extracting key moments and highlights from long recordings
+  - Creating accessible video descriptions for visually impaired users
+  - Analyzing product demo videos for feature documentation
+  - Content moderation and policy violation detection
+example_prompt: |
+  Analyze this video and provide a comprehensive breakdown.
+
+  Please include:
+  1. Overall summary (2-3 sentences)
+  2. Scene-by-scene breakdown with timestamps
+  3. Key objects, people, and actions identified
+  4. Text/UI elements visible on screen (OCR)
+  5. Mood/tone of each segment
+  6. Suggested chapter markers with titles
+
+  Video: [attach video file]
+
+  Additional context: This is a product demo for a SaaS application.
+  Focus on identifying features being demonstrated and any UI patterns.
+related_skills:
+  - data-analysis
+  - research-summarizer
+compatible_tools:
+  - kiro
+  - any
+created_at: "2026-06-04T00:00:00.000Z"
+updated_at: "2026-06-04T00:00:00.000Z"

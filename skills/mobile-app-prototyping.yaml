@@ -1,0 +1,71 @@
+id: mobile-app-prototyping
+name: Mobile App Prototyping
+description: >
+  Generates mobile application prototypes and implementations for iOS and Android.
+  Creates SwiftUI views, Jetpack Compose layouts, and React Native components from
+  descriptions or wireframe images. Handles navigation patterns, state management,
+  and platform-specific design guidelines.
+category: development
+tags:
+  - mobile
+  - ios
+  - android
+  - swiftui
+  - jetpack-compose
+  - react-native
+  - prototyping
+  - ui
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 64000
+modalities:
+  input:
+    - text
+    - image
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Converting wireframe images to SwiftUI code
+  - Generating React Native screens from descriptions
+  - Building Jetpack Compose UI with Material Design 3
+  - Creating navigation flows with proper state management
+  - Prototyping animations and gesture interactions
+example_prompt: |
+  Create a SwiftUI implementation of a fitness tracking app home screen.
+
+  Design requirements:
+  - Top: greeting with user name and today's date
+  - Activity rings (move, exercise, stand) similar to Apple Watch
+  - Scrollable list of today's workouts with:
+    - Workout type icon
+    - Duration and calories
+    - Time completed
+  - Floating action button to start new workout
+  - Bottom tab bar: Home, Activity, Discover, Profile
+
+  Implementation details:
+  - Use MVVM architecture
+  - SwiftUI with iOS 17+ APIs
+  - Proper accessibility labels
+  - Dark mode support
+  - Smooth animations on ring progress
+
+  Provide the full SwiftUI view hierarchy, view model, and sample data model.
+related_skills:
+  - react-component-generator
+  - frontend-design
+  - design-system-generator
+compatible_tools:
+  - cursor
+  - kiro
+  - github-copilot
+  - any
+created_at: "2026-06-04T00:00:00.000Z"
+updated_at: "2026-06-04T00:00:00.000Z"

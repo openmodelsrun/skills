@@ -1,0 +1,68 @@
+id: api-load-testing
+name: API Load Testing Generator
+description: >
+  Generates comprehensive load testing scripts and configurations for APIs. Supports
+  k6, Locust, Artillery, and JMeter formats. Creates realistic traffic patterns,
+  ramp-up scenarios, and threshold definitions. Includes analysis templates for
+  identifying bottlenecks and capacity planning.
+category: testing
+tags:
+  - load-testing
+  - performance
+  - k6
+  - locust
+  - api
+  - stress-testing
+  - benchmarking
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - deepseek-v3
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Generating k6 scripts for REST API load testing
+  - Creating Locust scenarios with realistic user behavior patterns
+  - Designing ramp-up and stress test profiles for capacity planning
+  - Building CI-integrated performance regression tests
+  - Analyzing API response time distribution and error rates
+example_prompt: |
+  Generate a k6 load testing script for our e-commerce API.
+
+  Endpoints to test:
+  - GET /api/products (list products with pagination)
+  - GET /api/products/:id (product detail)
+  - POST /api/cart/items (add to cart, requires auth)
+  - POST /api/orders (create order, requires auth)
+
+  Scenarios:
+  1. Smoke test: 5 VUs for 1 minute
+  2. Load test: ramp up to 100 VUs over 5 min, sustain 10 min, ramp down
+  3. Stress test: ramp to 500 VUs to find breaking point
+
+  Include:
+  - Realistic think times between requests
+  - Auth token handling
+  - Custom thresholds (p95 < 500ms, error rate < 1%)
+  - Custom metrics for business transactions
+  - HTML report generation
+related_skills:
+  - api-design
+  - performance-optimization
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-06-04T00:00:00.000Z"
+updated_at: "2026-06-04T00:00:00.000Z"

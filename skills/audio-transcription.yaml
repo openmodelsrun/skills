@@ -1,0 +1,56 @@
+id: audio-transcription
+name: Audio Transcription
+description: >
+  Transcribes audio recordings into structured text with speaker diarization,
+  timestamps, and formatting. Supports meeting recordings, interviews, podcasts,
+  and lectures. Handles multiple languages and accents with automatic language
+  detection and optional translation.
+category: productivity
+tags:
+  - audio
+  - transcription
+  - speech-to-text
+  - meetings
+  - diarization
+  - multilingual
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - gemma-4-12b
+  - gemini-2-5-pro
+  - gpt-5
+min_context_window: 32000
+modalities:
+  input:
+    - audio
+    - text
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Transcribing meeting recordings with speaker identification
+  - Converting podcast episodes to searchable text
+  - Generating subtitles from audio tracks
+  - Transcribing interviews with timestamp annotations
+  - Multi-language audio translation and transcription
+example_prompt: |
+  Transcribe the following audio recording.
+
+  Requirements:
+  1. Identify and label different speakers (Speaker 1, Speaker 2, etc.)
+  2. Add timestamps every 30 seconds
+  3. Correct filler words (um, uh) but preserve meaning
+  4. Format as structured text with paragraphs per speaker turn
+  5. Note any unclear or inaudible segments with [inaudible]
+  6. Provide a brief summary of key discussion points at the end
+
+  Audio: [attach audio file]
+related_skills:
+  - research-summarizer
+  - technical-writing
+compatible_tools:
+  - kiro
+  - any
+created_at: "2026-06-04T00:00:00.000Z"
+updated_at: "2026-06-04T00:00:00.000Z"

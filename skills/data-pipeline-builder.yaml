@@ -1,0 +1,72 @@
+id: data-pipeline-builder
+name: Data Pipeline Builder
+description: >
+  Designs and generates data pipeline configurations for ETL/ELT workflows. Supports
+  Apache Airflow DAGs, dbt models, Spark jobs, and streaming pipelines with Kafka or
+  Flink. Creates data quality checks, schema evolution strategies, and monitoring
+  dashboards for pipeline health.
+category: data
+tags:
+  - data-pipeline
+  - etl
+  - airflow
+  - dbt
+  - spark
+  - streaming
+  - kafka
+  - data-engineering
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - deepseek-v3
+min_context_window: 64000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - code
+    - text
+complexity: advanced
+use_cases:
+  - Generating Airflow DAGs for complex ETL workflows
+  - Creating dbt models with proper staging, intermediate, and mart layers
+  - Designing Kafka streaming pipelines with schema registry
+  - Building data quality validation rules with Great Expectations
+  - Setting up incremental data loading patterns
+example_prompt: |
+  Design a data pipeline to ingest e-commerce order data.
+
+  Source: PostgreSQL (orders, order_items, customers, products tables)
+  Destination: Snowflake data warehouse
+  Schedule: Every 15 minutes (near real-time)
+
+  Requirements:
+  1. Incremental extraction using CDC (Change Data Capture)
+  2. dbt transformation layer with:
+     - Staging models (1:1 source mapping)
+     - Intermediate models (joins, deduplication)
+     - Mart models (fact_orders, dim_customers, dim_products)
+  3. Data quality checks after each layer
+  4. Schema evolution handling (new columns, type changes)
+  5. Alerting on pipeline failures or quality issues
+
+  Generate:
+  - Airflow DAG for orchestration
+  - dbt models (SQL + schema.yml)
+  - Data quality assertions
+  - Monitoring dashboard queries
+related_skills:
+  - sql-generation
+  - data-analysis
+  - database-query-optimizer
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-06-04T00:00:00.000Z"
+updated_at: "2026-06-04T00:00:00.000Z"

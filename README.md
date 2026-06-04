@@ -36,8 +36,21 @@ skills/
 ├── code-translation.yaml
 ├── regex-builder.yaml
 ├── ...
-└── 66 skills total (see full list in skills/ directory)
+└── 75 skills total (see full list in skills/ directory)
 ```
+
+### New in v0.1.7
+
+- `infrastructure-as-code` — Terraform/CDK/Pulumi IaC configuration generation
+- `threat-modeling` — STRIDE analysis and security threat assessment
+- `video-analysis` — video content analysis with scene detection and annotation
+- `api-load-testing` — k6/Locust load testing script generation
+- `audio-transcription` — audio transcription with speaker diarization
+- `contract-analysis` — legal contract review and risk assessment
+- `incident-response` — SRE runbooks and postmortem generation
+- `mobile-app-prototyping` — SwiftUI/Compose/React Native prototyping
+- `design-system-generator` — design tokens and component specifications
+- `data-pipeline-builder` — Airflow/dbt/Spark ETL pipeline generation
 
 ### ASO Skills (new in v0.1.5)
 

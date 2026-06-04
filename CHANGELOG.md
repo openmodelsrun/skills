@@ -5,6 +5,26 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.7] - 2026-06-04
+
+### Added
+
+- 10 new skills across 7 categories:
+  - `infrastructure-as-code` — Terraform/CDK/Pulumi IaC generation (ops)
+  - `threat-modeling` — STRIDE analysis and security threat assessment (security)
+  - `video-analysis` — video content analysis with scene detection and annotation (data)
+  - `api-load-testing` — k6/Locust load testing script generation (testing)
+  - `audio-transcription` — audio transcription with speaker diarization (productivity)
+  - `contract-analysis` — legal contract review and risk assessment (research)
+  - `incident-response` — SRE runbooks and postmortem generation (ops)
+  - `mobile-app-prototyping` — SwiftUI/Compose/React Native prototyping (development)
+  - `design-system-generator` — design tokens and component specifications (creative)
+  - `data-pipeline-builder` — Airflow/dbt/Spark ETL pipeline generation (data)
+
+### Changed
+
+- Total skills: 75 (from 66)
+
 ## [0.1.5] - 2026-05-31
 
 ### Added
