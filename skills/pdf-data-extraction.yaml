@@ -1,0 +1,58 @@
+id: pdf-data-extraction
+name: PDF Data Extraction
+description: >
+  Extracts structured data from PDFs and scanned documents — invoices, receipts, forms,
+  contracts, reports, and tables. Returns clean, typed output (JSON, CSV, or Markdown tables),
+  handles multi-page layouts and nested tables, and flags low-confidence fields for review.
+  Uses vision-capable models for image-based and scanned PDFs.
+category: data
+tags:
+  - pdf
+  - extraction
+  - documents
+  - ocr
+  - tables
+  - structured-data
+  - forms
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-8
+  - gpt-5-5
+  - gemini-3-1-pro
+  - gemini-3-flash
+min_context_window: 32000
+modalities:
+  input:
+    - file
+    - image
+    - text
+  output:
+    - text
+    - file
+complexity: intermediate
+use_cases:
+  - Extracting line items and totals from invoices and receipts
+  - Converting PDF tables into clean CSV or JSON
+  - Pulling structured fields from forms and applications
+  - Digitizing scanned documents into machine-readable data
+  - Extracting key terms and clauses from contracts
+example_prompt: |
+  Extract structured data from the attached invoice PDF. Return JSON with:
+  - vendor name, invoice number, issue date, due date
+  - line items (description, quantity, unit price, amount)
+  - subtotal, tax, and total
+  - currency
+
+  Flag any field you are less than 90% confident about under a "needs_review" key.
+related_skills:
+  - data-analysis
+  - research-summarizer
+  - web-summarizer
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-06-12T00:00:00.000Z"
+updated_at: "2026-06-12T00:00:00.000Z"

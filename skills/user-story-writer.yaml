@@ -1,0 +1,57 @@
+id: user-story-writer
+name: User Story Writer
+description: >
+  Transforms feature ideas and product requirements into well-formed agile user stories with
+  clear acceptance criteria. Follows the "As a / I want / so that" format, adds Gherkin-style
+  Given/When/Then criteria, estimates relative complexity, and breaks epics into right-sized
+  stories ready for sprint planning.
+category: productivity
+tags:
+  - agile
+  - user-stories
+  - product
+  - requirements
+  - scrum
+  - acceptance-criteria
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-8
+  - gpt-5-5
+  - gemini-3-1-pro
+  - claude-sonnet-4-6
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Turning a feature request into agile user stories
+  - Writing Given/When/Then acceptance criteria
+  - Breaking an epic into sprint-sized stories
+  - Clarifying ambiguous requirements into testable statements
+  - Preparing a backlog for sprint planning
+example_prompt: |
+  Convert the following feature idea into agile user stories.
+  For each story provide:
+  - Title
+  - "As a / I want / so that" statement
+  - Given/When/Then acceptance criteria
+  - A relative complexity estimate (S/M/L)
+
+  If it's an epic, break it into smaller stories first.
+
+  Feature: "Let users reset their password via email."
+related_skills:
+  - technical-writing
+  - api-design
+  - system-design
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-06-12T00:00:00.000Z"
+updated_at: "2026-06-12T00:00:00.000Z"

@@ -1,0 +1,59 @@
+id: log-analysis
+name: Log Analysis
+description: >
+  Parses and analyzes application, system, and access logs to surface errors, anomalies,
+  and root causes. Correlates events across services, identifies recurring patterns and
+  spikes, extracts structured fields from unstructured lines, and produces a prioritized
+  summary with likely causes and recommended next steps.
+category: ops
+tags:
+  - logs
+  - observability
+  - debugging
+  - monitoring
+  - root-cause
+  - sre
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-8
+  - gpt-5-5
+  - gemini-3-1-pro
+  - deepseek-v4
+min_context_window: 128000
+modalities:
+  input:
+    - text
+    - file
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Finding the root cause of a production incident from log dumps
+  - Detecting anomalies and error spikes across distributed services
+  - Extracting structured fields from unstructured log lines
+  - Correlating request traces across microservices
+  - Summarizing noisy logs into an actionable incident timeline
+example_prompt: |
+  Analyze the following application logs. Identify:
+  1. The most frequent and most severe errors
+  2. Any anomalies, spikes, or unusual patterns over time
+  3. The likely root cause and the request/trace where it first appears
+  4. Recommended next steps to mitigate and prevent recurrence
+
+  Logs:
+  ```
+  [paste logs here]
+  ```
+related_skills:
+  - incident-response
+  - debugging-assistant
+  - performance-optimization
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-06-12T00:00:00.000Z"
+updated_at: "2026-06-12T00:00:00.000Z"

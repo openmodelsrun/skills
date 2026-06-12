@@ -1,0 +1,55 @@
+id: sentiment-analysis
+name: Sentiment Analysis
+description: >
+  Classifies the sentiment and emotional tone of text — reviews, support tickets, social posts,
+  and survey responses. Supports document-level and aspect-based sentiment, returns confidence
+  scores and representative quotes, and aggregates trends across large batches with themes and
+  actionable insights.
+category: data
+tags:
+  - sentiment
+  - nlp
+  - text-classification
+  - reviews
+  - feedback
+  - analytics
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-8
+  - gpt-5-5
+  - gemini-3-flash
+  - deepseek-v4
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Classifying customer reviews as positive, negative, or neutral
+  - Aspect-based sentiment on product features
+  - Triaging support tickets by frustration level
+  - Tracking sentiment trends across a batch of survey responses
+  - Surfacing representative quotes for each sentiment theme
+example_prompt: |
+  Analyze the sentiment of the following customer reviews. For each review return:
+  - overall sentiment (positive/negative/neutral) with a confidence score
+  - aspect-based sentiment (e.g., price, quality, support)
+  Then provide an aggregate summary: sentiment distribution, top themes, and 3 representative quotes.
+
+  Reviews:
+  ```
+  [paste reviews here]
+  ```
+related_skills:
+  - data-analysis
+  - research-summarizer
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-06-12T00:00:00.000Z"
+updated_at: "2026-06-12T00:00:00.000Z"

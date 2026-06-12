@@ -1,0 +1,57 @@
+id: meeting-notes-summarizer
+name: Meeting Notes Summarizer
+description: >
+  Turns raw meeting transcripts or rough notes into clear, structured summaries. Extracts key
+  decisions, action items with owners and due dates, open questions, and discussion highlights.
+  Produces a concise recap suitable for sharing, plus an optional follow-up email draft.
+category: productivity
+tags:
+  - meetings
+  - summarization
+  - notes
+  - action-items
+  - productivity
+  - transcripts
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-8
+  - gpt-5-5
+  - gemini-3-1-pro
+  - claude-sonnet-4-6
+min_context_window: 32000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Summarizing a meeting transcript into decisions and action items
+  - Extracting owners and due dates from rough notes
+  - Drafting a follow-up recap email after a call
+  - Capturing open questions and blockers for a standup
+  - Producing concise minutes from a long discussion
+example_prompt: |
+  Summarize the following meeting transcript. Produce:
+  1. A 3-5 sentence overview
+  2. Key decisions made
+  3. Action items as a table with owner and due date
+  4. Open questions and blockers
+  5. A short follow-up email draft to attendees
+
+  Transcript:
+  ```
+  [paste transcript here]
+  ```
+related_skills:
+  - research-summarizer
+  - web-summarizer
+  - technical-writing
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-06-12T00:00:00.000Z"
+updated_at: "2026-06-12T00:00:00.000Z"

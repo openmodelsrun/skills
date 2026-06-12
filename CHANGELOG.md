@@ -5,6 +5,23 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.8] - 2026-06-12
+
+### Added
+
+- 7 new skills across 4 categories:
+  - `kubernetes-manifest-generator` — production-ready K8s manifests, Kustomize/Helm scaffolding (ops)
+  - `log-analysis` — log parsing, anomaly detection, and root-cause analysis (ops)
+  - `graphql-schema-generator` — GraphQL SDL, resolvers, and pagination design (development)
+  - `meeting-notes-summarizer` — structured summaries with decisions and action items (productivity)
+  - `pdf-data-extraction` — structured data extraction from PDFs and scanned documents (data)
+  - `sentiment-analysis` — document-level and aspect-based sentiment classification (data)
+  - `user-story-writer` — agile user stories with Gherkin acceptance criteria (productivity)
+
+### Changed
+
+- Total skills: 82 (from 75)
+
 ## [0.1.7] - 2026-06-04
 
 ### Added

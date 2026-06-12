@@ -1,0 +1,59 @@
+id: kubernetes-manifest-generator
+name: Kubernetes Manifest Generator
+description: >
+  Generates production-ready Kubernetes manifests — Deployments, Services, Ingresses,
+  ConfigMaps, Secrets, HPAs, and more — from a plain-language description of the workload.
+  Applies best practices for resource limits, health probes, security contexts, and rolling
+  update strategies, with optional Kustomize overlays or Helm chart scaffolding.
+category: ops
+tags:
+  - kubernetes
+  - k8s
+  - manifests
+  - helm
+  - containers
+  - devops
+  - yaml
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-8
+  - gpt-5-5
+  - gemini-3-1-pro
+  - qwen3-coder
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Scaffolding Deployments and Services for a new microservice
+  - Adding HorizontalPodAutoscalers and resource limits to existing workloads
+  - Generating Kustomize overlays for staging and production
+  - Hardening pods with security contexts and network policies
+  - Translating Docker Compose definitions into Kubernetes manifests
+example_prompt: |
+  Generate Kubernetes manifests for a stateless Node.js API service with:
+  - 3 replicas, rolling updates, readiness and liveness probes on /healthz
+  - CPU/memory requests and limits
+  - A ClusterIP Service on port 8080
+  - An Ingress with TLS for api.example.com
+  - An HPA scaling between 3 and 10 pods at 70% CPU
+
+  Use best practices for security contexts and label conventions.
+related_skills:
+  - infrastructure-as-code
+  - docker-compose-generator
+  - cloud-deploy
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-06-12T00:00:00.000Z"
+updated_at: "2026-06-12T00:00:00.000Z"
