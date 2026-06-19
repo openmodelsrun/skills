@@ -5,6 +5,27 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.9] - 2026-06-19
+
+### Added
+
+- 11 new skills across 6 categories:
+  - `rag-pipeline-builder` — end-to-end retrieval-augmented generation pipeline design (data)
+  - `chart-generator` — data visualization and chart-rendering code generation (data)
+  - `data-anonymizer` — PII detection and redaction with privacy-preserving techniques (security)
+  - `prompt-injection-tester` — LLM red-teaming for prompt injection and jailbreaks (security)
+  - `database-migration-writer` — safe, reversible zero-downtime schema migrations (development)
+  - `code-comment-generator` — docstrings and inline comments for existing code (development)
+  - `api-mock-server` — mock API servers and stubbed responses from specs (testing)
+  - `feature-flag-manager` — feature flagging and progressive-delivery strategies (ops)
+  - `seo-content-optimizer` — on-page SEO optimization and structured data (writing)
+  - `localization-helper` — i18n/l10n extraction and translation (writing)
+  - `customer-support-responder` — grounded, empathetic support replies and macros (productivity)
+
+### Changed
+
+- Total skills: 93 (from 82)
+
 ## [0.1.8] - 2026-06-12
 
 ### Added

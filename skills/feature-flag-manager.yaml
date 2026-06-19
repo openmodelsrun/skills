@@ -1,0 +1,63 @@
+id: feature-flag-manager
+name: Feature Flag Manager
+description: >
+  Designs feature-flagging and progressive-delivery strategies and generates the integration
+  code. Covers flag naming and lifecycle, targeting and segmentation rules, percentage
+  rollouts, kill switches, and cleanup of stale flags across providers like LaunchDarkly,
+  Unleash, Flagsmith, or a homegrown config service.
+category: ops
+tags:
+  - feature-flags
+  - progressive-delivery
+  - rollout
+  - experimentation
+  - devops
+  - release-management
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - deepseek-v4
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Designing a feature flag naming and lifecycle convention
+  - Implementing percentage rollouts and user targeting
+  - Adding kill switches for risky releases
+  - Generating LaunchDarkly/Unleash integration code
+  - Identifying and safely removing stale flags
+example_prompt: |
+  Design a feature flag rollout for a new checkout flow in a Node.js + React app.
+
+  Requirements:
+  - Gradual rollout: 5% -> 25% -> 50% -> 100%
+  - Internal users always on
+  - Instant kill switch
+  - Use Unleash
+
+  Provide:
+  1. Flag naming and lifecycle plan
+  2. Targeting and rollout configuration
+  3. Server and client integration code
+  4. Kill-switch procedure
+  5. Stale-flag cleanup criteria
+related_skills:
+  - ab-test-setup
+  - ci-cd-pipeline
+  - cloud-deploy
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-06-19T00:00:00.000Z"
+updated_at: "2026-06-19T00:00:00.000Z"

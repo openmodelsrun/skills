@@ -1,0 +1,60 @@
+id: chart-generator
+name: Chart Generator
+description: >
+  Turns raw data and natural-language requests into clear, well-labeled charts and the code
+  to render them. Recommends the right chart type for the data and message, handles
+  aggregation and formatting, and outputs production-ready visualizations using libraries
+  like Matplotlib, Plotly, Vega-Lite, or Chart.js with accessible color palettes.
+category: data
+tags:
+  - visualization
+  - charts
+  - plotting
+  - data
+  - dashboards
+  - reporting
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - gpt-5
+  - claude-opus-4-6
+  - gemini-2-5-pro
+min_context_window: 8000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - code
+    - text
+complexity: beginner
+use_cases:
+  - Choosing the right chart type for a dataset and message
+  - Generating Matplotlib/Plotly/Vega-Lite code from raw data
+  - Building accessible, presentation-ready visualizations
+  - Creating multi-series and small-multiple comparisons
+  - Formatting axes, legends, and annotations clearly
+example_prompt: |
+  Create a chart from this monthly revenue data and explain your choice.
+
+  Data (month, revenue, target):
+  Jan 120k 100k, Feb 135k 110k, Mar 128k 120k, Apr 150k 130k
+
+  Requirements:
+  - Show actual vs target clearly
+  - Colorblind-safe palette
+  - Use Plotly
+
+  Provide the chart type rationale and complete rendering code.
+related_skills:
+  - data-analysis
+  - scientific-visualization
+  - time-series-forecasting
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-06-19T00:00:00.000Z"
+updated_at: "2026-06-19T00:00:00.000Z"

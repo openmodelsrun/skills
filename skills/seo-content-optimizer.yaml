@@ -1,0 +1,58 @@
+id: seo-content-optimizer
+name: SEO Content Optimizer
+description: >
+  Optimizes web content for search engines and readers. Performs keyword analysis and intent
+  mapping, improves titles, meta descriptions, headings, and internal linking, and generates
+  structured data (JSON-LD) while keeping copy natural and useful. Outputs an actionable,
+  prioritized list of on-page SEO improvements.
+category: writing
+tags:
+  - seo
+  - content
+  - keywords
+  - metadata
+  - structured-data
+  - marketing
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - gpt-5
+  - claude-opus-4-6
+  - gemini-2-5-pro
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Optimizing blog posts and landing pages for target keywords
+  - Writing compelling, length-compliant titles and meta descriptions
+  - Mapping content to search intent and improving heading structure
+  - Generating JSON-LD structured data for rich results
+  - Producing a prioritized on-page SEO checklist
+example_prompt: |
+  Optimize this article for SEO around the primary keyword "remote team onboarding".
+
+  [paste article draft here]
+
+  Provide:
+  1. Keyword and search-intent analysis
+  2. Optimized title and meta description (within length limits)
+  3. Heading structure recommendations
+  4. Internal/external linking suggestions
+  5. JSON-LD structured data
+  6. Prioritized improvement checklist
+related_skills:
+  - technical-writing
+  - landing-page-generator
+  - aso-metadata-optimization
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-06-19T00:00:00.000Z"
+updated_at: "2026-06-19T00:00:00.000Z"

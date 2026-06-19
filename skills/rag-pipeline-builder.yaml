@@ -1,0 +1,64 @@
+id: rag-pipeline-builder
+name: RAG Pipeline Builder
+description: >
+  Designs and implements retrieval-augmented generation (RAG) pipelines end to end. Covers
+  document chunking strategies, embedding model selection, vector store configuration,
+  hybrid and re-ranking retrieval, prompt construction with grounded citations, and
+  evaluation harnesses for measuring retrieval quality and answer faithfulness.
+category: data
+tags:
+  - rag
+  - retrieval
+  - embeddings
+  - vector-database
+  - llm
+  - grounding
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - deepseek-v4
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Building production RAG over internal documentation
+  - Choosing chunking and embedding strategies for a corpus
+  - Adding hybrid search and re-ranking to improve recall
+  - Designing citation-grounded answer prompts
+  - Creating retrieval and faithfulness evaluation suites
+example_prompt: |
+  Design a RAG pipeline for a customer support knowledge base of ~50,000 markdown articles.
+
+  Requirements:
+  - Sub-second retrieval latency
+  - Answers must cite source articles
+  - Multilingual content (English, Spanish, German)
+
+  Provide:
+  1. Chunking strategy with rationale
+  2. Embedding model recommendation and vector store choice
+  3. Hybrid retrieval + re-ranking design
+  4. Prompt template enforcing grounded citations
+  5. Evaluation plan (retrieval recall, answer faithfulness)
+  6. Example implementation code
+related_skills:
+  - knowledge-graph
+  - prompt-engineering
+  - data-pipeline-builder
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-06-19T00:00:00.000Z"
+updated_at: "2026-06-19T00:00:00.000Z"

@@ -1,0 +1,59 @@
+id: customer-support-responder
+name: Customer Support Responder
+description: >
+  Drafts accurate, empathetic customer support replies grounded in a knowledge base or help
+  docs. Classifies intent and urgency, matches the right tone, proposes solutions with clear
+  steps, suggests escalation when needed, and outputs canned-response and macro templates for
+  common ticket categories.
+category: productivity
+tags:
+  - customer-support
+  - help-desk
+  - tickets
+  - communication
+  - templates
+  - service
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - gpt-5
+  - claude-opus-4-6
+  - gemini-2-5-pro
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Drafting empathetic replies to support tickets
+  - Classifying ticket intent, urgency, and sentiment
+  - Generating canned responses and macros for common issues
+  - Suggesting escalation paths for complex cases
+  - Maintaining consistent brand tone across replies
+example_prompt: |
+  Draft a support reply to this ticket using the provided help-doc context.
+
+  Ticket: "I was charged twice for my subscription this month and I'm really frustrated."
+
+  Help-doc context:
+  - Duplicate charges are auto-reversed within 5-7 business days
+  - Agents can issue an immediate refund for amounts under $100
+
+  Provide:
+  1. Intent, urgency, and sentiment classification
+  2. An empathetic reply with concrete next steps
+  3. A reusable macro template for duplicate-charge tickets
+  4. Whether escalation is needed
+related_skills:
+  - email-writer
+  - sentiment-analysis
+  - meeting-notes-summarizer
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-06-19T00:00:00.000Z"
+updated_at: "2026-06-19T00:00:00.000Z"

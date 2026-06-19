@@ -1,0 +1,61 @@
+id: prompt-injection-tester
+name: Prompt Injection Tester
+description: >
+  Red-teams LLM applications for prompt injection, jailbreaks, and data exfiltration risks.
+  Generates adversarial test cases for direct and indirect injection, system prompt leakage,
+  tool-call abuse, and unsafe output handling, then reports findings with severity ratings
+  and concrete mitigations such as input isolation, output filtering, and least-privilege tools.
+category: security
+tags:
+  - prompt-injection
+  - llm-security
+  - red-teaming
+  - jailbreak
+  - ai-safety
+  - testing
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+complexity: advanced
+use_cases:
+  - Generating adversarial prompt injection test suites
+  - Probing for system prompt and secret leakage
+  - Testing tool-calling agents for unsafe action abuse
+  - Evaluating indirect injection via retrieved or user content
+  - Producing a remediation report with prioritized fixes
+example_prompt: |
+  Red-team the following LLM agent for prompt injection vulnerabilities.
+
+  Agent description:
+  - Customer-facing chatbot with access to a "send_email" and "lookup_order" tool
+  - Retrieves context from user-uploaded documents
+  - System prompt instructs it to never reveal internal pricing rules
+
+  Provide:
+  1. Direct injection test cases
+  2. Indirect injection cases via uploaded documents
+  3. Tool-abuse and data-exfiltration scenarios
+  4. Severity rating for each finding
+  5. Concrete mitigations (isolation, filtering, least privilege)
+related_skills:
+  - security-audit
+  - threat-modeling
+  - prompt-engineering
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-06-19T00:00:00.000Z"
+updated_at: "2026-06-19T00:00:00.000Z"

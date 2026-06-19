@@ -1,0 +1,63 @@
+id: data-anonymizer
+name: Data Anonymizer
+description: >
+  Detects and redacts personally identifiable information (PII) and sensitive data from
+  text, logs, and structured datasets. Recommends anonymization techniques such as masking,
+  tokenization, pseudonymization, k-anonymity, and differential privacy, and generates
+  reusable redaction code while preserving analytical utility and referential integrity.
+category: security
+tags:
+  - pii
+  - anonymization
+  - privacy
+  - redaction
+  - compliance
+  - gdpr
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - deepseek-v4
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Redacting PII from application logs before sharing
+  - Anonymizing datasets for analytics and ML training
+  - Choosing between masking, tokenization, and pseudonymization
+  - Building GDPR/HIPAA-compliant data export pipelines
+  - Generating reusable PII detection and redaction code
+example_prompt: |
+  Anonymize the following customer dataset for use in an analytics environment.
+
+  Columns: full_name, email, phone, ip_address, date_of_birth, city, purchase_amount
+
+  Requirements:
+  - Preserve ability to join records across tables (consistent pseudonyms)
+  - Keep city and purchase_amount usable for analysis
+  - Comply with GDPR
+
+  Provide:
+  1. Classification of each column by sensitivity
+  2. Recommended anonymization technique per column
+  3. Implementation code
+  4. Residual re-identification risk assessment
+related_skills:
+  - security-audit
+  - data-analysis
+  - test-data-generator
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-06-19T00:00:00.000Z"
+updated_at: "2026-06-19T00:00:00.000Z"

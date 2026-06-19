@@ -1,0 +1,62 @@
+id: api-mock-server
+name: API Mock Server
+description: >
+  Generates mock API servers and stubbed responses from OpenAPI specs, sample payloads, or
+  natural-language descriptions. Produces realistic fixture data, configurable latency and
+  error scenarios, and ready-to-run mock servers using tools like Prism, MSW, WireMock, or
+  json-server so frontend and integration tests can proceed without the real backend.
+category: testing
+tags:
+  - mocking
+  - api
+  - testing
+  - fixtures
+  - openapi
+  - stubs
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - gpt-5
+  - claude-opus-4-6
+  - deepseek-v4
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Spinning up a mock server from an OpenAPI spec
+  - Generating realistic fixture responses for endpoints
+  - Simulating latency, rate limits, and error responses
+  - Creating MSW handlers for frontend tests
+  - Unblocking integration tests when the backend is unavailable
+example_prompt: |
+  Generate a mock server from this OpenAPI snippet for local frontend development.
+
+  Endpoints:
+  - GET /products (paginated list)
+  - GET /products/{id}
+  - POST /orders
+
+  Requirements:
+  - Realistic sample data
+  - Simulate a 500 error for one product id
+  - Use Mock Service Worker (MSW)
+
+  Provide the handler code and setup instructions.
+related_skills:
+  - test-data-generator
+  - openapi-spec-generator
+  - api-client-generator
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-06-19T00:00:00.000Z"
+updated_at: "2026-06-19T00:00:00.000Z"

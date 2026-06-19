@@ -1,0 +1,64 @@
+id: code-comment-generator
+name: Code Comment Generator
+description: >
+  Adds clear, accurate inline comments and API doc blocks to existing code without changing
+  behavior. Generates docstrings and structured comments (JSDoc, Google/NumPy style, Javadoc,
+  Rustdoc) that explain intent, parameters, return values, side effects, and edge cases,
+  while avoiding noisy comments that merely restate the code.
+category: development
+tags:
+  - documentation
+  - comments
+  - docstrings
+  - code-quality
+  - developer-tools
+  - readability
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - deepseek-v4
+  - glm-5-2
+min_context_window: 16000
+modalities:
+  input:
+    - code
+    - text
+  output:
+    - code
+complexity: beginner
+use_cases:
+  - Adding docstrings to undocumented functions and classes
+  - Generating JSDoc/Javadoc/Rustdoc API documentation blocks
+  - Explaining complex algorithms with intent-focused comments
+  - Documenting parameters, return values, and side effects
+  - Standardizing comment style across a codebase
+example_prompt: |
+  Add high-quality docstrings and inline comments to the following Python function without
+  changing its behavior. Use Google-style docstrings and only comment non-obvious logic.
+
+  ```python
+  def merge_intervals(intervals):
+      intervals.sort(key=lambda x: x[0])
+      merged = []
+      for s, e in intervals:
+          if merged and s <= merged[-1][1]:
+              merged[-1][1] = max(merged[-1][1], e)
+          else:
+              merged.append([s, e])
+      return merged
+  ```
+related_skills:
+  - documentation-generator
+  - code-explainer
+  - technical-writing
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-06-19T00:00:00.000Z"
+updated_at: "2026-06-19T00:00:00.000Z"

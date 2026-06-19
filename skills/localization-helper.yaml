@@ -1,0 +1,63 @@
+id: localization-helper
+name: Localization Helper
+description: >
+  Assists with internationalization (i18n) and localization (l10n) of applications and
+  content. Extracts translatable strings, generates resource bundles, translates copy while
+  preserving placeholders and ICU plural/gender rules, and flags layout, date, number, and
+  currency formatting concerns for target locales.
+category: writing
+tags:
+  - i18n
+  - l10n
+  - translation
+  - localization
+  - internationalization
+  - locale
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - gpt-5
+  - claude-opus-4-6
+  - gemini-2-5-pro
+  - sarvam-m
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Extracting hardcoded strings into i18n resource files
+  - Translating UI copy while preserving placeholders and ICU rules
+  - Generating locale-specific date, number, and currency formats
+  - Reviewing translations for tone and cultural fit
+  - Auditing an app for internationalization readiness
+example_prompt: |
+  Localize the following React component strings into French, Japanese, and Hindi.
+
+  Source strings (en.json):
+  {
+    "cart.items": "You have {count} item(s) in your cart",
+    "checkout.total": "Total: {amount}",
+    "welcome": "Welcome back, {name}!"
+  }
+
+  Provide:
+  1. Translated resource files per locale with correct ICU plural handling
+  2. Notes on placeholder and formatting concerns
+  3. Any layout/length risks for the target locales
+related_skills:
+  - technical-writing
+  - email-writer
+  - documentation-generator
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-06-19T00:00:00.000Z"
+updated_at: "2026-06-19T00:00:00.000Z"
