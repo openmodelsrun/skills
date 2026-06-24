@@ -1,0 +1,59 @@
+id: dependency-upgrader
+name: Dependency Upgrader
+description: >
+  Plans and executes safe dependency upgrades across a project. Analyzes current versions,
+  reads changelogs and release notes for breaking changes, sequences upgrades to minimize
+  risk, applies required code migrations, and verifies with builds and tests. Works across
+  npm, pip, Maven, Cargo, and Go modules.
+category: development
+tags:
+  - dependencies
+  - upgrades
+  - maintenance
+  - breaking-changes
+  - migration
+  - tooling
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - deepseek-v4
+min_context_window: 32000
+modalities:
+  input:
+    - code
+    - text
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Planning a safe upgrade order for outdated dependencies
+  - Identifying breaking changes from changelogs
+  - Applying code migrations required by major version bumps
+  - Resolving peer/transitive version conflicts
+  - Verifying upgrades with builds and tests
+example_prompt: |
+  Plan an upgrade of these npm dependencies and apply the necessary code changes.
+
+  Current: react 17, react-router 5, eslint 8
+  Target: latest stable
+
+  Provide:
+  1. Recommended upgrade order and rationale
+  2. Breaking changes to expect per package
+  3. Required code migrations
+  4. Verification steps
+related_skills:
+  - dependency-auditor
+  - migration-planner
+  - refactoring-assistant
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-06-24T00:00:00.000Z"
+updated_at: "2026-06-24T00:00:00.000Z"

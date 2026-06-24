@@ -1,0 +1,55 @@
+id: market-research-analyst
+name: Market Research Analyst
+description: >
+  Conducts structured market and competitor research and turns it into a decision-ready brief.
+  Covers market sizing (TAM/SAM/SOM), competitor feature and pricing matrices, positioning and
+  differentiation, customer segments, and SWOT, with clearly stated assumptions and sources so
+  conclusions can be traced and challenged.
+category: research
+tags:
+  - market-research
+  - competitive-analysis
+  - strategy
+  - positioning
+  - swot
+  - business
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - gpt-5
+  - claude-opus-4-6
+  - gemini-2-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Estimating market size with a TAM/SAM/SOM breakdown
+  - Building competitor feature and pricing matrices
+  - Mapping positioning and differentiation opportunities
+  - Producing a SWOT analysis for a product
+  - Summarizing findings into a decision-ready brief
+example_prompt: |
+  Produce a market research brief for a new AI-powered code review tool aimed at mid-size
+  engineering teams.
+
+  Provide:
+  1. TAM/SAM/SOM estimate with stated assumptions
+  2. Competitor matrix (features, pricing, positioning)
+  3. Target segments and their key pains
+  4. SWOT analysis
+  5. Recommended positioning and three differentiators
+related_skills:
+  - aso-competitor-analysis
+  - research-summarizer
+  - brainstorm-facilitator
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-06-24T00:00:00.000Z"
+updated_at: "2026-06-24T00:00:00.000Z"

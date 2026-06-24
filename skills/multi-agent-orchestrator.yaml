@@ -1,0 +1,64 @@
+id: multi-agent-orchestrator
+name: Multi-Agent Orchestrator
+description: >
+  Designs multi-agent systems where a coordinator delegates sub-tasks to specialist agents,
+  verifies intermediate results, and synthesizes a final answer. Covers agent role definition,
+  routing and delegation strategy, shared memory and message passing, verification loops, cost
+  and latency budgeting, and failure handling across frameworks like LangGraph, CrewAI, or a
+  custom orchestrator.
+category: development
+tags:
+  - multi-agent
+  - orchestration
+  - agents
+  - delegation
+  - routing
+  - llm
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - sakana-fugu
+  - claude-opus-4-6
+  - gpt-5
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Designing a coordinator/worker agent topology for a task
+  - Defining routing rules that pick the right specialist model per sub-task
+  - Adding verification and self-check loops between agents
+  - Budgeting cost and latency across an agent pool
+  - Implementing orchestration with LangGraph or CrewAI
+example_prompt: |
+  Design a multi-agent system to autonomously resolve GitHub issues in a TypeScript repo.
+
+  Requirements:
+  - A coordinator that triages issues and delegates to specialists
+  - Specialists: code-search, patch-writer, test-writer, reviewer
+  - Verification before opening a PR
+  - Stay within a per-issue token budget
+
+  Provide:
+  1. Agent roles and responsibilities
+  2. Routing/delegation strategy
+  3. Message-passing and shared-state design
+  4. Verification loop
+  5. Reference implementation outline
+related_skills:
+  - ai-agent-builder
+  - self-improving-agent
+  - prompt-engineering
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-06-24T00:00:00.000Z"
+updated_at: "2026-06-24T00:00:00.000Z"

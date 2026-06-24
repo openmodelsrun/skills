@@ -36,7 +36,7 @@ skills/
 ├── code-translation.yaml
 ├── regex-builder.yaml
 ├── ...
-└── 93 skills total (see full list in skills/ directory)
+└── 103 skills total (see full list in skills/ directory)
 ```
 
 ### New in v0.1.7

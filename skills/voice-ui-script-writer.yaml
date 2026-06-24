@@ -1,0 +1,55 @@
+id: voice-ui-script-writer
+name: Voice UI Script Writer
+description: >
+  Designs conversational scripts and dialog flows for voice assistants, IVR systems, and
+  chatbots. Crafts natural prompts and responses, handles confirmations, errors, and re-prompts,
+  designs branching flows and fallbacks, and adapts tone for the brand while keeping turns
+  concise and accessible for audio-first interfaces.
+category: creative
+tags:
+  - voice-ui
+  - conversation-design
+  - chatbot
+  - ivr
+  - dialog
+  - ux-writing
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - gpt-5
+  - claude-opus-4-6
+  - gemini-2-5-pro
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Writing dialog flows for a voice assistant skill
+  - Designing confirmations, errors, and re-prompts
+  - Building branching conversation trees with fallbacks
+  - Adapting tone and persona for a brand
+  - Drafting IVR menu scripts that stay concise
+example_prompt: |
+  Write a voice assistant script for booking a restaurant reservation.
+
+  Requirements:
+  - Collect date, time, and party size
+  - Confirm before booking
+  - Handle "no availability" and unclear input gracefully
+  - Friendly, concise tone
+
+  Provide the dialog flow with prompts, expected responses, confirmations, and fallbacks.
+related_skills:
+  - ai-agent-builder
+  - landing-page-generator
+  - prompt-engineering
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-06-24T00:00:00.000Z"
+updated_at: "2026-06-24T00:00:00.000Z"

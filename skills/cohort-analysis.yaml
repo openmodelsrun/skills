@@ -1,0 +1,56 @@
+id: cohort-analysis
+name: Cohort Analysis
+description: >
+  Builds retention and behavioral cohort analyses from event or transaction data. Defines
+  cohorts by acquisition date or attributes, computes retention and churn curves, generates
+  the SQL or pandas code to produce cohort tables, and interprets the results into actionable
+  insights about engagement and lifecycle.
+category: data
+tags:
+  - cohort
+  - retention
+  - analytics
+  - churn
+  - metrics
+  - sql
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - gpt-5
+  - claude-opus-4-6
+  - deepseek-v4
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Computing weekly/monthly retention cohorts
+  - Building churn and engagement curves
+  - Generating SQL or pandas for cohort tables
+  - Comparing cohorts by acquisition channel
+  - Interpreting cohort trends into recommendations
+example_prompt: |
+  I have an "events" table (user_id, event_name, event_time) and a "users" table
+  (user_id, signup_date, channel).
+
+  Produce a monthly signup cohort retention analysis:
+  1. SQL to build the cohort retention table
+  2. How to read the resulting matrix
+  3. Two hypotheses to investigate based on typical retention shapes
+related_skills:
+  - data-analysis
+  - ab-test-setup
+  - time-series-forecasting
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-06-24T00:00:00.000Z"
+updated_at: "2026-06-24T00:00:00.000Z"

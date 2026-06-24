@@ -1,0 +1,61 @@
+id: synthetic-data-generator
+name: Synthetic Data Generator
+description: >
+  Generates realistic synthetic datasets that preserve the statistical properties and
+  relationships of source data without exposing real records. Covers schema-aware generation,
+  correlated and time-series fields, class balancing for ML training, and constraint
+  preservation, with code for tools like SDV, Faker, or custom generators.
+category: data
+tags:
+  - synthetic-data
+  - data-generation
+  - machine-learning
+  - privacy
+  - sampling
+  - simulation
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - gpt-5
+  - claude-opus-4-6
+  - deepseek-v4
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Generating synthetic training data that mirrors real distributions
+  - Balancing minority classes for ML models
+  - Producing correlated multi-column and time-series data
+  - Preserving referential integrity across tables
+  - Creating privacy-safe datasets for sharing
+example_prompt: |
+  Generate synthetic data for an e-commerce schema for ML experimentation.
+
+  Tables:
+  - customers(id, age, region, signup_date)
+  - orders(id, customer_id, order_date, amount, category)
+
+  Requirements:
+  - Preserve realistic age/amount distributions and customer-order relationships
+  - 10,000 customers, ~3 orders each
+  - No real PII
+
+  Provide generation code and a short fidelity check.
+related_skills:
+  - test-data-generator
+  - data-anonymizer
+  - data-analysis
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-06-24T00:00:00.000Z"
+updated_at: "2026-06-24T00:00:00.000Z"

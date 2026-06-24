@@ -1,0 +1,61 @@
+id: dockerfile-optimizer
+name: Dockerfile Optimizer
+description: >
+  Reviews and rewrites Dockerfiles for smaller images, faster builds, and better security.
+  Applies multi-stage builds, optimal layer ordering and caching, minimal base images,
+  non-root users, and .dockerignore tuning, and flags vulnerabilities and bloat while keeping
+  the build reproducible.
+category: ops
+tags:
+  - docker
+  - containers
+  - optimization
+  - build
+  - devops
+  - security
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - deepseek-v4
+min_context_window: 16000
+modalities:
+  input:
+    - code
+    - text
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Shrinking image size with multi-stage builds and slim bases
+  - Reordering layers to maximize build cache hits
+  - Running containers as a non-root user
+  - Tuning .dockerignore to cut build context
+  - Flagging insecure or outdated base images
+example_prompt: |
+  Optimize this Dockerfile for size, build speed, and security without changing runtime behavior.
+
+  ```dockerfile
+  FROM node:20
+  WORKDIR /app
+  COPY . .
+  RUN npm install
+  RUN npm run build
+  CMD ["node", "dist/index.js"]
+  ```
+
+  Provide the rewritten Dockerfile, a matching .dockerignore, and an explanation of each change.
+related_skills:
+  - docker-compose-generator
+  - kubernetes-manifest-generator
+  - ci-cd-pipeline
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-06-24T00:00:00.000Z"
+updated_at: "2026-06-24T00:00:00.000Z"

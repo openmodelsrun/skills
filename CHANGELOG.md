@@ -5,6 +5,26 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2026-06-24
+
+### Added
+
+- 10 new skills across 6 categories:
+  - `multi-agent-orchestrator` — coordinator/specialist agent system design with routing and verification (development)
+  - `dependency-upgrader` — safe, sequenced dependency upgrades with code migrations (development)
+  - `dockerfile-optimizer` — smaller, faster, more secure Docker images (ops)
+  - `helm-chart-generator` — package Kubernetes apps as reusable Helm charts (ops)
+  - `incident-postmortem-writer` — blameless postmortems from incident notes (ops)
+  - `cohort-analysis` — retention and behavioral cohort analysis (data)
+  - `synthetic-data-generator` — statistically faithful, privacy-safe synthetic datasets (data)
+  - `market-research-analyst` — market sizing, competitor matrices, and SWOT briefs (research)
+  - `meeting-agenda-planner` — focused, time-boxed meeting agendas (productivity)
+  - `voice-ui-script-writer` — conversational scripts and dialog flows for voice/IVR (creative)
+
+### Changed
+
+- Total skills: 103 (from 93)
+
 ## [0.1.9] - 2026-06-19
 
 ### Added

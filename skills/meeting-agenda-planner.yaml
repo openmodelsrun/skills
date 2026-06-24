@@ -1,0 +1,52 @@
+id: meeting-agenda-planner
+name: Meeting Agenda Planner
+description: >
+  Builds focused, time-boxed meeting agendas from a goal and a list of topics. Defines clear
+  objectives and desired outcomes, allocates time per item, assigns owners, suggests
+  pre-reads, and prepares decision points and discussion prompts so meetings stay purposeful
+  and produce action items.
+category: productivity
+tags:
+  - meetings
+  - agenda
+  - planning
+  - facilitation
+  - collaboration
+  - time-management
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - gpt-5
+  - claude-opus-4-6
+  - gemini-2-5-flash
+min_context_window: 8000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Turning a meeting goal into a time-boxed agenda
+  - Assigning owners and pre-reads per topic
+  - Preparing decision points and discussion prompts
+  - Structuring recurring team meetings
+  - Drafting a follow-up template for action items
+example_prompt: |
+  Plan a 45-minute agenda for a sprint planning meeting with 6 engineers.
+
+  Goal: commit to next sprint scope and surface risks.
+  Topics: review backlog priorities, estimate top items, capacity check, risks/dependencies.
+
+  Provide a time-boxed agenda with objectives, owners, and a follow-up action-item template.
+related_skills:
+  - meeting-notes-summarizer
+  - brainstorm-facilitator
+  - user-story-writer
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-06-24T00:00:00.000Z"
+updated_at: "2026-06-24T00:00:00.000Z"
