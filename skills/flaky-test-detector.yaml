@@ -1,0 +1,56 @@
+id: flaky-test-detector
+name: Flaky Test Detector
+description: >
+  Diagnoses and fixes flaky tests by analyzing test code and CI failure history for common
+  sources of nondeterminism such as time and timezone dependence, order dependence, shared
+  mutable state, race conditions, and unmocked network calls. Proposes targeted fixes and
+  quarantine strategies to keep the suite trustworthy.
+category: testing
+tags:
+  - testing
+  - flaky-tests
+  - ci
+  - reliability
+  - debugging
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-8
+  - gpt-5-6-sol
+  - deepseek-v4
+  - gemini-3-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - code
+    - text
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Finding the root cause of an intermittently failing test
+  - Removing order dependence and shared state between tests
+  - Stabilizing time- and timezone-sensitive assertions
+  - Deciding what to quarantine versus fix immediately
+example_prompt: |
+  This test passes locally but fails ~15% of the time in CI. Analyze it for sources of flakiness,
+  identify the most likely root cause, and rewrite it to be deterministic. Note any shared state
+  or ordering assumptions it relies on.
+
+  ```
+  [paste test code and a couple of failure logs]
+  ```
+related_skills:
+  - unit-test-generation
+  - debugging-assistant
+  - ci-cd-pipeline
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

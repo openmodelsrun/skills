@@ -5,6 +5,33 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-07-09
+
+### Added
+
+- 17 new skills across 8 categories:
+  - `observability-instrumentation` — add OpenTelemetry logs, metrics, and traces to a codebase (ops)
+  - `slo-error-budget-planner` — define SLIs/SLOs and multi-burn-rate error budget alerts (ops)
+  - `flaky-test-detector` — diagnose and fix nondeterministic tests (testing)
+  - `contract-test-generator` — consumer-driven contract tests between services (testing)
+  - `llm-eval-harness-builder` — evaluation harnesses with LLM-as-judge and regression gates (data)
+  - `data-quality-validator` — expectation suites for tables and pipelines (data)
+  - `feature-engineering-assistant` — leakage-safe ML feature design and pipelines (data)
+  - `webhook-integration-builder` — signed, idempotent, retry-safe webhook producers/consumers (development)
+  - `api-versioning-strategist` — versioning strategy, deprecation timelines, and migration guides (development)
+  - `legacy-code-modernizer` — incremental strangler-fig modernization with characterization tests (development)
+  - `iam-policy-reviewer` — least-privilege review of cloud IAM policies (security)
+  - `secrets-scanner` — detect and remediate leaked credentials in code and git history (security)
+  - `release-notes-writer` — audience-appropriate release notes from PRs and commits (writing)
+  - `grant-proposal-writer` — structured, funder-aligned grant proposals (research)
+  - `product-requirements-writer` — PRDs with goals, acceptance criteria, and open questions (productivity)
+  - `sprint-retro-facilitator` — action-oriented retrospective synthesis (productivity)
+  - `storyboard-generator` — shot-by-shot storyboards with image prompts (creative)
+
+### Changed
+
+- Total skills: 120 (from 103)
+
 ## [0.2.0] - 2026-06-24
 
 ### Added

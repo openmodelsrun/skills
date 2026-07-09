@@ -1,0 +1,50 @@
+id: storyboard-generator
+name: Storyboard Generator
+description: >
+  Turns a script, concept, or product idea into a shot-by-shot storyboard. Breaks the narrative
+  into scenes and panels with framing, camera movement, action, and dialogue notes, and generates
+  image-model prompts for each panel so teams can visualize a video, ad, or explainer before
+  production.
+category: creative
+tags:
+  - storyboard
+  - video
+  - creative
+  - pre-production
+  - visual
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - gpt-5-6-sol
+  - gemini-3-5-pro
+  - claude-opus-4-8
+  - muse-spark-1-1
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - image
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Converting a short script into a shot-by-shot storyboard
+  - Planning camera framing and movement for each panel
+  - Generating image-model prompts for visualization
+  - Pre-visualizing an ad or explainer video
+example_prompt: |
+  Here is a 30-second explainer script for a budgeting app. Break it into scenes and panels. For
+  each panel give the framing, camera movement, on-screen action, and voiceover line, plus an
+  image-generation prompt I can paste into an image model to visualize it.
+
+  Script: [paste script]
+related_skills:
+  - voice-ui-script-writer
+  - landing-page-generator
+  - brainstorm-facilitator
+compatible_tools:
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

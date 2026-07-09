@@ -1,0 +1,51 @@
+id: webhook-integration-builder
+name: Webhook Integration Builder
+description: >
+  Builds robust webhook producers and consumers. Covers signature verification, idempotency keys,
+  retry with exponential backoff, dead-letter handling, event ordering, and replay endpoints, and
+  generates handler code plus tests so integrations survive duplicates and outages.
+category: development
+tags:
+  - webhooks
+  - integration
+  - events
+  - idempotency
+  - api
+  - reliability
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-8
+  - gpt-5-6-sol
+  - deepseek-v4
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Implementing a secure webhook receiver with signature checks
+  - Making webhook processing idempotent and retry-safe
+  - Designing dead-letter and replay handling for failed events
+  - Testing webhook handlers against duplicate and out-of-order delivery
+example_prompt: |
+  Build a Stripe-style webhook receiver in Node.js: verify the HMAC signature, deduplicate events
+  by id for idempotency, process asynchronously with retry and a dead-letter queue, and expose a
+  replay endpoint. Include unit tests for duplicate and out-of-order delivery.
+related_skills:
+  - api-design
+  - api-error-handler
+  - api-mock-server
+compatible_tools:
+  - claude-code
+  - cursor
+  - github-copilot
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

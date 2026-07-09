@@ -1,0 +1,57 @@
+id: observability-instrumentation
+name: Observability Instrumentation
+description: >
+  Adds production-grade observability to a codebase by instrumenting it with structured logs,
+  metrics, and distributed traces. Recommends span boundaries, cardinality-safe labels, and
+  OpenTelemetry conventions, then generates the wiring code and dashboards needed to make a
+  service debuggable in production.
+category: ops
+tags:
+  - observability
+  - opentelemetry
+  - tracing
+  - metrics
+  - logging
+  - monitoring
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-8
+  - gpt-5-6-sol
+  - gemini-3-5-pro
+  - deepseek-v4
+min_context_window: 32000
+modalities:
+  input:
+    - code
+    - text
+  output:
+    - code
+    - text
+complexity: intermediate
+use_cases:
+  - Adding OpenTelemetry tracing to an existing service
+  - Defining metrics and SLIs for a new API
+  - Reducing metric cardinality that is blowing up costs
+  - Standardizing structured logging across microservices
+example_prompt: |
+  Instrument this Express.js service with OpenTelemetry. Add distributed tracing around the
+  route handlers and database calls, emit request-rate/error-rate/latency metrics, and switch
+  console logs to structured JSON logs with a trace_id field. Explain span boundaries and any
+  cardinality risks in the labels you choose.
+
+  ```
+  [paste service code here]
+  ```
+related_skills:
+  - log-analysis
+  - incident-response
+  - performance-optimization
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

@@ -1,0 +1,49 @@
+id: product-requirements-writer
+name: Product Requirements Writer
+description: >
+  Drafts clear product requirements documents from rough ideas or stakeholder notes. Structures
+  the problem statement, goals and non-goals, user stories, acceptance criteria, success metrics,
+  and open questions, and surfaces ambiguities and edge cases that need decisions before
+  engineering starts.
+category: productivity
+tags:
+  - product
+  - requirements
+  - prd
+  - planning
+  - documentation
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-8
+  - gpt-5-6-sol
+  - gemini-3-5-pro
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Turning a feature idea into a structured PRD
+  - Defining goals, non-goals, and success metrics
+  - Writing acceptance criteria for user stories
+  - Surfacing open questions and edge cases before build
+example_prompt: |
+  We want to add saved search alerts to our marketplace app. From these notes, write a PRD with
+  problem statement, goals and non-goals, target users, user stories with acceptance criteria,
+  success metrics, and a list of open questions and edge cases that need product decisions.
+
+  Notes: [paste rough notes here]
+related_skills:
+  - user-story-writer
+  - brainstorm-facilitator
+  - market-research-analyst
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

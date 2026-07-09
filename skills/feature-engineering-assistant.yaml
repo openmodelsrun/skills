@@ -1,0 +1,50 @@
+id: feature-engineering-assistant
+name: Feature Engineering Assistant
+description: >
+  Helps design and implement features for machine learning models from raw tabular, time-series,
+  or text data. Suggests transformations, encodings, aggregations, and leakage-safe splits,
+  explains the rationale, and generates reproducible feature pipeline code with validation.
+category: data
+tags:
+  - machine-learning
+  - feature-engineering
+  - data-science
+  - preprocessing
+  - modeling
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-8
+  - gpt-5-6-sol
+  - deepseek-v4
+  - gemini-3-5-pro
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Deriving features from raw tabular data for a classifier
+  - Building leakage-safe time-series features
+  - Choosing encodings for high-cardinality categoricals
+  - Generating a reproducible feature pipeline
+example_prompt: |
+  I'm predicting customer churn from this account-activity dataset. Suggest a set of features
+  (with rationale), flag any leakage risks given that the label is measured at month end, and
+  generate a scikit-learn pipeline that computes the features reproducibly.
+related_skills:
+  - data-analysis
+  - ml-experiment-tracker
+  - time-series-forecasting
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

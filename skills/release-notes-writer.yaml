@@ -1,0 +1,52 @@
+id: release-notes-writer
+name: Release Notes Writer
+description: >
+  Turns merged pull requests, commits, and issue references into clear, audience-appropriate
+  release notes. Groups changes into features, fixes, and breaking changes, translates technical
+  detail into user-facing value, and produces both a concise highlights section and a complete
+  changelog.
+category: writing
+tags:
+  - release-notes
+  - changelog
+  - documentation
+  - communication
+  - product
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-8
+  - gpt-5-6-sol
+  - gemini-3-5-flash
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Drafting release notes from a list of merged PRs
+  - Separating user-facing highlights from the full changelog
+  - Calling out breaking changes and required migration steps
+  - Adapting tone for developers versus end users
+example_prompt: |
+  Here are the merged PR titles and descriptions for version 2.4.0. Write release notes with a
+  short highlights section for end users and a complete changelog grouped into Features, Fixes,
+  and Breaking Changes. Flag any breaking change with an upgrade note.
+
+  ```
+  [paste PR titles / descriptions]
+  ```
+related_skills:
+  - changelog-generator
+  - technical-writing
+  - git-pr-description
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

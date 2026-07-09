@@ -1,0 +1,49 @@
+id: grant-proposal-writer
+name: Grant Proposal Writer
+description: >
+  Helps researchers and nonprofits draft compelling grant proposals. Structures the significance,
+  aims, methodology, timeline, and budget justification to match a funder's priorities and review
+  criteria, tightens the narrative, and flags gaps a reviewer would penalize before submission.
+category: research
+tags:
+  - grants
+  - research
+  - proposal
+  - academic-writing
+  - funding
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-8
+  - gpt-5-6-sol
+  - gemini-3-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: advanced
+use_cases:
+  - Drafting specific aims and significance sections
+  - Aligning a proposal with a funder's review criteria
+  - Writing a defensible budget justification
+  - Reviewing a draft for gaps a reviewer would flag
+example_prompt: |
+  I'm applying for a research grant on early wildfire detection using satellite imagery. Given
+  this abstract and the funder's priorities below, draft a significance section and specific
+  aims, outline the methodology and timeline, and note weaknesses a reviewer is likely to raise.
+
+  Abstract: [paste]
+  Funder priorities: [paste]
+related_skills:
+  - scientific-writing
+  - literature-review
+  - research-summarizer
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

@@ -1,0 +1,54 @@
+id: iam-policy-reviewer
+name: IAM Policy Reviewer
+description: >
+  Reviews cloud IAM policies for least-privilege violations, overly broad wildcards, privilege
+  escalation paths, and risky trust relationships across AWS, GCP, and Azure. Explains the risk
+  of each finding and rewrites policies to grant only the permissions actually needed.
+category: security
+tags:
+  - security
+  - iam
+  - cloud
+  - least-privilege
+  - access-control
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-8
+  - gpt-5-6-sol
+  - gemini-3-5-pro
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Auditing an AWS IAM policy for least-privilege violations
+  - Detecting privilege escalation paths in role trust policies
+  - Tightening wildcard actions and resources
+  - Rewriting a policy to grant only required permissions
+example_prompt: |
+  Review this AWS IAM policy. Identify least-privilege violations, dangerous wildcards, and any
+  privilege-escalation risks (for example iam:PassRole combined with broad service access).
+  Explain each risk and produce a tightened version scoped to the stated use case: read/write
+  to a single S3 bucket and publish to one SNS topic.
+
+  ```json
+  [paste IAM policy here]
+  ```
+related_skills:
+  - security-audit
+  - infrastructure-as-code
+  - threat-modeling
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

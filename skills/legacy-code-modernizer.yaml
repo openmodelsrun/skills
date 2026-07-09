@@ -1,0 +1,56 @@
+id: legacy-code-modernizer
+name: Legacy Code Modernizer
+description: >
+  Modernizes legacy codebases incrementally and safely. Establishes characterization tests to
+  lock in current behavior, then applies the strangler-fig pattern, dependency updates, and
+  idiomatic refactors in small verifiable steps, producing a migration plan that avoids big-bang
+  rewrites.
+category: development
+tags:
+  - legacy-code
+  - modernization
+  - refactoring
+  - migration
+  - technical-debt
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-8
+  - gpt-5-6-sol
+  - gemini-3-5-pro
+  - deepseek-v4
+min_context_window: 64000
+modalities:
+  input:
+    - code
+    - text
+  output:
+    - code
+    - text
+complexity: advanced
+use_cases:
+  - Planning an incremental migration off a legacy framework
+  - Adding characterization tests before refactoring
+  - Applying the strangler-fig pattern around a monolith
+  - Modernizing outdated language idioms and dependencies
+example_prompt: |
+  This module is legacy PHP with no tests and tight coupling to global state. Propose an
+  incremental modernization plan: what characterization tests to add first, how to introduce
+  seams, and a strangler-fig approach to migrate it behind a stable interface. Then show the
+  first refactoring step.
+
+  ```
+  [paste legacy code here]
+  ```
+related_skills:
+  - refactoring-assistant
+  - code-translation
+  - migration-planner
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

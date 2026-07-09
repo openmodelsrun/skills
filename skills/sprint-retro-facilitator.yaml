@@ -1,0 +1,49 @@
+id: sprint-retro-facilitator
+name: Sprint Retrospective Facilitator
+description: >
+  Facilitates agile retrospectives that produce action, not just venting. Suggests a format
+  suited to the team's mood, synthesizes raw notes into themes, distinguishes signal from
+  one-off complaints, and turns discussion into specific, owned, time-boxed action items with
+  follow-up on prior ones.
+category: productivity
+tags:
+  - agile
+  - retrospective
+  - team
+  - facilitation
+  - continuous-improvement
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-8
+  - gpt-5-6-sol
+  - gemini-3-5-flash
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Choosing a retro format for a given team situation
+  - Synthesizing retro notes into themes and priorities
+  - Converting discussion into owned, time-boxed action items
+  - Tracking follow-through on previous action items
+example_prompt: |
+  Here are the raw notes from our sprint retro (what went well, what didn't, ideas). Group them
+  into themes, highlight the top two issues worth acting on, and produce specific action items
+  with a suggested owner and a due date each. Also flag anything that looks like a recurring
+  problem from past sprints.
+
+  Notes: [paste retro notes]
+related_skills:
+  - meeting-notes-summarizer
+  - meeting-agenda-planner
+  - incident-postmortem-writer
+compatible_tools:
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

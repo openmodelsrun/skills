@@ -1,0 +1,54 @@
+id: contract-test-generator
+name: Contract Test Generator
+description: >
+  Generates consumer-driven contract tests between services so that API providers and consumers
+  stay compatible as they evolve independently. Produces Pact-style contracts, provider
+  verification stubs, and CI wiring, and flags breaking changes before they reach production.
+category: testing
+tags:
+  - testing
+  - contract-testing
+  - pact
+  - microservices
+  - api
+  - integration
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-8
+  - gpt-5-6-sol
+  - gemini-3-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - code
+    - text
+  output:
+    - code
+    - text
+complexity: advanced
+use_cases:
+  - Creating consumer-driven contracts between two services
+  - Generating provider verification tests from a contract
+  - Detecting breaking API changes in CI
+  - Migrating brittle end-to-end tests toward contract tests
+example_prompt: |
+  Here is a consumer that calls our /orders API and the provider's OpenAPI spec. Generate a
+  consumer-driven Pact contract, the matching provider verification test, and a CI step that fails
+  the build when the provider breaks the contract.
+
+  ```
+  [paste consumer client code + OpenAPI spec]
+  ```
+related_skills:
+  - contract-analysis
+  - api-design
+  - openapi-spec-generator
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"
