@@ -1,0 +1,56 @@
+id: security-headers-configurator
+name: Security Headers Configurator
+description: >
+  Configures HTTP security headers to harden web applications. Covers Content-Security-Policy
+  (including nonces and strict-dynamic), HSTS, X-Content-Type-Options, Referrer-Policy,
+  Permissions-Policy, COOP/COEP/CORP, and cookie flags. Produces server/CDN configuration,
+  explains tradeoffs, and provides a rollout plan using report-only mode to avoid breakage.
+category: security
+tags:
+  - security-headers
+  - csp
+  - hsts
+  - web-security
+  - hardening
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - deepseek-v4
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Writing a strict Content-Security-Policy with nonces
+  - Enabling HSTS and secure cookie flags
+  - Configuring COOP/COEP for cross-origin isolation
+  - Rolling out CSP safely with report-only mode
+  - Auditing existing headers for gaps
+example_prompt: |
+  Configure security headers for our web app served by [nginx/Cloudflare/Express].
+  Provide:
+  1. A strict CSP using nonces and strict-dynamic
+  2. HSTS, Referrer-Policy, Permissions-Policy, and X-Content-Type-Options
+  3. Secure cookie flags
+  4. A report-only rollout plan to catch breakage
+  5. The exact config snippet for our server/CDN
+related_skills:
+  - security-audit
+  - threat-modeling
+  - oauth-flow-implementer
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

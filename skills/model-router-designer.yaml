@@ -1,0 +1,57 @@
+id: model-router-designer
+name: Model Router Designer
+description: >
+  Designs routing layers that dispatch requests across multiple LLMs based on task type, difficulty,
+  latency, cost, and reliability. Covers classifier-based and heuristic routing, fallbacks and
+  retries across providers, quality scoring, and A/B evaluation of routing policies. Helps teams
+  get frontier quality where it matters and cheap models everywhere else.
+category: development
+tags:
+  - llm
+  - routing
+  - orchestration
+  - fallback
+  - cost
+  - reliability
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-7
+  - gpt-5-5-pro
+  - gemini-3-1-pro
+  - deepseek-v4
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Routing between a frontier model and a cheaper open model
+  - Adding cross-provider fallback for reliability
+  - Classifying request difficulty to pick a model
+  - Evaluating routing policies with offline metrics
+  - Building a router with cost and latency budgets
+example_prompt: |
+  Design a model router for a coding assistant that must balance cost and quality.
+  Provide:
+  1. A routing strategy (classifier vs heuristics) with rationale
+  2. Tiers mapping task types to models
+  3. Fallback and retry logic across providers
+  4. Quality and cost metrics to monitor
+  5. An offline evaluation plan for the routing policy
+related_skills:
+  - llm-cost-optimizer
+  - ai-agent-builder
+  - llm-eval-harness-builder
+compatible_tools:
+  - claude-code
+  - kiro
+  - cursor
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

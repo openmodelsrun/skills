@@ -1,0 +1,55 @@
+id: sbom-generator
+name: SBOM Generator
+description: >
+  Generates and validates Software Bills of Materials in CycloneDX or SPDX formats. Covers
+  dependency inventory, transitive resolution, license and vulnerability annotation, VEX
+  statements, container image SBOMs, and CI integration for supply-chain compliance. Helps teams
+  meet regulatory requirements and track what is actually shipped.
+category: security
+tags:
+  - sbom
+  - supply-chain
+  - cyclonedx
+  - spdx
+  - compliance
+  - security
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - deepseek-v4
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Generating a CycloneDX or SPDX SBOM for a project
+  - Producing SBOMs for container images
+  - Annotating components with licenses and CVEs
+  - Adding VEX statements for known vulnerabilities
+  - Integrating SBOM generation into CI
+example_prompt: |
+  Set up SBOM generation for our application and CI pipeline. Provide:
+  1. A recommended tool and format (CycloneDX/SPDX) for [stack]
+  2. Commands to generate SBOMs for source and container image
+  3. License and vulnerability annotation approach
+  4. A VEX workflow for triaging findings
+  5. A CI step that publishes the SBOM as an artifact
+related_skills:
+  - dependency-auditor
+  - secrets-scanner
+  - security-audit
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

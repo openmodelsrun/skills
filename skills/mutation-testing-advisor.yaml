@@ -1,0 +1,55 @@
+id: mutation-testing-advisor
+name: Mutation Testing Advisor
+description: >
+  Sets up and interprets mutation testing to measure real test-suite effectiveness beyond line
+  coverage. Configures tools like Stryker, PIT, or mutmut, explains surviving mutants, recommends
+  targeted tests to kill them, and tunes performance for CI. Helps teams find tests that assert
+  nothing and coverage that lies.
+category: testing
+tags:
+  - mutation-testing
+  - stryker
+  - test-quality
+  - coverage
+  - qa
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - deepseek-v4
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Configuring mutation testing for a project
+  - Interpreting surviving mutants and mutation score
+  - Writing tests to kill specific mutants
+  - Tuning mutation runs for CI performance
+  - Explaining why high line coverage can still be weak
+example_prompt: |
+  Set up mutation testing for this module and interpret the results. Provide:
+  1. A recommended tool and configuration for [language/framework]
+  2. An explanation of surviving mutants in this code: [paste code/report]
+  3. Targeted tests to kill the strongest surviving mutants
+  4. CI performance tuning (incremental, thresholds)
+  5. Guidance on a reasonable mutation-score target
+related_skills:
+  - unit-test-generation
+  - property-based-test-generator
+  - code-review
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

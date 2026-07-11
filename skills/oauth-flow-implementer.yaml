@@ -1,0 +1,59 @@
+id: oauth-flow-implementer
+name: OAuth Flow Implementer
+description: >
+  Implements secure OAuth 2.0 and OpenID Connect flows including authorization code with PKCE,
+  client credentials, and device code grants. Generates token exchange logic, refresh handling,
+  state/nonce validation, and secure token storage. Flags common pitfalls like implicit flow
+  usage, missing PKCE, and insecure redirect URI handling.
+category: development
+tags:
+  - oauth
+  - oidc
+  - authentication
+  - pkce
+  - security
+  - authorization
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-7
+  - gpt-5-5-pro
+  - gemini-3-1-pro
+  - deepseek-v4
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Adding "Sign in with Google/GitHub" to a web app
+  - Implementing authorization code flow with PKCE for a SPA
+  - Building server-to-server auth with client credentials
+  - Handling refresh token rotation and revocation
+  - Auditing an existing OAuth integration for security gaps
+example_prompt: |
+  Implement an OAuth 2.0 authorization code flow with PKCE for a React SPA
+  authenticating against an OpenID Connect provider. Include:
+  1. PKCE code verifier/challenge generation
+  2. Authorization request with state and nonce
+  3. Token exchange and ID token validation
+  4. Secure refresh token handling
+  5. Logout and token revocation
+
+  Stack: [describe your frontend and backend]
+related_skills:
+  - api-error-handler
+  - security-audit
+  - threat-modeling
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

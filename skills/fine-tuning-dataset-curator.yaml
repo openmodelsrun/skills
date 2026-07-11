@@ -1,0 +1,56 @@
+id: fine-tuning-dataset-curator
+name: Fine-Tuning Dataset Curator
+description: >
+  Curates high-quality datasets for supervised fine-tuning (SFT) and preference optimization
+  (DPO/RLHF). Covers deduplication, quality filtering, formatting into chat/instruction templates,
+  train/validation splits, label balancing, contamination checks against eval sets, and PII
+  scrubbing. Produces clean, well-documented datasets ready for training.
+category: data
+tags:
+  - fine-tuning
+  - dataset
+  - sft
+  - dpo
+  - data-quality
+  - llm
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-7
+  - gpt-5-5-pro
+  - gemini-3-1-pro
+  - deepseek-v4
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - file
+  output:
+    - text
+    - file
+complexity: advanced
+use_cases:
+  - Building an SFT dataset from support transcripts
+  - Constructing preference pairs for DPO
+  - Deduplicating and quality-filtering training data
+  - Checking for eval-set contamination
+  - Formatting data into instruction/chat templates
+example_prompt: |
+  I have raw examples for fine-tuning a support assistant: [describe data].
+  Produce a curation plan and scripts that:
+  1. Deduplicate and filter low-quality examples
+  2. Scrub PII and unsafe content
+  3. Format into an instruction/chat template
+  4. Create balanced train/validation splits
+  5. Check for contamination against my eval set
+related_skills:
+  - synthetic-data-generator
+  - data-quality-validator
+  - llm-eval-harness-builder
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

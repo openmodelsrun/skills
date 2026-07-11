@@ -5,6 +5,36 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2026-07-09
+
+### Added
+
+- 20 new skills across 7 categories:
+  - `oauth-flow-implementer` — secure OAuth 2.0/OIDC flows with PKCE and token handling (development)
+  - `websocket-service-builder` — real-time WebSocket/SSE services with scaling and reconnection (development)
+  - `cli-tool-builder` — ergonomic command-line tools with subcommands and completions (development)
+  - `state-machine-designer` — statecharts/XState workflows that prevent impossible states (development)
+  - `browser-extension-builder` — cross-browser Manifest V3 extensions (development)
+  - `llm-cost-optimizer` — reduce LLM inference cost via caching, routing, and prompt trimming (development)
+  - `model-router-designer` — route requests across LLMs by cost, latency, and difficulty (development)
+  - `fine-tuning-dataset-curator` — curate SFT/DPO datasets with dedup, filtering, and contamination checks (data)
+  - `recommendation-system-designer` — candidate generation, ranking, and cold-start strategy (data)
+  - `data-contract-designer` — producer/consumer data contracts with compatibility and SLAs (data)
+  - `terraform-module-writer` — reusable, validated Terraform modules with examples (ops)
+  - `cloud-cost-optimizer` — FinOps plan for rightsizing, commitments, and cleanup (ops)
+  - `chaos-experiment-designer` — safe chaos experiments with blast-radius limits (ops)
+  - `e2e-test-scenario-writer` — resilient Playwright/Cypress end-to-end tests (testing)
+  - `property-based-test-generator` — invariant/property tests with generators and shrinking (testing)
+  - `mutation-testing-advisor` — measure and improve real test-suite effectiveness (testing)
+  - `sbom-generator` — CycloneDX/SPDX software bills of materials with VEX (security)
+  - `security-headers-configurator` — CSP, HSTS, and hardening headers with safe rollout (security)
+  - `brand-voice-designer` — distinctive, consistent brand voice and tone guides (creative)
+  - `okr-planner` — outcome-based Objectives and Key Results with cadence (productivity)
+
+### Changed
+
+- Total skills: 140 (from 120)
+
 ## [0.3.0] - 2026-07-09
 
 ### Added

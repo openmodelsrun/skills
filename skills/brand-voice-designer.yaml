@@ -1,0 +1,53 @@
+id: brand-voice-designer
+name: Brand Voice Designer
+description: >
+  Develops a distinctive, consistent brand voice and tone system. Defines voice attributes,
+  do/don't guidance, vocabulary and grammar rules, tone shifts by context (marketing, support,
+  errors), and worked before/after examples. Produces a practical style guide teams and AI
+  assistants can apply across every touchpoint.
+category: creative
+tags:
+  - brand-voice
+  - tone
+  - style-guide
+  - copywriting
+  - content
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-7
+  - gpt-5-5-pro
+  - gemini-3-1-pro
+  - deepseek-v4
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Creating a brand voice guide from scratch
+  - Defining tone shifts for support vs marketing
+  - Building do/don't examples for writers
+  - Aligning AI assistant output with brand voice
+  - Refreshing an inconsistent brand voice
+example_prompt: |
+  Create a brand voice guide for our product. Here is context about the company
+  and audience: [describe]. Include:
+  1. Three to five voice attributes with definitions
+  2. Tone shifts for marketing, support, and error messages
+  3. Vocabulary and grammar do's and don'ts
+  4. Before/after rewrite examples
+  5. A short prompt snippet to make an AI assistant match this voice
+related_skills:
+  - technical-writing
+  - email-writer
+  - landing-page-generator
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

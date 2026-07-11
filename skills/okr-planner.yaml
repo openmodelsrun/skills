@@ -1,0 +1,53 @@
+id: okr-planner
+name: OKR Planner
+description: >
+  Turns strategy into well-formed Objectives and Key Results. Coaches on ambitious yet measurable
+  objectives, outcome-based (not output-based) key results, leading vs lagging indicators,
+  alignment across teams, and quarterly cadence with check-ins and scoring. Flags common
+  anti-patterns like task lists disguised as OKRs.
+category: productivity
+tags:
+  - okr
+  - goal-setting
+  - planning
+  - strategy
+  - management
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - deepseek-v4
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Drafting quarterly OKRs from a strategy
+  - Converting output-based KRs into outcome-based ones
+  - Aligning team OKRs to company objectives
+  - Designing a check-in and scoring cadence
+  - Reviewing OKRs for common anti-patterns
+example_prompt: |
+  Help me write OKRs for next quarter. Our strategic priority is: [describe].
+  Provide:
+  1. Two or three ambitious, measurable objectives
+  2. Three outcome-based key results each, with metrics
+  3. Leading vs lagging indicator notes
+  4. Alignment suggestions across teams
+  5. A check-in cadence and scoring rubric
+related_skills:
+  - product-requirements-writer
+  - meeting-agenda-planner
+  - sprint-retro-facilitator
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

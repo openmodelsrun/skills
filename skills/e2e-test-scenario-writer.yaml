@@ -1,0 +1,57 @@
+id: e2e-test-scenario-writer
+name: E2E Test Scenario Writer
+description: >
+  Writes end-to-end UI tests with Playwright or Cypress that mirror real user journeys. Covers
+  resilient selectors (roles/test-ids), network stubbing, auth setup, fixtures, waiting strategies
+  that avoid flakiness, visual and accessibility assertions, and CI integration. Produces
+  maintainable specs and a page-object structure.
+category: testing
+tags:
+  - e2e
+  - playwright
+  - cypress
+  - ui-testing
+  - automation
+  - qa
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - deepseek-v4
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Writing a Playwright test for a signup-to-checkout journey
+  - Replacing flaky waits with resilient strategies
+  - Structuring tests with page objects and fixtures
+  - Stubbing network calls for deterministic runs
+  - Adding accessibility assertions to E2E tests
+example_prompt: |
+  Write Playwright end-to-end tests for this user journey: sign up, verify email,
+  add an item to cart, and check out. Include:
+  1. Resilient selectors and page objects
+  2. Auth and data fixtures
+  3. Network stubbing for the payment step
+  4. Flake-resistant waiting strategies
+  5. A CI configuration snippet
+related_skills:
+  - unit-test-generation
+  - flaky-test-detector
+  - accessibility-review
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

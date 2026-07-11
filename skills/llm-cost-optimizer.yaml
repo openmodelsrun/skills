@@ -1,0 +1,56 @@
+id: llm-cost-optimizer
+name: LLM Cost Optimizer
+description: >
+  Analyzes LLM usage and reduces inference cost without sacrificing quality. Covers prompt
+  compression, context trimming, caching (prompt and semantic), model routing by task difficulty,
+  batching, structured output to cut retries, and token accounting. Produces a concrete plan with
+  estimated savings and quality guardrails.
+category: development
+tags:
+  - llm
+  - cost-optimization
+  - prompt
+  - caching
+  - routing
+  - tokens
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-7
+  - gpt-5-5-pro
+  - gemini-3-1-pro
+  - deepseek-v4
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+complexity: advanced
+use_cases:
+  - Cutting token spend on a high-volume LLM feature
+  - Introducing prompt and semantic caching
+  - Routing easy requests to cheaper models
+  - Reducing retries with structured outputs
+  - Building a token cost dashboard and budget alerts
+example_prompt: |
+  Here is our current LLM pipeline and monthly token usage: [paste details].
+  Produce a cost-optimization plan that:
+  1. Identifies the biggest cost drivers
+  2. Recommends prompt/context reductions with examples
+  3. Proposes a caching strategy (prompt + semantic)
+  4. Designs a model-routing policy by task difficulty
+  5. Estimates savings and defines quality guardrails
+related_skills:
+  - prompt-engineering
+  - model-router-designer
+  - rag-pipeline-builder
+compatible_tools:
+  - claude-code
+  - kiro
+  - cursor
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

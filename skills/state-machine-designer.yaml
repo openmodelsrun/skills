@@ -1,0 +1,57 @@
+id: state-machine-designer
+name: State Machine Designer
+description: >
+  Models complex application logic as explicit finite state machines and statecharts. Identifies
+  states, events, guards, and side effects; prevents impossible states; and generates
+  implementations (e.g., XState-style) with diagrams. Ideal for wizards, checkout flows,
+  connection lifecycles, and any feature where implicit boolean flags cause bugs.
+category: development
+tags:
+  - state-machine
+  - statechart
+  - xstate
+  - modeling
+  - frontend
+  - workflow
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-7
+  - gpt-5
+  - gemini-3-1-pro
+  - deepseek-v4
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Converting flag-based logic into an explicit state machine
+  - Designing a multi-step checkout or onboarding flow
+  - Modeling a WebSocket connection lifecycle
+  - Preventing impossible UI states
+  - Generating a statechart diagram and implementation
+example_prompt: |
+  Model a file upload feature as a statechart. Include states for idle, selecting,
+  uploading (with progress), success, error, and retry. Define:
+  1. Events and transitions
+  2. Guards and context (retry count, progress)
+  3. Side effects (start upload, cancel, cleanup)
+  4. A diagram and an XState-style implementation
+  5. Notes on impossible states this design prevents
+related_skills:
+  - system-design
+  - react-component-generator
+  - refactoring-assistant
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

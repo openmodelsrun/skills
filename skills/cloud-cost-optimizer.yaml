@@ -1,0 +1,54 @@
+id: cloud-cost-optimizer
+name: Cloud Cost Optimizer
+description: >
+  Analyzes cloud spend and produces a FinOps optimization plan. Covers rightsizing, autoscaling,
+  spot/reserved/savings plans, storage tiering, idle resource cleanup, data transfer reduction,
+  and tagging for cost allocation. Prioritizes actions by savings and risk, and defines guardrails
+  and budgets to prevent regressions.
+category: ops
+tags:
+  - finops
+  - cost-optimization
+  - cloud
+  - aws
+  - devops
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - deepseek-v4
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - file
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Reviewing a cloud bill for savings opportunities
+  - Rightsizing compute and databases
+  - Choosing reserved vs spot vs savings plans
+  - Setting up cost allocation tags and budgets
+  - Reducing data transfer and storage costs
+example_prompt: |
+  Here is a summary of our monthly cloud spend by service: [paste details].
+  Produce a cost-optimization plan that:
+  1. Ranks the biggest savings opportunities by impact and risk
+  2. Recommends rightsizing and autoscaling changes
+  3. Suggests commitment-based discounts where appropriate
+  4. Proposes storage tiering and idle cleanup
+  5. Defines budgets, alerts, and tagging guardrails
+related_skills:
+  - infrastructure-as-code
+  - llm-cost-optimizer
+  - observability-instrumentation
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

@@ -1,0 +1,53 @@
+id: chaos-experiment-designer
+name: Chaos Experiment Designer
+description: >
+  Designs chaos engineering experiments to validate system resilience. Defines steady-state
+  hypotheses, blast-radius limits, fault injections (latency, errors, instance/zone loss,
+  resource exhaustion), abort conditions, and observability checks. Produces a safe, incremental
+  experiment plan and success criteria for game days and automated chaos.
+category: ops
+tags:
+  - chaos-engineering
+  - resilience
+  - reliability
+  - sre
+  - testing
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-7
+  - gpt-5
+  - gemini-2-5-pro
+  - deepseek-v4
+min_context_window: 32000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: advanced
+use_cases:
+  - Planning a game day for a critical service
+  - Testing failover when a dependency degrades
+  - Validating retries, timeouts, and circuit breakers
+  - Defining safe blast radius and abort conditions
+  - Building a progressive chaos experiment backlog
+example_prompt: |
+  Design a chaos experiment to validate resilience of our checkout service against
+  a slow payment provider. Include:
+  1. Steady-state hypothesis and metrics
+  2. Fault injection (added latency, error rate)
+  3. Blast radius limits and abort conditions
+  4. Observability checks during the experiment
+  5. Success criteria and follow-up actions
+related_skills:
+  - incident-response
+  - slo-error-budget-planner
+  - observability-instrumentation
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"

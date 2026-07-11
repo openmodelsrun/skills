@@ -1,0 +1,55 @@
+id: data-contract-designer
+name: Data Contract Designer
+description: >
+  Defines data contracts between producers and consumers to prevent breaking changes in pipelines.
+  Covers schema definitions, semantic types, freshness and quality SLAs, ownership, versioning,
+  and backward/forward compatibility rules. Generates contract specs (e.g., ODCS-style) and CI
+  checks that fail builds when a producer violates the contract.
+category: data
+tags:
+  - data-contract
+  - schema
+  - data-quality
+  - governance
+  - pipelines
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - deepseek-v4
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Defining a contract for an event or table
+  - Adding compatibility rules to prevent breaking changes
+  - Specifying freshness and quality SLAs
+  - Generating CI checks that enforce contracts
+  - Documenting ownership and versioning policy
+example_prompt: |
+  Create a data contract for a "user_signup" event produced by our app and consumed
+  by analytics. Include:
+  1. Schema with semantic types and required fields
+  2. Compatibility rules (backward/forward)
+  3. Freshness and quality SLAs
+  4. Ownership and versioning policy
+  5. A CI check that fails on contract violations
+related_skills:
+  - schema-design
+  - data-quality-validator
+  - api-versioning-strategist
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-07-09T00:00:00.000Z"
