@@ -1,0 +1,59 @@
+id: privacy-compliance-auditor
+name: Privacy Compliance Auditor
+description: >
+  Reviews applications and data flows for common privacy-regulation obligations (GDPR,
+  CCPA/CPRA). Maps what personal data is collected, where it flows, and how long it is
+  retained; checks for lawful basis, consent handling, data-subject rights, and third-party
+  sharing; and produces a prioritized remediation list. Provides engineering guidance, not
+  legal advice.
+category: security
+tags:
+  - privacy
+  - gdpr
+  - ccpa
+  - compliance
+  - data-protection
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - claude-sonnet-4-5
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+complexity: advanced
+use_cases:
+  - Mapping personal data collection and flows in an app
+  - Checking consent, retention, and data-subject-rights handling
+  - Reviewing third-party data sharing and processor agreements
+  - Producing a prioritized privacy remediation backlog
+example_prompt: |
+  Audit this feature for GDPR and CCPA obligations.
+
+  Feature: a signup flow that stores name, email, IP, and device fingerprint, sends data to
+  an analytics vendor and an email provider, and keeps records indefinitely.
+
+  Produce:
+  1. A data inventory (what, why, where it flows, retention)
+  2. Gaps against key obligations (lawful basis, consent, deletion/access rights, sharing)
+  3. A prioritized remediation list (high/medium/low) with concrete engineering changes
+
+  Be explicit that this is engineering guidance, not legal advice, and note where counsel
+  should be consulted.
+related_skills:
+  - data-anonymizer
+  - security-audit
+  - threat-modeling
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"

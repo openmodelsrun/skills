@@ -1,0 +1,59 @@
+id: bdd-scenario-writer
+name: BDD Scenario Writer
+description: >
+  Translates requirements and user stories into behavior-driven development scenarios in
+  Gherkin. Writes clear Given/When/Then steps, covers happy paths, edge cases, and negative
+  cases, uses scenario outlines with examples for data-driven tests, and keeps steps
+  declarative and reusable. Optionally scaffolds step definitions for Cucumber or Behave.
+category: testing
+tags:
+  - bdd
+  - gherkin
+  - cucumber
+  - acceptance-testing
+  - test-automation
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - deepseek-v4
+  - qwen3-coder
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Converting a user story into Gherkin acceptance scenarios
+  - Covering edge and negative cases for a feature
+  - Writing scenario outlines for data-driven tests
+  - Scaffolding Cucumber or Behave step definitions
+example_prompt: |
+  Write BDD scenarios in Gherkin for this story.
+
+  Story: As a user, I can reset my password via an emailed link that expires after 30 minutes.
+
+  Include:
+  - Happy path
+  - Expired link
+  - Already-used link
+  - Invalid email / unknown account
+  - A scenario outline for lockout after N failed attempts (use an Examples table)
+
+  Keep steps declarative and reusable. Then scaffold matching step definitions for Behave (Python).
+related_skills:
+  - e2e-test-scenario-writer
+  - unit-test-generation
+  - user-story-writer
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"

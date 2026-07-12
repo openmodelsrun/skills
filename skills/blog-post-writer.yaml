@@ -1,0 +1,55 @@
+id: blog-post-writer
+name: Blog Post Writer
+description: >
+  Drafts long-form blog posts from a topic, outline, or set of notes. Handles title and
+  hook generation, logical section structure, SEO-aware headings, tone matching, internal
+  linking suggestions, and a clear call to action. Produces publish-ready Markdown with
+  meta description and suggested tags.
+category: writing
+tags:
+  - blogging
+  - content-marketing
+  - copywriting
+  - seo
+  - long-form
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - mistral-large-3
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Turning a rough outline into a polished blog post
+  - Writing SEO-optimized articles for a target keyword
+  - Repurposing internal docs into public-facing content
+  - Drafting a series of posts with consistent tone and structure
+example_prompt: |
+  Write a 1,200-word blog post for a developer audience.
+
+  Topic: "Why idempotency keys matter for payment APIs"
+  Tone: practical, friendly, no hype
+  Primary keyword: idempotency key
+  Include: an opening hook, 3-4 H2 sections, a short code example, and a closing CTA to
+  read our API docs.
+
+  Output publish-ready Markdown plus a 155-character meta description and 5 tags.
+related_skills:
+  - seo-content-optimizer
+  - technical-writing
+  - brand-voice-designer
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"

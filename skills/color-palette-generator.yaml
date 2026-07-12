@@ -1,0 +1,58 @@
+id: color-palette-generator
+name: Color Palette Generator
+description: >
+  Creates accessible color palettes for brands and UIs from a brief or a seed color.
+  Produces primary, secondary, and neutral scales with hex values, suggests semantic tokens
+  (success, warning, error, info), and checks foreground/background pairings against WCAG
+  contrast ratios. Outputs ready-to-use CSS variables or design tokens.
+category: creative
+tags:
+  - color
+  - design
+  - ui
+  - accessibility
+  - branding
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - claude-sonnet-4-5
+min_context_window: 8000
+modalities:
+  input:
+    - text
+  output:
+    - text
+    - code
+complexity: beginner
+use_cases:
+  - Generating a brand palette from a mood or seed color
+  - Building accessible semantic color tokens for a UI
+  - Checking text/background pairs against WCAG contrast ratios
+  - Exporting palettes as CSS variables or design tokens
+example_prompt: |
+  Create a color palette for a fintech dashboard.
+
+  Brief: trustworthy, calm, modern; seed color #2F6FED
+
+  Produce:
+  1. Primary, secondary, and neutral scales (hex, 5 steps each)
+  2. Semantic tokens: success, warning, error, info
+  3. A WCAG contrast check for key text-on-background pairs (AA target)
+  4. CSS custom properties ready to paste into a stylesheet
+
+  Note any pairing that fails AA and suggest an accessible alternative.
+related_skills:
+  - design-system-generator
+  - frontend-design
+  - accessibility-review
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"

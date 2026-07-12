@@ -1,0 +1,58 @@
+id: resume-optimizer
+name: Resume Optimizer
+description: >
+  Reviews and rewrites resumes and CVs to be clear, achievement-focused, and ATS-friendly.
+  Rewrites bullet points using strong action verbs and quantified impact, aligns wording to
+  a target job description, flags gaps and red flags, and checks formatting for applicant
+  tracking system compatibility.
+category: writing
+tags:
+  - resume
+  - cv
+  - career
+  - ats
+  - job-search
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - claude-sonnet-4-5
+  - gemini-2-5-pro
+min_context_window: 8000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Rewriting weak bullet points into quantified achievements
+  - Tailoring a resume to a specific job description
+  - Making a resume pass ATS keyword screening
+  - Condensing a multi-page CV into a focused one-pager
+example_prompt: |
+  Optimize the resume below for this role.
+
+  Target role: Senior Backend Engineer (Go, distributed systems)
+  Job description keywords: Kubernetes, gRPC, observability, on-call, mentoring
+
+  For each experience bullet:
+  - Rewrite with an action verb + measurable impact
+  - Weave in relevant keywords naturally (no stuffing)
+
+  Then list: missing keywords, any red flags, and an ATS-compatibility check.
+
+  Resume:
+  [paste resume here]
+related_skills:
+  - email-writer
+  - technical-writing
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"

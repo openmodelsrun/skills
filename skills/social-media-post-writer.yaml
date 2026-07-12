@@ -1,0 +1,53 @@
+id: social-media-post-writer
+name: Social Media Post Writer
+description: >
+  Generates platform-tailored social media posts from a single idea or announcement. Adapts
+  length, tone, hashtags, and formatting for X, LinkedIn, Instagram, and threads. Produces
+  hook-first copy, variant options for A/B testing, and a suggested posting cadence while
+  respecting each platform's conventions and character limits.
+category: writing
+tags:
+  - social-media
+  - marketing
+  - copywriting
+  - engagement
+  - content
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - mistral-large-3
+min_context_window: 8000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Turning a product launch into a multi-platform post set
+  - Writing a LinkedIn post and an X thread from one announcement
+  - Generating hook variants for A/B testing
+  - Creating a week of scheduled posts from a content theme
+example_prompt: |
+  We just shipped a feature: real-time collaboration in our editor.
+
+  Create:
+  1. One LinkedIn post (professional, ~150 words, 3 hashtags)
+  2. One X thread (5 posts, hook-first, punchy)
+  3. One Instagram caption (casual, emoji-friendly, 8 hashtags)
+
+  Give 2 hook variants for the X thread and note the best time to post each.
+related_skills:
+  - brand-voice-designer
+  - seo-content-optimizer
+  - blog-post-writer
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"

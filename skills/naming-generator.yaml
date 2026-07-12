@@ -1,0 +1,55 @@
+id: naming-generator
+name: Naming Generator
+description: >
+  Generates candidate names for products, features, projects, or companies against a clear
+  brief. Explores naming styles (descriptive, evocative, coined, compound), checks each for
+  pronounceability and unwanted meanings, and suggests domain and handle patterns to verify.
+  Returns a shortlist with rationale rather than an undifferentiated list.
+category: creative
+tags:
+  - naming
+  - branding
+  - product
+  - ideation
+  - creative
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - mistral-large-3
+min_context_window: 8000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Brainstorming product or feature names against a brief
+  - Exploring different naming styles for a new company
+  - Screening names for pronounceability and bad connotations
+  - Suggesting domain and social handle patterns to check
+example_prompt: |
+  Generate name candidates for a new open-source tool.
+
+  Brief:
+  - What it does: turns API logs into replayable test cases
+  - Audience: backend engineers
+  - Vibe: precise, developer-first, a little playful
+  - Constraints: one or two syllables preferred, easy to type
+
+  Give 12 candidates grouped by style (descriptive, evocative, coined). For each, add a
+  one-line rationale, a pronounceability note, and a suggested domain/handle to verify.
+  Flag any that may have unintended meanings.
+related_skills:
+  - brand-voice-designer
+  - brainstorm-facilitator
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"

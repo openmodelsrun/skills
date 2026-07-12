@@ -1,0 +1,56 @@
+id: nginx-config-generator
+name: Nginx Config Generator
+description: >
+  Produces production-ready nginx configuration for common scenarios: reverse proxy, load
+  balancing, TLS termination, static file serving, HTTP/2, gzip/brotli, caching, rate
+  limiting, and security headers. Explains each directive, warns about risky defaults, and
+  includes a validation step so the config can be tested before reload.
+category: ops
+tags:
+  - nginx
+  - reverse-proxy
+  - web-server
+  - tls
+  - load-balancing
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - deepseek-v4
+  - qwen3-coder
+min_context_window: 8000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Generating a reverse-proxy config with TLS and HTTP/2
+  - Setting up load balancing across multiple upstreams
+  - Adding rate limiting and security headers to an existing config
+  - Configuring caching and gzip/brotli for a static site
+example_prompt: |
+  Generate an nginx config for these requirements:
+  - Reverse proxy to an app on 127.0.0.1:3000
+  - TLS termination (certs at /etc/letsencrypt/live/example.com/)
+  - Redirect HTTP to HTTPS, enable HTTP/2
+  - Gzip on, sane security headers, and a 10 req/s rate limit per IP with a small burst
+
+  Annotate each block with a short comment, flag any directive that could break under load,
+  and include the exact command to test the config before reloading.
+related_skills:
+  - security-headers-configurator
+  - infrastructure-as-code
+  - performance-optimization
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"

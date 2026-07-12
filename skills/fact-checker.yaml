@@ -1,0 +1,58 @@
+id: fact-checker
+name: Fact Checker
+description: >
+  Reviews claims in a document for accuracy and verifiability. Extracts discrete factual
+  statements, rates each as supported, unsupported, or needs-verification, flags logical
+  inconsistencies and unsourced numbers, and suggests what evidence would confirm or refute
+  each claim. Designed to reduce hallucinated or outdated facts before publishing.
+category: research
+tags:
+  - fact-checking
+  - verification
+  - accuracy
+  - editorial
+  - citations
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - grok-4
+min_context_window: 32000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Reviewing an article for unsupported or outdated claims
+  - Extracting and rating each factual statement in a report
+  - Flagging unsourced statistics before publication
+  - Listing the evidence needed to verify contested claims
+example_prompt: |
+  Fact-check the passage below.
+
+  For each discrete factual claim:
+  1. Restate the claim
+  2. Rate it: supported / unsupported / needs-verification
+  3. Explain your reasoning
+  4. Note what source or evidence would confirm or refute it
+
+  Flag any internal contradictions and any numbers presented without a source. Do not assert
+  a claim is true unless it is well-established; prefer "needs-verification" when uncertain.
+
+  Passage:
+  [paste text here]
+related_skills:
+  - research-summarizer
+  - literature-review
+  - web-summarizer
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"

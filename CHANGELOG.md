@@ -5,6 +5,34 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-07-12
+
+### Added
+
+- 18 new skills across 8 categories:
+  - `git-hooks-manager` — set up and maintain Git hooks (Husky/Lefthook/pre-commit) for linting, formatting, and secret scanning (development)
+  - `blog-post-writer` — draft SEO-aware long-form blog posts from an outline or notes (writing)
+  - `social-media-post-writer` — platform-tailored posts and threads for X, LinkedIn, and Instagram (writing)
+  - `resume-optimizer` — rewrite resumes into ATS-friendly, achievement-focused documents (writing)
+  - `csv-data-cleaner` — diagnose and fix messy tabular data with reproducible pandas/Polars code (data)
+  - `data-storytelling` — turn analysis results into an audience-ready narrative with chart guidance (data)
+  - `competitive-intelligence-analyst` — structured competitor matrices and SWOT from public info (research)
+  - `fact-checker` — extract and rate factual claims for accuracy and verifiability (research)
+  - `naming-generator` — product, feature, and company name candidates with rationale (creative)
+  - `color-palette-generator` — accessible brand/UI palettes with WCAG contrast checks and tokens (creative)
+  - `nginx-config-generator` — production-ready reverse proxy, TLS, and rate-limit configs (ops)
+  - `ansible-playbook-writer` — idempotent Ansible playbooks and roles from a target state (ops)
+  - `bdd-scenario-writer` — Gherkin acceptance scenarios and Cucumber/Behave step definitions (testing)
+  - `visual-regression-tester` — screenshot-based visual regression suites with CI baselines (testing)
+  - `jwt-analyzer` — decode and security-review JWTs and token validation flows (security)
+  - `privacy-compliance-auditor` — GDPR/CCPA data-flow review and remediation backlog (security)
+  - `task-prioritizer` — rank tasks with RICE, Eisenhower, or value/effort frameworks (productivity)
+  - `decision-matrix-builder` — weighted decision matrices with sensitivity analysis for ADRs (productivity)
+
+### Changed
+
+- Total skills: 158 (from 140)
+
 ## [0.4.0] - 2026-07-09
 
 ### Added

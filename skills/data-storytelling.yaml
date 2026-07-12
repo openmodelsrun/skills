@@ -1,0 +1,57 @@
+id: data-storytelling
+name: Data Storytelling
+description: >
+  Turns analysis results into a clear narrative for a specific audience. Selects the key
+  message, orders findings for impact, recommends the right chart for each point, writes
+  plain-language takeaways, and frames actionable recommendations. Helps analysts move from
+  raw numbers to a memo or slide narrative executives can act on.
+category: data
+tags:
+  - data-storytelling
+  - visualization
+  - analytics
+  - communication
+  - insights
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - claude-sonnet-4-5
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Turning a metrics dump into an executive-ready narrative
+  - Choosing the right chart type for each finding
+  - Writing plain-language takeaways and recommendations
+  - Structuring a data review deck around one core message
+example_prompt: |
+  I have these analysis results (below). The audience is our exec team; they have 5 minutes.
+
+  Produce:
+  1. The single most important message in one sentence
+  2. A 4-point narrative ordered for impact
+  3. A recommended chart type for each point and why
+  4. Two concrete recommendations with expected trade-offs
+
+  Results:
+  - Signups +18% MoM, activation flat at 34%
+  - Churn up from 4.1% to 5.3% among annual plans
+  - Support tickets about onboarding up 40%
+related_skills:
+  - data-analysis
+  - chart-generator
+  - cohort-analysis
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"
