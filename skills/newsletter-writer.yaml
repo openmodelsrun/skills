@@ -1,0 +1,59 @@
+id: newsletter-writer
+name: Newsletter Writer
+description: >
+  Drafts email newsletters that get opened and read. Writes subject lines and preview text,
+  structures the issue with a clear lead, scannable sections, and a single primary call to
+  action, and adapts tone to the audience. Can turn a list of updates or links into a
+  cohesive issue and suggest send-time and segmentation tips.
+category: writing
+tags:
+  - newsletter
+  - email-marketing
+  - copywriting
+  - content
+  - engagement
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - mistral-large-3
+min_context_window: 8000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Turning a week of updates into a cohesive newsletter issue
+  - Writing subject lines and preview text that lift open rates
+  - Structuring a product or community newsletter with one clear CTA
+  - Adapting an issue's tone for a specific subscriber segment
+example_prompt: |
+  Write a monthly product newsletter issue from these notes.
+
+  Audience: existing users of a developer tool
+  Notes:
+  - Shipped real-time collaboration
+  - New docs site
+  - Community call next Thursday
+  - Hiring two backend engineers
+
+  Deliver:
+  1. Three subject-line options + preview text for each
+  2. A structured issue (lead, sections, one primary CTA)
+  3. A short PS line
+  Keep it skimmable and friendly, no hype.
+related_skills:
+  - email-writer
+  - blog-post-writer
+  - brand-voice-designer
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"

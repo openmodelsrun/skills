@@ -1,0 +1,56 @@
+id: game-design-document-writer
+name: Game Design Document Writer
+description: >
+  Helps turn a game concept into a structured game design document. Captures the core loop,
+  mechanics, progression, economy, controls, level structure, art and audio direction, and
+  target platform and audience. Keeps scope realistic, flags dependencies and risks, and
+  produces a living GDD that a small team can build from.
+category: creative
+tags:
+  - game-design
+  - gdd
+  - game-development
+  - mechanics
+  - narrative
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - mistral-large-3
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Turning a game pitch into a structured design document
+  - Defining the core gameplay loop and progression
+  - Documenting mechanics, controls, and economy
+  - Scoping a prototype for a small team or game jam
+example_prompt: |
+  Help me write a GDD for a 2D roguelite about repairing a broken space station.
+
+  Deliver:
+  1. High concept and pillars (2-3 sentences each)
+  2. Core loop and moment-to-moment mechanics
+  3. Progression and meta-progression
+  4. Economy and resources
+  5. Controls and target platform
+  6. Art/audio direction in a few lines
+  7. A realistic MVP scope and top risks
+  Keep scope achievable for a two-person team over three months.
+related_skills:
+  - storyboard-generator
+  - naming-generator
+  - product-requirements-writer
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"

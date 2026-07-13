@@ -1,0 +1,58 @@
+id: runbook-generator
+name: Runbook Generator
+description: >
+  Produces operational runbooks for services and common incidents. Documents prerequisites,
+  step-by-step diagnosis and remediation, exact commands, verification checks, rollback
+  steps, and escalation paths. Structures each runbook so an on-call engineer can follow it
+  under pressure, and keeps destructive steps clearly flagged with safeguards.
+category: ops
+tags:
+  - runbook
+  - operations
+  - on-call
+  - incident-response
+  - sre
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - deepseek-v4
+  - claude-sonnet-4-5
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Writing an on-call runbook for a specific alert
+  - Documenting diagnosis and remediation steps with commands
+  - Adding rollback and escalation paths to a procedure
+  - Standardizing operational docs across services
+example_prompt: |
+  Write a runbook for the alert "API p99 latency > 2s for 5 minutes".
+
+  Service: Node API behind an ALB, Postgres backend, Redis cache.
+
+  Include:
+  1. Prerequisites (access, dashboards, tools)
+  2. Step-by-step diagnosis (what to check and in what order)
+  3. Likely causes and remediation with exact commands
+  4. Verification that the issue is resolved
+  5. Rollback steps and when to escalate (with who to page)
+  Clearly flag any destructive step and add a safeguard/confirmation before it.
+related_skills:
+  - incident-response
+  - incident-postmortem-writer
+  - observability-instrumentation
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"

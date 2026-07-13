@@ -1,0 +1,55 @@
+id: survey-designer
+name: Survey Designer
+description: >
+  Designs surveys that produce reliable, unbiased data. Turns research goals into clear
+  questions, chooses appropriate scales and response types, avoids leading and double-barreled
+  wording, orders questions to reduce bias, and plans screening and branching logic. Outputs a
+  ready-to-field questionnaire with an analysis plan for each question.
+category: research
+tags:
+  - survey
+  - user-research
+  - questionnaire
+  - ux-research
+  - data-collection
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - claude-sonnet-4-5
+min_context_window: 8000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Turning research goals into an unbiased questionnaire
+  - Choosing scales and response types for each question
+  - Adding screening and branching logic
+  - Planning how each question will be analyzed
+example_prompt: |
+  Design a survey to understand why trial users don't convert to paid.
+
+  Constraints: under 5 minutes, mobile-friendly, mix of quantitative and open-ended.
+
+  Deliver:
+  1. 8-12 questions with the right response type/scale for each
+  2. Screening questions and any branching logic
+  3. Notes on wording pitfalls you avoided (leading, double-barreled)
+  4. A short analysis plan: what each question will tell us
+  Flag any question that could bias responses.
+related_skills:
+  - market-research-analyst
+  - user-story-writer
+  - data-analysis
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"

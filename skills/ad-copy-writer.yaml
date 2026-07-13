@@ -1,0 +1,54 @@
+id: ad-copy-writer
+name: Ad Copy Writer
+description: >
+  Writes conversion-focused ad copy for search, social, and display. Crafts headlines and
+  descriptions within platform character limits, leads with a clear benefit and hook, matches
+  message to audience and funnel stage, and produces multiple variants for A/B testing. Keeps
+  claims honest and includes a strong, specific call to action.
+category: creative
+tags:
+  - advertising
+  - copywriting
+  - marketing
+  - conversion
+  - ppc
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - mistral-large-3
+min_context_window: 8000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Writing Google Search headlines and descriptions within limits
+  - Creating multiple ad variants for A/B testing
+  - Matching ad copy to audience and funnel stage
+  - Turning a value proposition into punchy hooks and CTAs
+example_prompt: |
+  Write ad copy for a project management tool aimed at small agencies.
+
+  Deliver:
+  1. 5 Google Search headlines (<=30 chars each) and 3 descriptions (<=90 chars)
+  2. 3 primary-text variants for a Meta ad (hook-first)
+  3. A/B testing note: which single variable each variant changes
+
+  Emphasize the benefit (fewer status meetings), keep claims honest, and end each with a
+  specific CTA.
+related_skills:
+  - landing-page-generator
+  - seo-content-optimizer
+  - social-media-post-writer
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"

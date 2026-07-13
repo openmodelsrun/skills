@@ -1,0 +1,57 @@
+id: penetration-test-planner
+name: Penetration Test Planner
+description: >
+  Plans authorized penetration tests for systems you own or are permitted to assess. Defines
+  scope, rules of engagement, and objectives; maps the attack surface; structures phases
+  (recon, mapping, exploitation, post-exploitation, reporting) around a framework like the
+  OWASP Testing Guide or PTES; and specifies safe handling of findings. Emphasizes explicit
+  authorization and non-destructive testing.
+category: security
+tags:
+  - penetration-testing
+  - security
+  - owasp
+  - offensive-security
+  - assessment
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - deepseek-v4
+  - claude-sonnet-4-5
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: advanced
+use_cases:
+  - Scoping an authorized pentest with rules of engagement
+  - Mapping the attack surface of a web application
+  - Structuring test phases around OWASP or PTES
+  - Planning safe, non-destructive test procedures and reporting
+example_prompt: |
+  Help me plan an authorized penetration test of our own web app (we have written approval).
+
+  App: React SPA + REST API, JWT auth, Postgres, deployed on AWS.
+
+  Deliver:
+  1. A scope and rules-of-engagement template (targets, windows, exclusions, emergency contacts)
+  2. Attack-surface map and prioritized test areas
+  3. A phased plan aligned to the OWASP Testing Guide
+  4. Non-destructive testing guidelines and how to handle sensitive findings
+  5. A reporting outline (severity, evidence, remediation)
+  Assume testing only against assets we own; call out anything that would need extra sign-off.
+related_skills:
+  - security-audit
+  - threat-modeling
+  - prompt-injection-tester
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"

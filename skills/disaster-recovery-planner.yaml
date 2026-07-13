@@ -1,0 +1,57 @@
+id: disaster-recovery-planner
+name: Disaster Recovery Planner
+description: >
+  Builds disaster recovery and business continuity plans for systems and data. Defines RTO
+  and RPO targets, maps critical dependencies, chooses backup and replication strategies,
+  documents failover and restore procedures, and designs a testing cadence with game days.
+  Produces a plan that balances resilience against cost and operational complexity.
+category: ops
+tags:
+  - disaster-recovery
+  - business-continuity
+  - backups
+  - resilience
+  - sre
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - gemini-2-5-pro
+  - claude-sonnet-4-5
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: advanced
+use_cases:
+  - Defining RTO/RPO targets for critical services
+  - Choosing backup and replication strategies within budget
+  - Documenting failover and restore procedures
+  - Planning DR game days and recovery testing
+example_prompt: |
+  Create a disaster recovery plan for a SaaS app.
+
+  Stack: multi-AZ Postgres, object storage for uploads, single-region deployment.
+  Constraints: RTO 1 hour, RPO 5 minutes, cost-conscious.
+
+  Deliver:
+  1. Critical dependency map and failure scenarios
+  2. Backup and replication strategy that meets RPO
+  3. Step-by-step failover and restore runbook to meet RTO
+  4. What to add for regional failure (and the cost trade-off)
+  5. A testing cadence and game-day checklist
+  Be explicit about which risks the plan does and does not cover.
+related_skills:
+  - runbook-generator
+  - infrastructure-as-code
+  - incident-response
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"

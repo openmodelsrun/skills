@@ -1,0 +1,58 @@
+id: test-plan-writer
+name: Test Plan Writer
+description: >
+  Produces structured test plans for features and releases. Defines scope and objectives,
+  derives test cases from requirements and acceptance criteria, covers functional, edge,
+  negative, performance, and accessibility cases, sets entry/exit criteria, and maps risk to
+  test priority. Outputs a clear plan with a traceability matrix linking tests to requirements.
+category: testing
+tags:
+  - test-plan
+  - qa
+  - test-cases
+  - quality-assurance
+  - coverage
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - deepseek-v4
+  - claude-sonnet-4-5
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Writing a test plan for a new feature from its requirements
+  - Deriving functional, edge, and negative test cases
+  - Setting entry/exit criteria for a release
+  - Building a requirement-to-test traceability matrix
+example_prompt: |
+  Write a test plan for a new "team invitations" feature.
+
+  Requirements: admins invite by email, invites expire in 7 days, roles are viewer/editor/admin,
+  invited users must accept before access is granted.
+
+  Deliver:
+  1. Scope, objectives, and out-of-scope items
+  2. Test cases grouped by functional, edge, negative, and permissions
+  3. Non-functional checks (performance, accessibility) worth including
+  4. Entry/exit criteria for the release
+  5. A traceability matrix mapping each requirement to test cases
+  Prioritize cases by risk and note which are must-pass for launch.
+related_skills:
+  - e2e-test-scenario-writer
+  - bdd-scenario-writer
+  - user-story-writer
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"

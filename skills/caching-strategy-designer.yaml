@@ -1,0 +1,58 @@
+id: caching-strategy-designer
+name: Caching Strategy Designer
+description: >
+  Designs caching strategies across the stack to cut latency and load. Chooses cache layers
+  (browser, CDN, application, database), picks patterns (cache-aside, read-through,
+  write-through, write-behind), sets TTLs and eviction policies, and plans invalidation to
+  avoid staleness and stampedes. Produces a layered plan with keys, TTLs, and invalidation rules.
+category: development
+tags:
+  - caching
+  - performance
+  - redis
+  - cdn
+  - scalability
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - deepseek-v4
+  - qwen3-coder
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Designing a multi-layer caching plan for a read-heavy API
+  - Choosing between cache-aside and read-through patterns
+  - Planning invalidation to prevent stale data and stampedes
+  - Setting TTLs and eviction policies for a Redis cache
+example_prompt: |
+  Design a caching strategy for a product catalog API.
+
+  Context: read-heavy, data updated a few times per hour, Redis + a CDN available.
+
+  Deliver:
+  1. Which layers to cache at (CDN, app, DB) and why
+  2. Pattern per layer (cache-aside, read-through, etc.) with trade-offs
+  3. Key naming scheme, TTLs, and eviction policy
+  4. Invalidation approach on updates, including how to prevent cache stampedes
+  5. Metrics to track (hit ratio, staleness) to validate the design
+related_skills:
+  - performance-optimization
+  - database-query-optimizer
+  - system-design
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"

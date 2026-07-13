@@ -1,0 +1,59 @@
+id: rate-limiter-designer
+name: Rate Limiter Designer
+description: >
+  Designs and implements rate limiting for APIs and services. Recommends an algorithm (token
+  bucket, leaky bucket, fixed or sliding window) for the use case, defines per-key and
+  per-endpoint limits, plans distributed enforcement with Redis, and specifies response
+  headers and 429 handling with retry-after. Produces a design plus reference implementation.
+category: development
+tags:
+  - rate-limiting
+  - api
+  - scalability
+  - redis
+  - backend
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-4-6
+  - gpt-5
+  - deepseek-v4
+  - qwen3-coder
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Choosing a rate-limiting algorithm for an API gateway
+  - Implementing distributed limits with Redis across instances
+  - Designing per-user and per-endpoint quota tiers
+  - Adding correct 429 responses and retry-after headers
+example_prompt: |
+  Design rate limiting for a public REST API.
+
+  Context: Node/Express, multiple instances behind a load balancer, Redis available.
+  Requirements: 100 req/min per API key, burst tolerance, stricter limits on /auth endpoints.
+
+  Deliver:
+  1. Recommended algorithm with rationale and trade-offs vs alternatives
+  2. Key design (per-key, per-endpoint) and where limits are stored
+  3. Reference middleware implementation using Redis
+  4. Response headers (limit/remaining/reset) and 429 + Retry-After handling
+  5. How to avoid race conditions under concurrency
+related_skills:
+  - api-design
+  - webhook-integration-builder
+  - performance-optimization
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-07-12T00:00:00.000Z"

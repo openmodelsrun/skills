@@ -5,6 +5,31 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.0] - 2026-07-12
+
+### Added
+
+- 15 new skills across 9 categories:
+  - `caching-strategy-designer` — multi-layer caching plans with patterns, TTLs, and invalidation (development)
+  - `rate-limiter-designer` — API rate limiting algorithms and distributed Redis enforcement (development)
+  - `newsletter-writer` — email newsletters with subject lines and a single clear CTA (writing)
+  - `case-study-writer` — challenge/solution/results customer case studies with verifiable metrics (writing)
+  - `sql-query-explainer` — plain-language SQL explanations and EXPLAIN ANALYZE reading (data)
+  - `dbt-model-generator` — layered dbt models with schema.yml tests and materialization strategy (data)
+  - `survey-designer` — unbiased questionnaires with scales, branching, and an analysis plan (research)
+  - `user-interview-guide-builder` — discovery/usability interview guides with non-leading probes (research)
+  - `game-design-document-writer` — structured GDDs covering core loop, economy, and MVP scope (creative)
+  - `ad-copy-writer` — conversion-focused search/social ad variants for A/B testing (creative)
+  - `runbook-generator` — operational runbooks with diagnosis, remediation, rollback, and escalation (ops)
+  - `disaster-recovery-planner` — DR/BC plans with RTO/RPO targets, failover, and game days (ops)
+  - `test-plan-writer` — structured test plans with case derivation and traceability matrix (testing)
+  - `penetration-test-planner` — scoped, authorized pentest plans aligned to OWASP/PTES (security)
+  - `email-triage-assistant` — inbox triage with categorization, action extraction, and reply drafts (productivity)
+
+### Changed
+
+- Total skills: 173 (from 158)
+
 ## [0.5.0] - 2026-07-12
 
 ### Added
