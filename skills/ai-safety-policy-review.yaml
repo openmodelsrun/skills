@@ -1,0 +1,18 @@
+id: ai-safety-policy-review
+name: AI Safety Policy Review
+description: >
+  Converts product safety requirements into practical agent and LLM policies with abuse
+  cases, escalation paths, safe defaults, audit events, and acceptance criteria.
+category: security
+tags: [ai-safety, governance, policy, risk-management]
+author: {name: OpenModels Community, github: openmodelsrun}
+recommended_models: [claude-opus-4-6, gpt-5, gemini-2-5-pro]
+min_context_window: 16000
+modalities: {input: [text, file], output: [text]}
+complexity: advanced
+use_cases: [AI feature governance, Safety requirement reviews, Agent permission design]
+example_prompt: "Review this AI feature policy. Identify abuse cases, define safe defaults and escalation paths, list audit events, and write testable acceptance criteria."
+related_skills: [threat-modeling, privacy-compliance-auditor]
+compatible_tools: [claude-code, cursor, kiro, any]
+created_at: "2026-07-15T00:00:00.000Z"
+updated_at: "2026-07-15T00:00:00.000Z"

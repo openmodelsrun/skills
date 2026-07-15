@@ -1,0 +1,18 @@
+id: model-context-budgeting
+name: Model Context Budgeting
+description: >
+  Optimizes prompts and agent workflows for finite context windows by prioritizing evidence,
+  compressing history, managing retrieval budgets, and measuring token-cost trade-offs.
+category: ops
+tags: [context-engineering, llm-cost, prompts, optimization]
+author: {name: OpenModels Community, github: openmodelsrun}
+recommended_models: [claude-opus-4-6, gpt-5, gemini-2-5-pro]
+min_context_window: 16000
+modalities: {input: [text, code, file], output: [text, code]}
+complexity: advanced
+use_cases: [Long-running agents, Prompt cost optimization, RAG context tuning]
+example_prompt: "Optimize this agent context strategy. Allocate a token budget across instructions, history, retrieval, and tool output, then propose truncation and summarization rules."
+related_skills: [llm-cost-optimizer, rag-pipeline-builder]
+compatible_tools: [claude-code, cursor, kiro, any]
+created_at: "2026-07-15T00:00:00.000Z"
+updated_at: "2026-07-15T00:00:00.000Z"

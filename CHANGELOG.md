@@ -5,6 +5,31 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.7.0] - 2026-07-15
+
+### Added
+
+- 15 new skills for production AI-agent, LLM quality, and developer workflows:
+  - `agent-memory-design` — durable agent memory architecture with retrieval, retention, and privacy controls (development)
+  - `ai-codebase-onboarding` — repository discovery and concise developer onboarding guides (development)
+  - `architecture-decision-record` — reviewable ADRs with alternatives, trade-offs, and reversal criteria (development)
+  - `browser-test-debugging` — diagnosis of E2E failures using traces, screenshots, network activity, and state (testing)
+  - `design-to-code-implementation` — accessible responsive implementation from designs and screenshots (development)
+  - `llm-output-evaluation` — representative datasets, rubrics, automated checks, and quality thresholds (testing)
+  - `mcp-server-builder` — secure MCP server design, tool schemas, transports, and tests (development)
+  - `mcp-server-security-review` — MCP permission, injection, secret-handling, and authorization review (security)
+  - `model-context-budgeting` — context allocation and token-cost optimization for agents and RAG (ops)
+  - `prompt-regression-testing` — regression suites and CI gates for prompts and agent instructions (testing)
+  - `retrieval-evaluation` — retrieval metrics, failure taxonomy, and RAG tuning experiments (data)
+  - `structured-output-design` — validated, versioned JSON contracts for LLM integrations (development)
+  - `tool-call-testing` — integration tests for agent tools, authorization, side effects, and recovery (testing)
+  - `ai-safety-policy-review` — actionable AI safety policies, escalation paths, and acceptance criteria (security)
+  - `workflow-automation-design` — reliable AI-assisted automations with approvals, retries, and handoffs (productivity)
+
+### Changed
+
+- Total skills: 188 (from 173)
+
 ## [0.6.0] - 2026-07-12
 
 ### Added

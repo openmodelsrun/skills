@@ -1,0 +1,18 @@
+id: agent-memory-design
+name: Agent Memory Design
+description: >
+  Designs durable memory for AI agents, including what to retain, how to retrieve it,
+  privacy boundaries, expiration policies, and evaluation criteria for useful recall.
+category: development
+tags: [ai-agents, agent-memory, context-engineering, rag]
+author: {name: OpenModels Community, github: openmodelsrun}
+recommended_models: [claude-opus-4-6, gpt-5, gemini-2-5-pro]
+min_context_window: 32000
+modalities: {input: [text, code], output: [text, code]}
+complexity: advanced
+use_cases: [Persistent assistant memory, Agent context architecture, Privacy-aware recall]
+example_prompt: "Design a memory architecture for this agent. Define memory types, schemas, retrieval rules, retention limits, privacy controls, and measurable quality checks."
+related_skills: [rag-pipeline-builder, ai-agent-builder]
+compatible_tools: [claude-code, cursor, kiro, any]
+created_at: "2026-07-15T00:00:00.000Z"
+updated_at: "2026-07-15T00:00:00.000Z"
