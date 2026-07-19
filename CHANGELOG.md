@@ -5,6 +5,20 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.8.0] - 2026-07-15
+
+### Added
+
+- 15 new skills for dependable AI, product, data, and engineering operations:
+  - `agent-evals`, `red-team-simulation`, and `ai-agent-incident-response` for agent quality, safety, and operational recovery.
+  - `llm-observability-design`, `data-contract-design`, `database-migration-planning`, and `analytics-instrumentation` for production reliability and data governance.
+  - `accessibility-audit`, `release-notes-automation`, `customer-feedback-synthesis`, and `product-requirements-discovery` for product quality and discovery.
+  - `api-versioning-strategy`, `secrets-rotation-design`, `infrastructure-cost-review`, and `incident-postmortem` for safe platform evolution and operations.
+
+### Changed
+
+- Total skills: 203 (from 188).
+
 ## [0.7.0] - 2026-07-15
 
 ### Added

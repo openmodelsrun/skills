@@ -1,0 +1,17 @@
+id: customer-feedback-synthesis
+name: Customer Feedback Synthesis
+description: >
+  Synthesizes interviews, support tickets, reviews, and survey responses into evidence-based
+  themes, opportunities, representative quotes, confidence levels, and product actions.
+category: research
+tags: [customer-feedback, product-research, synthesis, insights]
+author: {name: OpenModels Community, github: openmodelsrun}
+recommended_models: [claude-opus-4-6, gpt-5, gemini-2-5-pro]
+min_context_window: 32000
+modalities: {input: [text, file], output: [text]}
+complexity: intermediate
+use_cases: [Voice-of-customer analysis, Support trend analysis, Product discovery]
+example_prompt: "Synthesize this customer feedback. Group evidence into themes, distinguish signals from anecdotes, quantify frequency, surface contradictions, and recommend product actions."
+compatible_tools: [claude-code, cursor, kiro, any]
+created_at: "2026-07-15T00:00:00.000Z"
+updated_at: "2026-07-15T00:00:00.000Z"

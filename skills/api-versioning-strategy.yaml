@@ -1,0 +1,17 @@
+id: api-versioning-strategy
+name: API Versioning Strategy
+description: >
+  Designs durable API evolution plans with compatibility guarantees, deprecation policy,
+  version negotiation, consumer communication, migration tooling, and operational telemetry.
+category: development
+tags: [api, versioning, backward-compatibility, architecture]
+author: {name: OpenModels Community, github: openmodelsrun}
+recommended_models: [claude-opus-4-6, gpt-5, gemini-2-5-pro]
+min_context_window: 16000
+modalities: {input: [text, code, file], output: [text, code]}
+complexity: advanced
+use_cases: [Public API evolution, Breaking-change planning, SDK migration]
+example_prompt: "Design a versioning strategy for this API change. Explain compatibility, endpoint and schema changes, deprecation windows, consumer migration, telemetry, and rollback."
+compatible_tools: [claude-code, cursor, kiro, any]
+created_at: "2026-07-15T00:00:00.000Z"
+updated_at: "2026-07-15T00:00:00.000Z"

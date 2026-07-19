@@ -1,0 +1,17 @@
+id: ai-agent-incident-response
+name: AI Agent Incident Response
+description: >
+  Guides containment, evidence collection, root-cause analysis, customer communication,
+  and remediation when an AI agent takes an unsafe, incorrect, or unauthorized action.
+category: ops
+tags: [ai-agents, incident-response, operations, reliability]
+author: {name: OpenModels Community, github: openmodelsrun}
+recommended_models: [claude-opus-4-6, gpt-5, gemini-2-5-pro]
+min_context_window: 16000
+modalities: {input: [text, code, file], output: [text, code]}
+complexity: advanced
+use_cases: [Agent outages, Unsafe agent actions, AI incident runbooks]
+example_prompt: "Create an incident-response plan for this agent failure. Include immediate containment, evidence to preserve, impact assessment, stakeholder updates, root-cause steps, and preventive controls."
+compatible_tools: [claude-code, cursor, kiro, any]
+created_at: "2026-07-15T00:00:00.000Z"
+updated_at: "2026-07-15T00:00:00.000Z"

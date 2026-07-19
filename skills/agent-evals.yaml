@@ -1,0 +1,17 @@
+id: agent-evals
+name: Agent Evaluation Design
+description: >
+  Builds repeatable evaluations for AI agents that measure task success, tool correctness,
+  groundedness, latency, cost, and safe recovery across realistic end-to-end scenarios.
+category: testing
+tags: [ai-agents, evaluation, benchmarks, quality]
+author: {name: OpenModels Community, github: openmodelsrun}
+recommended_models: [claude-opus-4-6, gpt-5, gemini-2-5-pro]
+min_context_window: 32000
+modalities: {input: [text, code, file], output: [text, code]}
+complexity: advanced
+use_cases: [Agent release gates, Tool-use quality measurement, Production agent benchmarking]
+example_prompt: "Design an evaluation suite for this agent. Define representative tasks, success criteria, tool assertions, cost and latency metrics, safety checks, and release thresholds."
+compatible_tools: [claude-code, cursor, kiro, any]
+created_at: "2026-07-15T00:00:00.000Z"
+updated_at: "2026-07-15T00:00:00.000Z"

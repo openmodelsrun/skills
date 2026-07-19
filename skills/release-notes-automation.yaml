@@ -1,0 +1,17 @@
+id: release-notes-automation
+name: Release Notes Automation
+description: >
+  Turns merged work, pull requests, issues, and user-visible behavior changes into accurate,
+  audience-specific release notes with breaking-change and upgrade guidance.
+category: writing
+tags: [release-notes, changelog, documentation, automation]
+author: {name: OpenModels Community, github: openmodelsrun}
+recommended_models: [claude-opus-4-6, gpt-5, gemini-2-5-pro]
+min_context_window: 16000
+modalities: {input: [text, code, file], output: [text]}
+complexity: intermediate
+use_cases: [Product releases, Developer changelogs, Customer announcements]
+example_prompt: "Draft release notes from these issues and changes. Separate user-visible features, fixes, breaking changes, migration guidance, acknowledgements, and technical detail."
+compatible_tools: [claude-code, cursor, github-copilot, kiro, any]
+created_at: "2026-07-15T00:00:00.000Z"
+updated_at: "2026-07-15T00:00:00.000Z"

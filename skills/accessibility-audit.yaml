@@ -1,0 +1,17 @@
+id: accessibility-audit
+name: Accessibility Audit
+description: >
+  Audits product interfaces against practical accessibility requirements, covering semantic
+  structure, keyboard access, focus behavior, color contrast, screen readers, and forms.
+category: testing
+tags: [accessibility, a11y, frontend, ux]
+author: {name: OpenModels Community, github: openmodelsrun}
+recommended_models: [claude-opus-4-6, gpt-5, gemini-2-5-pro]
+min_context_window: 16000
+modalities: {input: [image, text, code], output: [text, code]}
+complexity: intermediate
+use_cases: [UI accessibility review, WCAG remediation, Design-system quality checks]
+example_prompt: "Audit this interface for accessibility. Identify semantic, keyboard, focus, contrast, labeling, screen-reader, and responsive issues, then provide prioritized fixes."
+compatible_tools: [claude-code, cursor, github-copilot, kiro, any]
+created_at: "2026-07-15T00:00:00.000Z"
+updated_at: "2026-07-15T00:00:00.000Z"
