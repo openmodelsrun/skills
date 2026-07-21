@@ -1,0 +1,64 @@
+id: computer-use-automation
+name: Computer Use Automation
+description: >
+  Designs and drives computer-use agents that operate a desktop or browser directly via
+  screenshots and UI actions (click, type, scroll, navigate). Plans multi-step GUI workflows,
+  handles verification and recovery between steps, and structures guardrails for safe
+  autonomous execution. Built for models exposing computer use as a native client-side tool.
+category: development
+tags:
+  - computer-use
+  - browser-automation
+  - gui-automation
+  - ai-agents
+  - agentic-workflows
+  - tool-use
+  - automation
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - gemini-3-6-flash
+  - gemini-3-5-flash-lite
+  - gemini-3-5-pro
+  - claude-opus-4-7
+min_context_window: 64000
+modalities:
+  input:
+    - text
+    - image
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Automating repetitive web form submissions across internal tools
+  - Driving a browser to gather and reconcile data from multiple dashboards
+  - Building an agent that navigates a legacy desktop app without an API
+  - Running end-to-end UI flows for QA and regression checks
+  - Orchestrating high-throughput agentic search and document processing
+example_prompt: |
+  Design a computer-use agent that reconciles invoices between a web ERP and a spreadsheet.
+
+  The agent should:
+  1. Open the ERP dashboard and locate the pending invoices view
+  2. For each invoice, read the amount and vendor from the screen
+  3. Cross-check the value against the corresponding spreadsheet row
+  4. Flag mismatches in a report and never modify records without confirmation
+
+  Provide:
+  - The action loop (observe screenshot -> plan -> act -> verify)
+  - Guardrails for destructive or irreversible actions
+  - Recovery logic when an expected UI element is missing
+  - A stopping condition and human-in-the-loop checkpoints
+related_skills:
+  - ai-agent-builder
+  - multi-agent-orchestrator
+  - browser-test-debugging
+compatible_tools:
+  - gemini-cli
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-21T00:00:00.000Z"
+updated_at: "2026-07-21T00:00:00.000Z"
