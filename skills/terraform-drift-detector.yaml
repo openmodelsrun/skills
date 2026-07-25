@@ -1,0 +1,55 @@
+id: terraform-drift-detector
+name: Terraform Drift Detector
+description: >
+  Analyzes Terraform plan output and state to find configuration drift between declared
+  infrastructure and what actually exists. Explains each drifted resource in plain language,
+  flags risky or destructive changes, and recommends whether to reconcile in code, import, or
+  apply, so teams can keep state and reality aligned safely.
+category: ops
+tags:
+  - terraform
+  - infrastructure-as-code
+  - drift
+  - devops
+  - cloud
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gpt-5-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Explaining what changed in a noisy terraform plan
+  - Flagging destructive changes before an apply
+  - Deciding whether to import a resource or update the config
+  - Summarizing drift across modules for a review
+example_prompt: |
+  Review this `terraform plan` output for drift and risk.
+
+  ```
+  [paste terraform plan output here]
+  ```
+
+  Group the changes by resource, explain what drifted and likely why, clearly flag anything that
+  would destroy or replace a resource, and recommend a safe reconciliation path for each.
+related_skills:
+  - terraform-module-writer
+  - infrastructure-as-code
+  - disaster-recovery-planner
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-25T00:00:00.000Z"
+updated_at: "2026-07-25T00:00:00.000Z"

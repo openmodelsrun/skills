@@ -1,0 +1,54 @@
+id: json-schema-generator
+name: JSON Schema Generator
+description: >
+  Generates JSON Schema (Draft 7 through 2020-12) from example payloads, TypeScript types, or a
+  natural-language description of a data shape. Infers types, required fields, formats, and
+  constraints, and can add descriptions and enums to produce a validation-ready schema.
+category: development
+tags:
+  - json-schema
+  - validation
+  - data-modeling
+  - api
+  - types
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gemini-3-5-flash-lite
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - code
+complexity: intermediate
+use_cases:
+  - Deriving a JSON Schema from a sample API response
+  - Converting a TypeScript interface into a JSON Schema
+  - Adding constraints, formats, and enums to an existing schema
+  - Producing request/response validation schemas for an endpoint
+example_prompt: |
+  Generate a JSON Schema (Draft 2020-12) from this example payload.
+
+  Infer required fields, use string formats where appropriate (email, date-time, uri), add
+  sensible min/max constraints, and include a short description for each property.
+
+  ```json
+  [paste example JSON here]
+  ```
+related_skills:
+  - typescript-type-generator
+  - openapi-spec-generator
+  - structured-output-design
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - continue
+  - any
+created_at: "2026-07-25T00:00:00.000Z"
+updated_at: "2026-07-25T00:00:00.000Z"

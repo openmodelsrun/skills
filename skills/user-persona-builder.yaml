@@ -1,0 +1,53 @@
+id: user-persona-builder
+name: User Persona Builder
+description: >
+  Synthesizes user research, interviews, and survey data into clear, evidence-based user personas.
+  Clusters behaviors and needs, names each persona, and captures goals, pain points, motivations,
+  and representative scenarios, keeping the output grounded in the source data rather than
+  invented detail.
+category: research
+tags:
+  - personas
+  - user-research
+  - product
+  - ux
+  - discovery
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gpt-5-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Turning interview notes into 3-4 distinct personas
+  - Summarizing survey segments as persona profiles
+  - Identifying primary versus secondary personas for a product
+  - Grounding a design discussion in evidence-based user types
+example_prompt: |
+  Build user personas from the research notes below.
+
+  ```
+  [paste interview notes / survey results here]
+  ```
+
+  Produce 3-4 distinct personas. For each, include a name and role, goals, key pain points,
+  motivations, and a short representative scenario. Cite which parts of the source data support
+  each persona and note where evidence is thin.
+related_skills:
+  - user-interview-guide-builder
+  - customer-feedback-synthesis
+  - product-requirements-discovery
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-25T00:00:00.000Z"
+updated_at: "2026-07-25T00:00:00.000Z"

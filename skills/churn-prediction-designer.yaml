@@ -1,0 +1,54 @@
+id: churn-prediction-designer
+name: Churn Prediction Designer
+description: >
+  Designs a customer churn prediction approach end to end: framing the target and prediction
+  window, engineering behavioral and tenure features, choosing suitable models and evaluation
+  metrics for imbalanced data, and planning how predictions feed retention actions. Focuses on
+  leakage-free design and metrics that match the business goal.
+category: data
+tags:
+  - churn
+  - machine-learning
+  - predictive-modeling
+  - feature-engineering
+  - retention
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gpt-5-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Framing churn as a labeled prediction problem with a clear window
+  - Designing leakage-free behavioral and tenure features
+  - Choosing metrics for imbalanced churn data (PR-AUC, recall at k)
+  - Planning how churn scores drive retention interventions
+example_prompt: |
+  Help me design a churn prediction model for a B2B SaaS product.
+
+  Available data: subscription events, product usage logs, support tickets, and billing history.
+
+  Define the target and prediction window, propose features (and call out any that risk leakage),
+  recommend candidate models and evaluation metrics for the class imbalance, and outline how the
+  predictions should trigger retention actions.
+related_skills:
+  - feature-engineering-assistant
+  - cohort-analysis
+  - recommendation-system-designer
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-25T00:00:00.000Z"
+updated_at: "2026-07-25T00:00:00.000Z"

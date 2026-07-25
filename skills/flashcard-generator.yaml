@@ -1,0 +1,50 @@
+id: flashcard-generator
+name: Flashcard Generator
+description: >
+  Turns notes, articles, or textbook passages into spaced-repetition flashcards. Produces atomic
+  question-and-answer pairs (and optional cloze deletions) that test one concept each, avoiding
+  ambiguous prompts, and can export in a plain format ready to import into tools like Anki.
+category: writing
+tags:
+  - flashcards
+  - study
+  - spaced-repetition
+  - learning
+  - education
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - gemini-3-6-flash
+  - gemini-3-5-flash-lite
+  - claude-opus-5
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Converting lecture notes into Q&A flashcards
+  - Creating cloze-deletion cards from a textbook passage
+  - Generating a study deck for exam preparation
+  - Producing CSV-ready cards for Anki import
+example_prompt: |
+  Create spaced-repetition flashcards from the notes below.
+
+  ```
+  [paste notes or passage here]
+  ```
+
+  Make each card atomic (one fact per card), phrase questions unambiguously, and include a few
+  cloze-deletion cards. Output as a two-column format (front, back) I can paste into Anki.
+related_skills:
+  - research-summarizer
+  - technical-writing
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-25T00:00:00.000Z"
+updated_at: "2026-07-25T00:00:00.000Z"

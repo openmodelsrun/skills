@@ -1,0 +1,57 @@
+id: kubernetes-troubleshooter
+name: Kubernetes Troubleshooter
+description: >
+  Diagnoses failing Kubernetes workloads from symptoms, events, logs, and manifests. Works through
+  a systematic checklist (pod status, events, resource limits, probes, scheduling, networking) to
+  identify the root cause of issues like CrashLoopBackOff, ImagePullBackOff, OOMKilled, and pending
+  pods, then recommends concrete fixes and verification steps.
+category: ops
+tags:
+  - kubernetes
+  - troubleshooting
+  - debugging
+  - containers
+  - devops
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gpt-5-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Diagnosing a CrashLoopBackOff or OOMKilled pod
+  - Explaining why a pod is stuck in Pending
+  - Tracing a failing readiness or liveness probe
+  - Debugging service or ingress connectivity issues
+example_prompt: |
+  My deployment keeps restarting. Help me find the root cause.
+
+  Here are the pod events, container logs, and the deployment manifest:
+
+  ```
+  [paste kubectl describe / logs / manifest here]
+  ```
+
+  Walk through the diagnosis step by step, name the most likely root cause, give the exact fix,
+  and tell me which command to run to confirm it's resolved.
+related_skills:
+  - kubernetes-manifest-generator
+  - helm-chart-generator
+  - incident-response
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-25T00:00:00.000Z"
+updated_at: "2026-07-25T00:00:00.000Z"

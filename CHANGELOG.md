@@ -5,6 +5,16 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.0] - 2026-07-25
+### Added
+- 10 new skills across development, ops, data, research, writing, and security:
+  - `json-schema-generator` and `git-bisect-assistant` for development.
+  - `kubernetes-troubleshooter`, `terraform-drift-detector`, and `incident-comms-writer` for ops.
+  - `churn-prediction-designer` for data and `user-persona-builder` for research.
+  - `cover-letter-writer` and `flashcard-generator` for writing, and `security-questionnaire-responder` for security.
+### Changed
+- Total skills: 216 (from 206).
+
 ## [0.9.0] - 2026-07-21
 ### Added
 - 2 new skills tied to the latest Gemini Flash releases:

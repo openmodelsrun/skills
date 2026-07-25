@@ -1,0 +1,55 @@
+id: security-questionnaire-responder
+name: Security Questionnaire Responder
+description: >
+  Drafts accurate, well-supported answers to vendor security and compliance questionnaires (SIG,
+  CAIQ, custom due-diligence forms). Maps each question to existing policies and control evidence,
+  writes clear responses, and flags any question where the honest answer is unknown or a control
+  is missing rather than overstating posture.
+category: security
+tags:
+  - security
+  - compliance
+  - questionnaire
+  - vendor-assessment
+  - grc
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gpt-5-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: intermediate
+use_cases:
+  - Drafting answers to a SIG or CAIQ questionnaire
+  - Mapping questions to existing policies and control evidence
+  - Flagging gaps where a control is missing or unverified
+  - Standardizing tone and detail across a long questionnaire
+example_prompt: |
+  Draft responses to the security questionnaire below using our control documentation.
+
+  Questionnaire:
+  [paste questions]
+
+  Control documentation / policies:
+  [paste relevant policy excerpts]
+
+  For each question, write a concise, accurate answer grounded in the documentation. Where the
+  documentation does not support a "yes," say so explicitly and flag it as a gap to review rather
+  than overstating our posture.
+related_skills:
+  - privacy-compliance-auditor
+  - threat-modeling
+  - security-audit
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-25T00:00:00.000Z"
+updated_at: "2026-07-25T00:00:00.000Z"

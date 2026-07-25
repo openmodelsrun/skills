@@ -1,0 +1,56 @@
+id: git-bisect-assistant
+name: Git Bisect Assistant
+description: >
+  Guides a git bisect session to isolate the commit that introduced a regression. Helps define a
+  reliable good/bad test, drives the bisect steps, interprets results, and can suggest an
+  automated test script for `git bisect run`, then explains the offending change once the culprit
+  commit is found.
+category: development
+tags:
+  - git
+  - debugging
+  - regression
+  - bisect
+  - version-control
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gpt-5-5-pro
+min_context_window: 16000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Finding the commit that introduced a bug
+  - Writing a test script for git bisect run
+  - Choosing reliable good and bad reference points
+  - Interpreting a bisect result and explaining the culprit change
+example_prompt: |
+  A test that used to pass now fails on main. Help me set up a git bisect to find the commit that
+  broke it.
+
+  The failing behavior is: [describe symptom]
+  A known-good commit is: [hash or tag]
+
+  Give me the exact commands to start the bisect, a minimal script I can pass to `git bisect run`,
+  and how to read the result.
+related_skills:
+  - debugging-assistant
+  - git-conflict-resolver
+  - flaky-test-detector
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - aider
+  - any
+created_at: "2026-07-25T00:00:00.000Z"
+updated_at: "2026-07-25T00:00:00.000Z"

@@ -1,0 +1,53 @@
+id: cover-letter-writer
+name: Cover Letter Writer
+description: >
+  Drafts tailored, concise cover letters that connect a candidate's experience to a specific job
+  description. Extracts the role's key requirements, maps them to the applicant's most relevant
+  achievements, and produces a focused letter in the requested tone without generic filler.
+category: writing
+tags:
+  - cover-letter
+  - job-application
+  - career
+  - writing
+  - hiring
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gpt-5-5-pro
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Tailoring a cover letter to a specific job posting
+  - Rewriting a generic letter to emphasize relevant achievements
+  - Adjusting tone for a startup versus a large enterprise
+  - Condensing a long draft to a single focused page
+example_prompt: |
+  Write a one-page cover letter for the job description below using my background.
+
+  Job description:
+  [paste job posting]
+
+  My background:
+  [paste resume highlights]
+
+  Keep it to three short paragraphs, match the company's tone, and lead with the achievement most
+  relevant to the role. Avoid clichés and generic filler.
+related_skills:
+  - resume-optimizer
+  - email-writer
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-25T00:00:00.000Z"
+updated_at: "2026-07-25T00:00:00.000Z"
