@@ -1,0 +1,57 @@
+id: mcp-apps-ui-builder
+name: MCP Apps UI Builder
+description: >
+  Designs and implements interactive in-conversation interfaces using the MCP Apps extension, which
+  lets a server render UI directly inside the chat instead of returning plain text. Covers choosing
+  when a UI beats text output, structuring the component and its state, wiring user actions back to
+  tool calls, and keeping the surface accessible and degradable for clients without MCP Apps support.
+category: development
+tags:
+  - mcp
+  - mcp-apps
+  - ui
+  - interactive
+  - ai-agents
+  - extensions
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gpt-5-6-sol
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Deciding whether a tool result should render as UI or text
+  - Building an inline form or picker that feeds back into tool calls
+  - Rendering a data table or chart inside the conversation
+  - Providing a text fallback for clients without MCP Apps
+example_prompt: |
+  I have an MCP tool that returns a list of deployments as JSON. Design an MCP Apps UI for it.
+
+  Cover:
+  1. Whether a UI is actually the right choice here versus formatted text
+  2. The component layout and what state it holds
+  3. How a user selecting a deployment triggers a follow-up tool call
+  4. Keyboard accessibility and a graceful text fallback for unsupported clients
+
+  Include the implementation.
+related_skills:
+  - mcp-server-builder
+  - frontend-design
+  - accessibility-review
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-28T00:00:00.000Z"
+updated_at: "2026-07-28T00:00:00.000Z"

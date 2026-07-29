@@ -5,6 +5,16 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.11.0] - 2026-07-28
+### Added
+- 8 new skills, four of them tied to the MCP 2026-07-28 spec release:
+  - `mcp-stateless-migration` and `mcp-apps-ui-builder` for the new stateless core and the MCP Apps extension.
+  - `enterprise-sso-integration` for the spec's hardened OAuth 2.0 / OIDC alignment with Entra and Okta.
+  - `n-plus-one-query-detector`, `timezone-handling-auditor` for development correctness and performance.
+  - `grafana-dashboard-builder` for ops, `image-alt-text-writer` for accessible writing, and `spreadsheet-formula-builder` for productivity.
+### Changed
+- Total skills: 223 (from 215).
+
 ## [0.10.0] - 2026-07-25
 ### Added
 - 10 new skills across development, ops, data, research, writing, and security:

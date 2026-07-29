@@ -1,0 +1,53 @@
+id: spreadsheet-formula-builder
+name: Spreadsheet Formula Builder
+description: >
+  Builds and explains spreadsheet formulas for Excel and Google Sheets from a plain-language
+  description of the goal. Handles lookups, conditional aggregation, date math, text parsing, array
+  formulas, and pivot-style summaries, explains how each part works, and debugs formulas that
+  return errors or wrong values.
+category: productivity
+tags:
+  - spreadsheet
+  - excel
+  - google-sheets
+  - formulas
+  - data-analysis
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gemini-3-5-flash-lite
+min_context_window: 16000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: beginner
+use_cases:
+  - Translating a plain-language requirement into a working formula
+  - Debugging #REF!, #VALUE!, or silently wrong results
+  - Replacing fragile nested IFs with a cleaner approach
+  - Building conditional aggregations and lookups across sheets
+example_prompt: |
+  I need a Google Sheets formula for this.
+
+  Sheet "Orders" has columns: date (A), customer (B), region (C), amount (D).
+
+  I want, for a given region in cell F1, the total amount for the current month only, ignoring
+  blank rows.
+
+  Give me the formula, explain each part, note any assumption about date formats, and show how it
+  would differ in Excel.
+related_skills:
+  - data-analysis
+  - csv-data-cleaner
+  - chart-generator
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-07-28T00:00:00.000Z"
+updated_at: "2026-07-28T00:00:00.000Z"

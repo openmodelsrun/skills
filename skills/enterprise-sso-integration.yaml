@@ -1,0 +1,56 @@
+id: enterprise-sso-integration
+name: Enterprise SSO Integration
+description: >
+  Plans and implements enterprise single sign-on against production identity providers such as
+  Microsoft Entra ID, Okta, and Google Workspace. Covers choosing between OIDC and SAML, mapping
+  IdP groups to application roles, handling just-in-time provisioning and SCIM deprovisioning, and
+  validating token and session security before rollout.
+category: security
+tags:
+  - sso
+  - oidc
+  - saml
+  - identity
+  - entra
+  - okta
+  - scim
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gpt-5-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Choosing between OIDC and SAML for an enterprise customer
+  - Mapping IdP groups to in-app roles and permissions
+  - Implementing JIT provisioning and SCIM deprovisioning
+  - Reviewing token validation, session lifetime, and logout flows
+example_prompt: |
+  We need to add enterprise SSO so customers can log in with Microsoft Entra ID and Okta.
+
+  Our app currently uses email and password sessions.
+
+  Recommend OIDC or SAML and explain the tradeoff, describe the group-to-role mapping design,
+  cover just-in-time provisioning plus deprovisioning, and list the token and session checks I
+  must get right. Call out anything that would be a security mistake to skip.
+related_skills:
+  - oauth-flow-implementer
+  - iam-policy-reviewer
+  - security-audit
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-28T00:00:00.000Z"
+updated_at: "2026-07-28T00:00:00.000Z"

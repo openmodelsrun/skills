@@ -1,0 +1,57 @@
+id: timezone-handling-auditor
+name: Timezone Handling Auditor
+description: >
+  Reviews code for date, time, and timezone bugs: naive local timestamps, missing UTC
+  normalization, DST transition errors, off-by-one date boundaries, and inconsistent storage or
+  serialization. Explains the failure case for each finding, proposes a correct implementation, and
+  suggests edge-case tests around DST shifts and day boundaries.
+category: development
+tags:
+  - timezone
+  - datetime
+  - utc
+  - dst
+  - correctness
+  - internationalization
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gpt-5-6-sol
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Auditing a codebase for naive versus timezone-aware timestamps
+  - Fixing DST transition bugs in scheduling or recurrence logic
+  - Deciding how to store and serialize timestamps consistently
+  - Writing tests for day boundaries across user timezones
+example_prompt: |
+  Audit this code for timezone and date handling bugs.
+
+  ```
+  [paste code here]
+  ```
+
+  For each issue, describe a concrete scenario where it produces the wrong result (include a DST
+  transition and a user in a non-UTC timezone), give the corrected implementation, and list the
+  edge-case tests I should add.
+related_skills:
+  - debugging-assistant
+  - localization-helper
+  - code-review
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-28T00:00:00.000Z"
+updated_at: "2026-07-28T00:00:00.000Z"

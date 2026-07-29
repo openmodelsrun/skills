@@ -1,0 +1,55 @@
+id: grafana-dashboard-builder
+name: Grafana Dashboard Builder
+description: >
+  Designs Grafana dashboards and the queries behind them for a given service or SLO. Chooses the
+  right panels and visualizations, writes PromQL, LogQL, or SQL queries, sets sensible thresholds
+  and alert rules, and produces importable dashboard JSON organized so an on-call engineer can read
+  it under pressure.
+category: ops
+tags:
+  - grafana
+  - dashboards
+  - promql
+  - observability
+  - monitoring
+  - alerting
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gpt-5-6-sol
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Building a service dashboard around the four golden signals
+  - Writing PromQL or LogQL for specific panels
+  - Setting alert thresholds tied to an SLO and error budget
+  - Generating importable Grafana dashboard JSON
+example_prompt: |
+  Build a Grafana dashboard for an HTTP API backed by Prometheus.
+
+  The SLO is 99.9% availability and p95 latency under 300ms.
+
+  Give me the panel layout organized for on-call use, the PromQL for each panel (rate, error ratio,
+  latency percentiles, saturation), alert rules tied to the error budget, and the dashboard JSON I
+  can import.
+related_skills:
+  - observability-instrumentation
+  - slo-error-budget-planner
+  - incident-response
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-28T00:00:00.000Z"
+updated_at: "2026-07-28T00:00:00.000Z"

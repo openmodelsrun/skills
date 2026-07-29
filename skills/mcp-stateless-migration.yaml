@@ -1,0 +1,57 @@
+id: mcp-stateless-migration
+name: MCP Stateless Migration
+description: >
+  Migrates an existing MCP server from the older bidirectional stateful protocol to the stateless
+  request/response core introduced in the MCP 2026-07-28 spec. Audits where the server depends on
+  session state, proposes stateless equivalents (tokens, idempotency keys, external stores), and
+  plans the move to serverless or edge deployment without breaking existing clients.
+category: development
+tags:
+  - mcp
+  - migration
+  - stateless
+  - serverless
+  - protocol
+  - ai-agents
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gpt-5-6-sol
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Auditing an MCP server for hidden session-state dependencies
+  - Replacing in-memory session storage with a stateless design
+  - Planning a move to serverless or edge hosting
+  - Keeping backward compatibility with older MCP clients during rollout
+example_prompt: |
+  Review this MCP server and plan its migration to the stateless core in the MCP 2026-07-28 spec.
+
+  ```
+  [paste server implementation here]
+  ```
+
+  Identify every place that relies on persistent session state, propose a stateless replacement
+  for each, flag anything that cannot be made stateless without a design change, and give me a
+  staged rollout plan that keeps existing clients working.
+related_skills:
+  - mcp-server-builder
+  - mcp-server-security-review
+  - migration-planner
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-07-28T00:00:00.000Z"
+updated_at: "2026-07-28T00:00:00.000Z"
