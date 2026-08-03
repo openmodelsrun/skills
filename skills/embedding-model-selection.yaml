@@ -1,0 +1,54 @@
+id: embedding-model-selection
+name: Embedding Model Selection
+description: >
+  Selects an embedding model for a retrieval workload by weighing retrieval quality, dimensionality
+  and index cost, max sequence length, multilingual and domain coverage, and hosted versus
+  self-hosted tradeoffs. Includes building a small domain-specific benchmark instead of trusting
+  leaderboards, and planning the re-embedding migration when the model changes.
+category: data
+tags:
+  - embeddings
+  - vector-search
+  - retrieval
+  - benchmarking
+  - model-selection
+  - rag
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gpt-5-6-sol
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Comparing embedding models for a specific domain corpus
+  - Trading off vector dimensionality against index size and cost
+  - Building a small labeled benchmark to evaluate candidates
+  - Planning a re-embedding migration without downtime
+example_prompt: |
+  Help me choose an embedding model for semantic search over 2 million multilingual support
+  tickets, served from a managed vector database.
+
+  Shortlist candidates and compare them on retrieval quality, dimensionality and storage cost,
+  max input length, and multilingual coverage. Describe how to build a small labeled benchmark from
+  our own tickets to decide, and outline the re-embedding migration plan if we switch later.
+related_skills:
+  - rag-chunking-strategy
+  - retrieval-evaluation
+  - reranker-tuning
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-08-03T00:00:00.000Z"
+updated_at: "2026-08-03T00:00:00.000Z"

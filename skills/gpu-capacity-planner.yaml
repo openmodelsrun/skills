@@ -1,0 +1,56 @@
+id: gpu-capacity-planner
+name: GPU Capacity Planner
+description: >
+  Sizes GPU capacity for self-hosted LLM inference from a target traffic profile. Estimates KV
+  cache and weight memory, derives concurrency limits from context length and batch size, models
+  throughput against latency targets, and compares instance types and autoscaling policies so
+  capacity matches demand without paying for idle accelerators.
+category: ops
+tags:
+  - gpu
+  - capacity-planning
+  - inference
+  - kv-cache
+  - scaling
+  - cost
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gpt-5-6-sol
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Estimating how many GPUs a target QPS requires
+  - Computing KV cache memory for a given context length and concurrency
+  - Choosing batch size to balance throughput against p95 latency
+  - Comparing instance types and autoscaling policies on cost
+example_prompt: |
+  Plan GPU capacity for a self-hosted inference service.
+
+  Model: 32B parameters, FP8. Traffic: 40 requests/second peak, average 8K input and 1K output
+  tokens. Target: p95 time-to-first-token under 800ms.
+
+  Walk through the memory math (weights plus KV cache), the concurrency each GPU can sustain, how
+  many GPUs I need at peak, and the batching and autoscaling configuration. Show your assumptions
+  so I can adjust them.
+related_skills:
+  - model-quantization-advisor
+  - inference-latency-optimizer
+  - cloud-cost-optimizer
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-08-03T00:00:00.000Z"
+updated_at: "2026-08-03T00:00:00.000Z"

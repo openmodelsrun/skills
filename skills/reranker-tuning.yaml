@@ -1,0 +1,54 @@
+id: reranker-tuning
+name: Reranker Tuning
+description: >
+  Adds and tunes a reranking stage on top of first-pass vector retrieval to lift precision at the
+  top of the result list. Covers cross-encoder versus LLM-as-reranker choices, candidate pool size,
+  score thresholds and cutoffs, hybrid fusion with keyword search, and the latency and cost budget
+  a reranker introduces.
+category: data
+tags:
+  - reranking
+  - cross-encoder
+  - retrieval
+  - rag
+  - precision
+  - hybrid-search
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gemini-3-5-flash-lite
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Adding a cross-encoder reranker to an existing RAG pipeline
+  - Choosing candidate pool size and final cutoff
+  - Fusing dense and keyword results before reranking
+  - Measuring the precision gain against added latency and cost
+example_prompt: |
+  Our vector search returns roughly relevant chunks but the best passage is often ranked 5th or
+  lower. Design a reranking stage.
+
+  Recommend cross-encoder versus LLM reranking for our case, the candidate pool size to retrieve
+  before reranking, how to set the final cutoff, and whether to add hybrid keyword fusion. Quantify
+  the expected latency and cost per query, and tell me which metrics should improve if it works.
+related_skills:
+  - retrieval-evaluation
+  - embedding-model-selection
+  - rag-pipeline-builder
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-08-03T00:00:00.000Z"
+updated_at: "2026-08-03T00:00:00.000Z"

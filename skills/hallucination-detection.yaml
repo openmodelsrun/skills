@@ -1,0 +1,57 @@
+id: hallucination-detection
+name: Hallucination Detection
+description: >
+  Designs checks that catch unsupported or fabricated claims in LLM output before users see them.
+  Covers grounding verification against retrieved context, claim decomposition and per-claim
+  entailment checking, citation validation, self-consistency sampling, and abstention thresholds,
+  plus how to measure detector precision and recall on a labeled set.
+category: testing
+tags:
+  - hallucination
+  - groundedness
+  - faithfulness
+  - llm-evaluation
+  - rag
+  - guardrails
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gpt-5-6-sol
+min_context_window: 32000
+modalities:
+  input:
+    - text
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Verifying that RAG answers are grounded in retrieved passages
+  - Decomposing an answer into claims and checking each for support
+  - Validating that citations actually contain the cited statement
+  - Setting abstention thresholds so the model says "I don't know"
+example_prompt: |
+  Design a hallucination detection layer for our RAG assistant over internal documentation.
+
+  Cover:
+  1. How to decompose an answer into individually checkable claims
+  2. How to score each claim for support against the retrieved chunks
+  3. How to validate citations point at text that actually supports the claim
+  4. Thresholds for rewriting versus abstaining
+  5. How I measure detector precision and recall, and what labeled data I need
+
+  Include the implementation and note the latency and cost this adds per request.
+related_skills:
+  - retrieval-evaluation
+  - llm-output-evaluation
+  - rag-pipeline-builder
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-08-03T00:00:00.000Z"
+updated_at: "2026-08-03T00:00:00.000Z"

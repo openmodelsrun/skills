@@ -5,6 +5,16 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.12.0] - 2026-08-03
+### Added
+- 11 new AI-focused skills covering gaps across the LLM lifecycle:
+  - **Retrieval quality**: `rag-chunking-strategy`, `embedding-model-selection`, and `reranker-tuning`.
+  - **Output quality**: `hallucination-detection` (groundedness, claim-level entailment, abstention) and `multimodal-prompt-design`.
+  - **Serving & efficiency**: `inference-latency-optimizer`, `model-quantization-advisor`, and `gpu-capacity-planner`.
+  - **Safety & governance**: `agent-sandbox-design`, `ai-act-compliance-reviewer` (EU AI Act), and `model-card-writer`.
+### Changed
+- Total skills: 234 (from 223).
+
 ## [0.11.0] - 2026-07-28
 ### Added
 - 8 new skills, four of them tied to the MCP 2026-07-28 spec release:

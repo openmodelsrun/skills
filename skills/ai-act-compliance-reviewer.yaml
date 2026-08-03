@@ -1,0 +1,53 @@
+id: ai-act-compliance-reviewer
+name: AI Act Compliance Reviewer
+description: >
+  Reviews an AI system against EU AI Act obligations. Helps classify the system's risk tier,
+  identifies the duties that follow (risk management, data governance, technical documentation,
+  logging, human oversight, accuracy and robustness, transparency disclosures for generative
+  output), and produces a gap list with owners. Provides structured analysis, not legal advice.
+category: security
+tags:
+  - eu-ai-act
+  - compliance
+  - ai-governance
+  - risk-assessment
+  - regulation
+  - documentation
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gpt-5-5-pro
+min_context_window: 64000
+modalities:
+  input:
+    - text
+  output:
+    - text
+complexity: advanced
+use_cases:
+  - Classifying an AI feature's risk tier under the EU AI Act
+  - Mapping obligations to concrete engineering work
+  - Preparing technical documentation and logging requirements
+  - Identifying transparency disclosures for generated content
+example_prompt: |
+  Review this AI feature against EU AI Act obligations.
+
+  System: [describe purpose, users, data, deployment region, degree of automation]
+
+  Classify the likely risk tier and explain the reasoning, list the obligations that follow, map
+  each to concrete engineering or documentation work, and produce a gap list. Where classification
+  depends on facts I have not provided, say what you need. Note clearly that this is structured
+  analysis and not legal advice.
+related_skills:
+  - privacy-compliance-auditor
+  - ai-safety-policy-review
+  - model-card-writer
+compatible_tools:
+  - claude-code
+  - kiro
+  - any
+created_at: "2026-08-03T00:00:00.000Z"
+updated_at: "2026-08-03T00:00:00.000Z"

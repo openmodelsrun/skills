@@ -1,0 +1,54 @@
+id: rag-chunking-strategy
+name: RAG Chunking Strategy
+description: >
+  Chooses how to split documents for retrieval so that chunks stay semantically coherent and
+  answerable. Compares fixed-size, recursive, semantic, and structure-aware splitting, sets chunk
+  size and overlap against the embedding model's limits, handles tables, code, and headings, and
+  covers contextual headers plus parent-document retrieval to avoid losing surrounding meaning.
+category: data
+tags:
+  - rag
+  - chunking
+  - retrieval
+  - embeddings
+  - document-processing
+  - vector-search
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gpt-5-6-sol
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: intermediate
+use_cases:
+  - Picking chunk size and overlap for a given embedding model
+  - Splitting structured documents without breaking tables or code
+  - Adding contextual headers so chunks stand alone
+  - Diagnosing poor retrieval caused by bad chunk boundaries
+example_prompt: |
+  Our RAG pipeline retrieves irrelevant passages from a corpus of technical manuals with headings,
+  tables, and code samples. Current setup: fixed 1000-character chunks, no overlap.
+
+  Recommend a chunking strategy: what splitter to use, chunk size and overlap for our embedding
+  model, how to keep tables and code blocks intact, and whether to add contextual headers or
+  parent-document retrieval. Explain how I would A/B test the change against retrieval metrics.
+related_skills:
+  - rag-pipeline-builder
+  - retrieval-evaluation
+  - embedding-model-selection
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-08-03T00:00:00.000Z"
+updated_at: "2026-08-03T00:00:00.000Z"

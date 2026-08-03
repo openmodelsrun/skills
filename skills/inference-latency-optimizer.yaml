@@ -1,0 +1,56 @@
+id: inference-latency-optimizer
+name: Inference Latency Optimizer
+description: >
+  Reduces end-to-end latency for LLM-backed features by attacking the right bottleneck. Separates
+  time-to-first-token from generation throughput, applies streaming, prompt and prefix caching,
+  speculative decoding, output length limits, parallel tool calls, and model routing, and shows how
+  to measure each change against p50 and p95 rather than averages.
+category: ops
+tags:
+  - latency
+  - inference
+  - performance
+  - streaming
+  - caching
+  - optimization
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - claude-opus-5
+  - gemini-3-6-flash
+  - gpt-5-6-sol
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Diagnosing whether TTFT or generation speed is the bottleneck
+  - Applying prefix and prompt caching to repeated system prompts
+  - Cutting perceived latency with streaming and partial rendering
+  - Routing easy requests to a faster, cheaper model
+example_prompt: |
+  Our chat feature has a p95 response time of 9 seconds and users are complaining.
+
+  Setup: single frontier model, 6K-token system prompt resent every turn, no streaming, agent makes
+  up to 4 sequential tool calls.
+
+  Identify the likely bottlenecks in priority order, give concrete fixes for each (caching,
+  streaming, parallel tool calls, output limits, model routing), and estimate the p95 improvement
+  per change. Tell me what to instrument to confirm the gains.
+related_skills:
+  - performance-optimization
+  - model-router-designer
+  - llm-cost-optimizer
+compatible_tools:
+  - claude-code
+  - cursor
+  - kiro
+  - any
+created_at: "2026-08-03T00:00:00.000Z"
+updated_at: "2026-08-03T00:00:00.000Z"
