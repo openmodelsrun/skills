@@ -1,0 +1,66 @@
+id: realtime-voice-agent-design
+name: Realtime Voice Agent Design
+description: >
+  Designs production voice agents for low-latency, two-way audio conversations. Covers WebRTC
+  and WebSocket transport, voice activity detection, interruption and barge-in behavior, turn
+  state, streaming transcripts, tool calls, specialist handoffs, consent, failure recovery,
+  latency budgets, and evaluation of conversational quality. Complements dialogue writing with
+  the runtime architecture required to operate a reliable realtime agent.
+category: development
+tags:
+  - voice-agents
+  - realtime
+  - audio
+  - webrtc
+  - websocket
+  - tool-calling
+  - agent-handoffs
+  - latency
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - gpt-5-6-sol
+  - gemini-3-6-flash
+  - gpt-5-5-pro
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - audio
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Designing a low-latency customer support voice agent
+  - Adding interruption and barge-in handling to an assistant
+  - Coordinating voice-agent tool calls and specialist handoffs
+  - Defining consent and escalation behavior for recorded conversations
+  - Evaluating latency, task completion, and conversational recovery
+example_prompt: |
+  Design a realtime voice agent for appointment scheduling.
+
+  The agent must handle natural interruptions, call tools to check and reserve time slots,
+  confirm before committing a booking, and hand off to a human when confidence is low.
+
+  Provide:
+  - The client/server architecture and choice of WebRTC or WebSocket transport
+  - The turn state machine, including VAD, barge-in, cancellation, and reconnect behavior
+  - Tool-call and specialist-handoff flows
+  - A latency budget from microphone input to first audible response
+  - Consent, transcript retention, and escalation guardrails
+  - An evaluation plan for task success, latency, interruptions, and recovery
+related_skills:
+  - ai-agent-builder
+  - voice-ui-script-writer
+  - websocket-service-builder
+  - tool-call-testing
+compatible_tools:
+  - claude-code
+  - cursor
+  - gemini-cli
+  - kiro
+  - any
+created_at: "2026-08-22T00:00:00.000Z"
+updated_at: "2026-08-22T00:00:00.000Z"

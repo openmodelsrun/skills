@@ -5,6 +5,13 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.13.0] - 2026-08-22
+### Added
+- `realtime-voice-agent-design` — production voice-agent architecture covering realtime audio
+  transport, VAD, barge-in, tool calls, handoffs, latency budgets, consent, and evaluation.
+### Changed
+- Total skills: 235 (from 234).
+
 ## [0.12.0] - 2026-08-03
 ### Added
 - 11 new AI-focused skills covering gaps across the LLM lifecycle:

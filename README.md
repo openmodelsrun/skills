@@ -13,6 +13,8 @@ Skills are structured definitions of tasks that AI agents excel at. Each skill i
 
 Skills help developers discover what AI agents can do and choose the right model for each task.
 
+The registry currently contains **235 skills** across 9 categories.
+
 ## Quick Start
 
 Browse skills on [openmodels.run/skills](https://openmodels.run/skills) or explore the YAML files directly:
@@ -36,8 +38,13 @@ skills/
 ├── code-translation.yaml
 ├── regex-builder.yaml
 ├── ...
-└── 103 skills total (see full list in skills/ directory)
+└── 235 skills total (see full list in skills/ directory)
 ```
+
+### New in v0.13.0
+
+- `realtime-voice-agent-design` — realtime voice-agent architecture with audio transport,
+  interruption handling, tool calls, handoffs, latency budgets, and production guardrails
 
 ### New in v0.1.7
 
