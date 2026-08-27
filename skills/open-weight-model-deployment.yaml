@@ -1,0 +1,66 @@
+id: open-weight-model-deployment
+name: Open-Weight Model Deployment
+description: >
+  Designs a production deployment for an open-weight language or multimodal model from its model
+  card, checkpoint layout, target workload, and available hardware. Verifies licensing and runtime
+  support, estimates weights and KV-cache memory, selects a serving framework and parallelism plan,
+  defines quantization and long-context settings, and creates quality, latency, security, and
+  rollback gates before traffic is moved to the new model.
+category: ops
+tags:
+  - open-weights
+  - model-deployment
+  - inference
+  - vllm
+  - sglang
+  - gpu
+  - multimodal
+  - production-readiness
+author:
+  name: OpenModels Community
+  github: openmodelsrun
+recommended_models:
+  - glm-5-3-flash
+  - qwen3-8-flash-next
+  - gpt-5-6-sol
+min_context_window: 32000
+modalities:
+  input:
+    - text
+    - code
+    - file
+  output:
+    - text
+    - code
+complexity: advanced
+use_cases:
+  - Turning a newly released checkpoint and model card into a deployment plan
+  - Choosing between vLLM, SGLang, and another model-supported serving runtime
+  - Estimating weight, KV-cache, and multimodal encoder memory before provisioning GPUs
+  - Defining canary, quality, latency, safety, and rollback gates for a model upgrade
+  - Separating verified model capabilities from deployment assumptions that require testing
+example_prompt: |
+  Design a production deployment for this open-weight model.
+
+  Model card or repository: [URL]
+  Hardware: [GPU type and count]
+  Traffic: [requests per second, input/output token distribution, image or video usage]
+  SLOs: [time to first token, throughput, availability]
+
+  Verify the license, supported runtimes, native and extended context limits, checkpoint precision,
+  and multimodal requirements. Then propose the serving framework, tensor/pipeline parallelism,
+  quantization, memory budget, batching, autoscaling, observability, canary evaluation, and rollback
+  plan. Clearly label any value that must be benchmarked instead of treating it as known.
+related_skills:
+  - gpu-capacity-planner
+  - model-quantization-advisor
+  - inference-latency-optimizer
+  - llm-eval-harness-builder
+compatible_tools:
+  - claude-code
+  - cursor
+  - opencode
+  - kiro
+  - any
+created_at: "2026-08-27T00:00:00.000Z"
+updated_at: "2026-08-27T00:00:00.000Z"
