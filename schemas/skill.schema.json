@@ -97,6 +97,37 @@
       "description": "URL to the skill source code or documentation",
       "format": "uri"
     },
+    "provenance": {
+      "type": "object",
+      "description": "Structured publisher and canonical-source provenance used by OpenModels discovery",
+      "additionalProperties": false,
+      "required": ["source_kind", "canonical_url", "publisher"],
+      "properties": {
+        "source_kind": {
+          "type": "string",
+          "enum": ["original", "adapted", "imported", "community"]
+        },
+        "canonical_url": {"type": "string", "format": "uri"},
+        "source_revision": {"type": "string", "maxLength": 255},
+        "license": {"type": "string", "maxLength": 64},
+        "verified_at": {"type": "string", "format": "date-time"},
+        "publisher": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "name", "verification_status"],
+          "properties": {
+            "id": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 128},
+            "name": {"type": "string", "minLength": 1, "maxLength": 255},
+            "github": {"type": "string", "maxLength": 64},
+            "url": {"type": "string", "format": "uri"},
+            "verification_status": {
+              "type": "string",
+              "enum": ["unverified", "claimed", "verified"]
+            }
+          }
+        }
+      }
+    },
     "recommended_models": {
       "type": "array",
       "description": "List of model IDs that work well with this skill (references OpenModels registry)",

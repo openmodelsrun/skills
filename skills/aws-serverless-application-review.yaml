@@ -1,0 +1,45 @@
+id: aws-serverless-application-review
+name: AWS Serverless Application Review
+description: >
+  Reviews AWS SAM and Lambda applications across architecture, build reproducibility,
+  event schemas, local testing, deployment safety, logs, permissions, cost, and
+  rollback. Produces actionable findings while keeping deployment and sensitive-log
+  access behind explicit approval gates.
+category: ops
+tags: [aws, serverless, lambda, sam, cloudformation, deployment]
+author: {name: OpenModels Community, github: openmodelsrun, url: https://www.openmodels.run}
+source_url: https://github.com/awslabs/mcp/tree/main/src/aws-serverless-mcp-server
+provenance:
+  source_kind: adapted
+  canonical_url: https://github.com/awslabs/mcp/tree/main/src/aws-serverless-mcp-server
+  license: Apache-2.0
+  verified_at: "2026-09-01T00:00:00.000Z"
+  publisher: {id: openmodels-community, name: OpenModels Community, github: openmodelsrun, url: https://www.openmodels.run, verification_status: verified}
+recommended_models: [gpt-5-6-sol, claude-opus-5, gemini-3-6-flash]
+min_context_window: 64000
+modalities: {input: [text, code, file], output: [text, code]}
+complexity: advanced
+use_cases:
+  - Reviewing SAM templates and Lambda boundaries
+  - Checking event schemas and local invocation coverage
+  - Designing staged serverless deployments and rollback
+  - Auditing permissions, observability, and cost controls
+example_prompt: |
+  Review this AWS serverless application before deployment.
+
+  Provide the SAM template, function code, event sources, environments, and traffic assumptions.
+
+  Check:
+  1. Function boundaries, idempotency, retries, and failure destinations.
+  2. Event schema correctness and local SAM test cases.
+  3. IAM least privilege, secrets, and sensitive-log exposure.
+  4. Build reproducibility and artifact integrity.
+  5. Metrics, alarms, tracing, and cost limits.
+  6. A canary deployment and rollback procedure.
+
+  Do not deploy or read production logs without explicit approval.
+related_skills: [iam-policy-reviewer, security-audit, api-design]
+compatible_tools: [claude-code, cursor, kiro, gemini-cli, any]
+created_at: "2026-09-01T00:00:00.000Z"
+updated_at: "2026-09-01T00:00:00.000Z"
+

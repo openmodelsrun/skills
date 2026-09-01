@@ -1,0 +1,45 @@
+id: aws-data-processing-plan
+name: AWS Data Processing Plan
+description: >
+  Plans governed data-processing workflows across AWS Glue, EMR, EMR Serverless,
+  Athena, S3, and IAM. Produces catalog, compute, orchestration, data-quality,
+  encryption, cost, and observability decisions with read-only discovery first and
+  explicit approval before resource changes.
+category: data
+tags: [aws, glue, emr, athena, etl, data-engineering, governance]
+author: {name: OpenModels Community, github: openmodelsrun, url: https://www.openmodels.run}
+source_url: https://github.com/awslabs/mcp/tree/main/src/aws-dataprocessing-mcp-server
+provenance:
+  source_kind: adapted
+  canonical_url: https://github.com/awslabs/mcp/tree/main/src/aws-dataprocessing-mcp-server
+  license: Apache-2.0
+  verified_at: "2026-09-01T00:00:00.000Z"
+  publisher: {id: openmodels-community, name: OpenModels Community, github: openmodelsrun, url: https://www.openmodels.run, verification_status: verified}
+recommended_models: [gpt-5-6-sol, claude-opus-5, gemini-3-6-flash]
+min_context_window: 64000
+modalities: {input: [text, code, file], output: [text, code]}
+complexity: advanced
+use_cases:
+  - Choosing between Glue, EMR, EMR Serverless, and Athena
+  - Planning governed catalogs and ETL workflows
+  - Auditing data-processing IAM and encryption
+  - Estimating cost and operational controls before rollout
+example_prompt: |
+  Design an AWS data-processing plan for this workload.
+
+  Sources: [systems, formats, sizes, arrival pattern]
+  Consumers: [queries, dashboards, ML, exports]
+  Constraints: [latency, region, retention, compliance, budget]
+
+  Produce:
+  1. A service-selection decision for Glue, EMR, EMR Serverless, Athena, and S3.
+  2. Catalog, partitioning, schema-evolution, and data-quality rules.
+  3. Read-only discovery steps before any mutation.
+  4. IAM, encryption, network, and sensitive-data controls.
+  5. Cost model, quotas, metrics, and failure recovery.
+  6. A staged implementation plan with acceptance tests.
+related_skills: [data-pipeline-builder, iam-policy-reviewer, cloud-cost-optimizer]
+compatible_tools: [claude-code, cursor, kiro, gemini-cli, any]
+created_at: "2026-09-01T00:00:00.000Z"
+updated_at: "2026-09-01T00:00:00.000Z"
+

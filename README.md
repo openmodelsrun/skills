@@ -13,7 +13,7 @@ Skills are structured definitions of tasks that AI agents excel at. Each skill i
 
 Skills help developers discover what AI agents can do and choose the right model for each task.
 
-The registry currently contains **236 skills** across 9 categories.
+The registry currently contains **241 skills** across 9 categories.
 
 ## Quick Start
 

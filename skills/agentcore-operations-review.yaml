@@ -1,0 +1,44 @@
+id: agentcore-operations-review
+name: AgentCore Operations Review
+description: >
+  Reviews Amazon Bedrock AgentCore runtime, memory, identity, gateway, policy,
+  browser, and code-interpreter operations before deployment. Separates read-only,
+  billable, mutating, and destructive actions and produces scoped enablement,
+  observability, rollback, and cost-control recommendations.
+category: ops
+tags: [aws, bedrock, agentcore, ai-agents, operations, security]
+author: {name: OpenModels Community, github: openmodelsrun, url: https://www.openmodels.run}
+source_url: https://github.com/awslabs/mcp/tree/main/src/amazon-bedrock-agentcore-mcp-server
+provenance:
+  source_kind: adapted
+  canonical_url: https://github.com/awslabs/mcp/tree/main/src/amazon-bedrock-agentcore-mcp-server
+  license: Apache-2.0
+  verified_at: "2026-09-01T00:00:00.000Z"
+  publisher: {id: openmodels-community, name: OpenModels Community, github: openmodelsrun, url: https://www.openmodels.run, verification_status: verified}
+recommended_models: [gpt-5-6-sol, claude-opus-5, gemini-3-6-flash]
+min_context_window: 64000
+modalities: {input: [text, code], output: [text]}
+complexity: advanced
+use_cases:
+  - Reviewing AgentCore runtime and gateway rollout plans
+  - Scoping memory, identity, browser, and interpreter tools
+  - Separating billable and destructive operations
+  - Designing rollback and audit controls for agent infrastructure
+example_prompt: |
+  Review this Amazon Bedrock AgentCore deployment and operations plan.
+
+  Context: [architecture, regions, environments, IAM roles, expected traffic]
+  Enabled primitives: [runtime, memory, identity, gateway, policy, browser, code_interpreter]
+
+  Return:
+  1. A primitive-by-primitive necessity review.
+  2. Read-only, billable, mutating, and destructive operation classes.
+  3. Least-privilege IAM and identity boundaries.
+  4. Session lifecycle, timeout, and cost controls.
+  5. Observability signals and incident runbooks.
+  6. A staged rollout and tested rollback plan.
+related_skills: [ai-agent-builder, iam-policy-reviewer, security-audit]
+compatible_tools: [claude-code, cursor, kiro, gemini-cli, any]
+created_at: "2026-09-01T00:00:00.000Z"
+updated_at: "2026-09-01T00:00:00.000Z"
+

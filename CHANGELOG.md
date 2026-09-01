@@ -5,6 +5,18 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.15.0] - 2026-09-01
+### Added
+- Five source-backed AWS infrastructure skills:
+  - `bedrock-knowledge-base-retrieval` for citation-aware RAG review and evaluation.
+  - `agentcore-operations-review` for AgentCore primitive, cost, access, and rollback controls.
+  - `aws-serverless-application-review` for SAM and Lambda deployment readiness.
+  - `aws-data-processing-plan` for governed Glue, EMR, Athena, and S3 workflows.
+  - `s3-tables-lakehouse-review` for S3 Tables and Iceberg design, governance, and recovery.
+- Optional structured provenance metadata for publisher verification and canonical-source tracking.
+### Changed
+- Total skills: 241 (from 236).
+
 ## [0.14.0] - 2026-08-27
 ### Added
 - `open-weight-model-deployment` — a source-aware production deployment workflow covering model-card and license verification, runtime selection, weights and KV-cache sizing, quantization, parallelism, long-context settings, canary evaluation, observability, and rollback.

@@ -1,0 +1,47 @@
+id: bedrock-knowledge-base-retrieval
+name: Bedrock Knowledge Base Retrieval Review
+description: >
+  Reviews and plans citation-aware retrieval over Amazon Bedrock Knowledge Bases.
+  Produces a least-privilege access plan, knowledge-base discovery criteria,
+  data-source filters, reranking decision, evaluation set, and an evidence-preserving
+  response contract without inventing source content.
+category: data
+tags: [aws, bedrock, rag, retrieval, knowledge-base, citations]
+author: {name: OpenModels Community, github: openmodelsrun, url: https://www.openmodels.run}
+source_url: https://github.com/awslabs/mcp/tree/main/src/bedrock-kb-retrieval-mcp-server
+provenance:
+  source_kind: adapted
+  canonical_url: https://github.com/awslabs/mcp/tree/main/src/bedrock-kb-retrieval-mcp-server
+  license: Apache-2.0
+  verified_at: "2026-09-01T00:00:00.000Z"
+  publisher: {id: openmodels-community, name: OpenModels Community, github: openmodelsrun, url: https://www.openmodels.run, verification_status: verified}
+recommended_models: [gpt-5-6-sol, claude-opus-5, gemini-3-6-flash]
+min_context_window: 64000
+modalities: {input: [text, file], output: [text]}
+complexity: advanced
+use_cases:
+  - Reviewing a Bedrock Knowledge Base retrieval architecture
+  - Defining citation and evidence requirements for RAG answers
+  - Choosing data-source filters and reranking behavior
+  - Preparing a retrieval quality evaluation set
+example_prompt: |
+  Review this Amazon Bedrock Knowledge Base retrieval use case.
+
+  Inputs:
+  - Knowledge Bases and data sources: [describe]
+  - User questions: [examples]
+  - Required citations: [format and precision]
+  - AWS region and access boundary: [details]
+
+  Produce:
+  1. A read-only discovery and query plan.
+  2. Least-privilege IAM actions and resource scope.
+  3. Data-source inclusion/exclusion rules.
+  4. A reranking decision with regional and cost constraints.
+  5. An evaluation set with retrieval, citation, and refusal checks.
+  6. Failure modes. Never fill missing evidence with model knowledge.
+related_skills: [ai-agent-builder, data-pipeline-builder, security-audit]
+compatible_tools: [claude-code, cursor, kiro, gemini-cli, any]
+created_at: "2026-09-01T00:00:00.000Z"
+updated_at: "2026-09-01T00:00:00.000Z"
+

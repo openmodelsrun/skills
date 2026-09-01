@@ -1,0 +1,43 @@
+id: s3-tables-lakehouse-review
+name: S3 Tables Lakehouse Review
+description: >
+  Reviews Amazon S3 Tables and Apache Iceberg lakehouse designs for table-bucket
+  boundaries, namespaces, schemas, query access, ingestion, maintenance, governance,
+  and recovery. Defaults to metadata discovery and read-only SQL, with append or
+  metadata changes isolated behind explicit approval.
+category: data
+tags: [aws, s3, iceberg, lakehouse, sql, data-governance]
+author: {name: OpenModels Community, github: openmodelsrun, url: https://www.openmodels.run}
+source_url: https://github.com/awslabs/mcp/tree/main/src/s3-tables-mcp-server
+provenance:
+  source_kind: adapted
+  canonical_url: https://github.com/awslabs/mcp/tree/main/src/s3-tables-mcp-server
+  license: Apache-2.0
+  verified_at: "2026-09-01T00:00:00.000Z"
+  publisher: {id: openmodels-community, name: OpenModels Community, github: openmodelsrun, url: https://www.openmodels.run, verification_status: verified}
+recommended_models: [gpt-5-6-sol, claude-opus-5, gemini-3-6-flash]
+min_context_window: 64000
+modalities: {input: [text, code, file], output: [text, code]}
+complexity: advanced
+use_cases:
+  - Reviewing S3 Table Bucket and namespace boundaries
+  - Designing Iceberg schema and partition evolution
+  - Auditing read-only SQL and append workflows
+  - Planning maintenance, governance, and recovery controls
+example_prompt: |
+  Review this Amazon S3 Tables lakehouse design.
+
+  Include table buckets, namespaces, schemas, partitioning, ingestion paths,
+  query engines, access roles, retention, and expected volume.
+
+  Return:
+  1. A metadata-first discovery checklist.
+  2. Table and namespace boundary recommendations.
+  3. Schema, partition, and maintenance strategy.
+  4. Read-only SQL checks and append validation tests.
+  5. IAM, resource-policy, encryption, and audit controls.
+  6. Backup, recovery, and explicit approval gates for writes.
+related_skills: [data-pipeline-builder, sql-generation, security-audit]
+compatible_tools: [claude-code, cursor, kiro, gemini-cli, any]
+created_at: "2026-09-01T00:00:00.000Z"
+updated_at: "2026-09-01T00:00:00.000Z"
