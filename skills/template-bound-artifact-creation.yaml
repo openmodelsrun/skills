@@ -1,0 +1,41 @@
+id: template-bound-artifact-creation
+name: Template-bound Artifact Creation
+description: >
+  Produces documents, spreadsheets, presentations, and structured deliverables
+  that follow an existing template, style, and business context instead of
+  generating generic output. Covers source selection, required context checks,
+  layout constraints, citation boundaries, validation passes, and final artifact
+  review.
+category: productivity
+tags: [documents, spreadsheets, presentations, templates, artifacts, business-work]
+author: {name: OpenModels Community, github: openmodelsrun, url: https://www.openmodels.run}
+source_url: https://developers.openai.com/api/docs/guides/latest-model
+provenance:
+  source_kind: adapted
+  canonical_url: https://developers.openai.com/api/docs/guides/latest-model
+  license: other
+  verified_at: "2026-09-04T00:00:00.000Z"
+  publisher: {id: openmodels-community, name: OpenModels Community, github: openmodelsrun, url: https://www.openmodels.run, verification_status: verified}
+recommended_models: [gpt-6-astra, gpt-5-6-sol, claude-fable-5-1]
+min_context_window: 128000
+modalities: {input: [text, file], output: [text, file]}
+complexity: advanced
+use_cases:
+  - Creating a slide deck that follows an existing company template
+  - Rewriting a document while preserving legal or client-specific fields
+  - Building a spreadsheet report with a known workbook structure
+  - Reviewing generated artifacts against style and layout constraints
+example_prompt: |
+  Create this deliverable using the attached template and source materials.
+
+  Before drafting, identify:
+  1. Required facts and source files.
+  2. Template sections and formatting constraints.
+  3. Content that must not be invented.
+  4. Validation checks before delivery.
+
+  Then produce the artifact and a short QA summary.
+related_skills: [documentation-generator, data-analysis, pptx-generator, research-summarizer]
+compatible_tools: [claude-code, cursor, kiro, any]
+created_at: "2026-09-04T00:00:00.000Z"
+updated_at: "2026-09-04T00:00:00.000Z"

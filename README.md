@@ -13,7 +13,7 @@ Skills are structured definitions of tasks that AI agents excel at. Each skill i
 
 Skills help developers discover what AI agents can do and choose the right model for each task.
 
-The registry currently contains **241 skills** across 9 categories.
+The registry currently contains **245 skills** across 9 categories.
 
 ## Quick Start
 
@@ -38,13 +38,15 @@ skills/
 ├── code-translation.yaml
 ├── regex-builder.yaml
 ├── ...
-└── 235 skills total (see full list in skills/ directory)
+└── 245 skills total (see full list in skills/ directory)
 ```
 
-### New in v0.13.0
+### New in v0.16.0
 
-- `realtime-voice-agent-design` — realtime voice-agent architecture with audio transport,
-  interruption handling, tool calls, handoffs, latency budgets, and production guardrails
+- `gpt-6-astra-migration` — migration workflow for OpenAI integrations moving to GPT-6 Astra
+- `async-tool-calling-design` — long-running asynchronous tool workflow design
+- `mid-turn-steering-workflow` — user steering and conflict handling during long agent tasks
+- `template-bound-artifact-creation` — template-following documents, decks, spreadsheets, and structured deliverables
 
 ### New in v0.1.7
 

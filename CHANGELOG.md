@@ -5,6 +5,16 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.16.0] - 2026-09-04
+### Added
+- Four source-backed agent workflow skills:
+  - `gpt-6-astra-migration` for moving OpenAI integrations to GPT-6 Astra.
+  - `async-tool-calling-design` for long-running asynchronous tool workflows.
+  - `mid-turn-steering-workflow` for incorporating user steering during long agent tasks.
+  - `template-bound-artifact-creation` for producing documents, decks, spreadsheets, and structured deliverables from existing templates.
+### Changed
+- Total skills: 245 (from 241).
+
 ## [0.15.0] - 2026-09-01
 ### Added
 - Five source-backed AWS infrastructure skills:
