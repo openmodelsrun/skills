@@ -13,7 +13,7 @@ Skills are structured definitions of tasks that AI agents excel at. Each skill i
 
 Skills help developers discover what AI agents can do and choose the right model for each task.
 
-The registry currently contains **245 skills** across 9 categories.
+The registry currently contains **260 skills** across 9 categories.
 
 ## Quick Start
 
@@ -38,7 +38,7 @@ skills/
 ├── code-translation.yaml
 ├── regex-builder.yaml
 ├── ...
-└── 245 skills total (see full list in skills/ directory)
+└── 260 skills total (see full list in skills/ directory)
 ```
 
 ### New in v0.16.0

@@ -5,6 +5,18 @@ All notable changes to the OpenModels Skills Registry will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.17.0] - 2026-10-01
+### Added
+- Fifteen skills filling gaps found in a registry audit:
+  - Model operations: `claude-opus-5-5-migration`, `adaptive-thinking-effort-tuning`, `prompt-caching-strategy`, `batch-inference-planner`, and `model-upgrade-regression-eval`.
+  - Agent tooling: `agent-skill-authoring` and `mcp-tool-description-optimizer`.
+  - Security: `api-security-review` and `llm-guardrails-design`.
+  - Research: `benchmark-results-interpreter` and `technical-due-diligence-brief`.
+  - Writing: `rfc-design-doc-writer` and `api-reference-writer`.
+  - Creative: `video-script-writer` and `ux-microcopy-writer`.
+### Changed
+- Total skills: 260 (from 245).
+
 ## [0.16.0] - 2026-09-04
 ### Added
 - Four source-backed agent workflow skills:

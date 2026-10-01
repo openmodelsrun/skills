@@ -1,0 +1,35 @@
+id: benchmark-results-interpreter
+name: Benchmark Results Interpreter
+description: >
+  Interprets published LLM benchmark results critically. Explains what each benchmark
+  measures, checks comparability across reported settings such as effort level, tools, and
+  scaffolding, flags vendor-reported versus independent numbers and possible
+  contamination, and translates scores into what they do and do not imply for a specific
+  use case.
+category: research
+tags: [benchmarks, model-evaluation, llm, comparison, analysis]
+author: {name: OpenModels Community, github: openmodelsrun, url: https://www.openmodels.run}
+recommended_models: [claude-opus-5-5, gpt-6-astra, gpt-6-1-sol]
+min_context_window: 32000
+modalities: {input: [text], output: [text]}
+complexity: intermediate
+use_cases:
+  - Reading a model launch post and separating signal from marketing
+  - Comparing coding or agentic benchmark scores across vendors
+  - Deciding whether a benchmark gain matters for a given product task
+  - Briefing stakeholders on a new model release
+example_prompt: |
+  Interpret these benchmark results.
+
+  Context: [benchmark table or launch post, models compared, my use case]
+
+  Return:
+  1. What each benchmark measures and its limits.
+  2. Comparability issues in the reported settings.
+  3. Which results are vendor-reported or independent.
+  4. What the differences likely mean for my use case.
+  5. What to test myself before deciding.
+related_skills: [research-summarizer, fact-checker, llm-output-evaluation]
+compatible_tools: [claude-code, cursor, kiro, any]
+created_at: "2026-10-01T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"

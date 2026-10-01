@@ -1,0 +1,35 @@
+id: adaptive-thinking-effort-tuning
+name: Adaptive Thinking Effort Tuning
+description: >
+  Chooses reasoning effort levels per workload for models that expose adaptive thinking or
+  reasoning-effort controls. Segments traffic by task difficulty, measures quality,
+  latency, and cost at each effort level, and produces a routing table with defaults,
+  escalation rules, and monitoring so teams stop paying for maximum effort on easy
+  requests.
+category: ops
+tags: [reasoning, effort, thinking, latency, cost, tuning]
+author: {name: OpenModels Community, github: openmodelsrun, url: https://www.openmodels.run}
+recommended_models: [claude-opus-5-5, gpt-6-astra, gpt-6-1-sol]
+min_context_window: 32000
+modalities: {input: [text, code], output: [text, code]}
+complexity: advanced
+use_cases:
+  - Setting default effort for chat, extraction, and agentic coding routes
+  - Finding the lowest effort level that still passes an eval suite
+  - Adding escalation to higher effort after a failed first attempt
+  - Budgeting latency and token cost for reasoning-heavy features
+example_prompt: |
+  Tune reasoning effort for these workloads.
+
+  Context: [workloads, model, current effort settings, eval results, latency and cost targets]
+
+  Return:
+  1. Workload segments by difficulty and risk.
+  2. Experiment design across effort levels.
+  3. Recommended effort per segment with trade-offs.
+  4. Escalation and fallback rules.
+  5. Metrics and alerts to watch after rollout.
+related_skills: [inference-latency-optimizer, llm-cost-optimizer, model-router-designer]
+compatible_tools: [claude-code, cursor, kiro, any]
+created_at: "2026-10-01T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"

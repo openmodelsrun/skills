@@ -1,0 +1,34 @@
+id: api-security-review
+name: API Security Review
+description: >
+  Reviews an HTTP API against the common API risk classes: broken object and function
+  level authorization, weak authentication, excessive data exposure, missing rate and
+  resource limits, mass assignment, injection, and misconfiguration. Maps each finding to
+  the affected endpoint, rates severity, and proposes concrete fixes and tests.
+category: security
+tags: [api-security, owasp, authorization, authentication, appsec]
+author: {name: OpenModels Community, github: openmodelsrun, url: https://www.openmodels.run}
+recommended_models: [claude-opus-5-5, gpt-6-astra, gpt-6-1-sol]
+min_context_window: 64000
+modalities: {input: [text, code], output: [text, code]}
+complexity: advanced
+use_cases:
+  - Auditing a REST or GraphQL API before a public launch
+  - Finding object-level authorization gaps across endpoints
+  - Reviewing an OpenAPI spec for excessive data exposure
+  - Producing a prioritized remediation list for an API
+example_prompt: |
+  Review this API for security issues.
+
+  Context: [OpenAPI spec or routes, auth model, roles, sample handlers]
+
+  Return:
+  1. Findings per endpoint with risk class and severity.
+  2. Authorization matrix gaps by role and resource.
+  3. Input validation and data exposure issues.
+  4. Rate and resource limit gaps.
+  5. Fixes and regression tests for each finding.
+related_skills: [security-audit, threat-modeling, jwt-analyzer]
+compatible_tools: [claude-code, cursor, kiro, any]
+created_at: "2026-10-01T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"

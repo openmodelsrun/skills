@@ -1,0 +1,34 @@
+id: technical-due-diligence-brief
+name: Technical Due Diligence Brief
+description: >
+  Produces a technical due diligence brief on a vendor, product, or codebase. Covers
+  architecture and scalability, security and compliance posture, engineering practices,
+  dependency and licensing risk, team and bus-factor signals, and cost structure, then
+  summarizes red flags, open questions, and a recommendation with stated confidence.
+category: research
+tags: [due-diligence, vendor-evaluation, architecture, risk, assessment]
+author: {name: OpenModels Community, github: openmodelsrun, url: https://www.openmodels.run}
+recommended_models: [claude-opus-5-5, gpt-6-astra, gpt-6-1-sol]
+min_context_window: 64000
+modalities: {input: [text], output: [text]}
+complexity: advanced
+use_cases:
+  - Evaluating a SaaS vendor before a procurement decision
+  - Assessing an acquisition target or open-source dependency
+  - Preparing questions for a vendor technical review call
+  - Summarizing technical risk for non-technical decision makers
+example_prompt: |
+  Write a technical due diligence brief.
+
+  Context: [target, available documents, intended use, decision deadline]
+
+  Return:
+  1. Summary and recommendation with confidence.
+  2. Architecture, scalability, and reliability assessment.
+  3. Security, compliance, and data handling.
+  4. Dependency, licensing, and lock-in risk.
+  5. Red flags and open questions to ask.
+related_skills: [competitive-intelligence-analyst, security-questionnaire-responder, contract-analysis]
+compatible_tools: [claude-code, cursor, kiro, any]
+created_at: "2026-10-01T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"

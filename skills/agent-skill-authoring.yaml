@@ -1,0 +1,35 @@
+id: agent-skill-authoring
+name: Agent Skill Authoring
+description: >
+  Writes reusable agent skills: packaged instructions that a coding agent loads on demand
+  for a specific kind of task. Defines a precise trigger description, scopes what the
+  skill covers, structures step-by-step instructions with supporting scripts and
+  references, and adds test prompts to confirm the skill triggers and performs as
+  intended.
+category: development
+tags: [agent-skills, skills, instructions, coding-agents, workflow]
+author: {name: OpenModels Community, github: openmodelsrun, url: https://www.openmodels.run}
+recommended_models: [claude-opus-5-5, gpt-6-astra, gpt-6-1-sol]
+min_context_window: 32000
+modalities: {input: [text, code], output: [text, code]}
+complexity: intermediate
+use_cases:
+  - Packaging a team deploy or review process as a reusable skill
+  - Writing a trigger description that fires on the right requests
+  - Splitting long instructions into a short entry file plus references
+  - Testing a skill against prompts that should and should not trigger it
+example_prompt: |
+  Author an agent skill for this workflow.
+
+  Context: [workflow steps, tools and scripts involved, common mistakes, target agent]
+
+  Return:
+  1. Skill name and trigger description.
+  2. Entry instructions in order of execution.
+  3. Supporting files to bundle and when to read them.
+  4. Guardrails and stop conditions.
+  5. Test prompts for triggering and for non-triggering.
+related_skills: [skill-vetter, prompt-engineering, ai-codebase-onboarding]
+compatible_tools: [claude-code, cursor, kiro, any]
+created_at: "2026-10-01T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"

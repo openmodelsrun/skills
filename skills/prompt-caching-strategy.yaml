@@ -1,0 +1,34 @@
+id: prompt-caching-strategy
+name: Prompt Caching Strategy
+description: >
+  Designs a prompt caching strategy for LLM applications. Restructures prompts so stable
+  content such as system instructions, tool definitions, and reference documents forms a
+  cacheable prefix, places cache breakpoints, estimates break-even from cache-write and
+  cache-read prices and hit rates, and defines monitoring for cache effectiveness.
+category: ops
+tags: [prompt-caching, cost, latency, context, llm-ops]
+author: {name: OpenModels Community, github: openmodelsrun, url: https://www.openmodels.run}
+recommended_models: [claude-opus-5-5, gpt-6-astra, gpt-6-1-sol]
+min_context_window: 32000
+modalities: {input: [text, code], output: [text, code]}
+complexity: intermediate
+use_cases:
+  - Cutting input cost for agents with long system prompts and tool lists
+  - Ordering prompt sections so the cacheable prefix stays stable
+  - Estimating savings from cache-read pricing at a given hit rate
+  - Diagnosing low cache hit rates in production
+example_prompt: |
+  Design prompt caching for this application.
+
+  Context: [prompt structure, tools, documents, request volume, provider and prices]
+
+  Return:
+  1. Which sections are stable, semi-stable, and volatile.
+  2. Reordered prompt layout and cache breakpoints.
+  3. Break-even and savings estimate with assumptions.
+  4. Cache invalidation risks and TTL considerations.
+  5. Metrics to track hit rate and cost per request.
+related_skills: [llm-cost-optimizer, model-context-budgeting, inference-latency-optimizer]
+compatible_tools: [claude-code, cursor, kiro, any]
+created_at: "2026-10-01T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"

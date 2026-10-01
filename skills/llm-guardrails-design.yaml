@@ -1,0 +1,35 @@
+id: llm-guardrails-design
+name: LLM Guardrails Design
+description: >
+  Designs input and output guardrails for an LLM product. Defines the policy to enforce,
+  places checks at the right points such as input filtering, retrieval and tool-result
+  screening, and output validation, chooses between rules, classifiers, and model-based
+  checks, and specifies fallback behavior, logging, and evaluation of false positives and
+  negatives.
+category: security
+tags: [guardrails, safety, moderation, prompt-injection, policy]
+author: {name: OpenModels Community, github: openmodelsrun, url: https://www.openmodels.run}
+recommended_models: [claude-opus-5-5, gpt-6-astra, gpt-6-1-sol]
+min_context_window: 64000
+modalities: {input: [text, code], output: [text, code]}
+complexity: advanced
+use_cases:
+  - Adding policy enforcement to a customer-facing assistant
+  - Screening retrieved documents and tool results for injected instructions
+  - Validating structured outputs before they reach downstream systems
+  - Measuring and reducing guardrail false positives
+example_prompt: |
+  Design guardrails for this LLM application.
+
+  Context: [product, users, policy requirements, tools and data sources, risk tolerance]
+
+  Return:
+  1. Policy categories and severity.
+  2. Check placement across the request path.
+  3. Mechanism per check with latency and cost.
+  4. Fallback and user messaging on a block.
+  5. Evaluation set and metrics for the guardrails.
+related_skills: [prompt-injection-tester, ai-safety-policy-review, agent-sandbox-design]
+compatible_tools: [claude-code, cursor, kiro, any]
+created_at: "2026-10-01T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
